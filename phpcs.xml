@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<ruleset name="shubkb">
+	<description>Generally-applicable sniffs for WordPress plugins</description>
+
+	<rule ref="WordPress">
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax.Found"/>
+		<exclude name="Squiz.Commenting.FileComment.Missing"/>
+	</rule>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<!-- List of text domains used in your plugin and theme -->
+				<element value="shubkbPlugin" />
+				<element value="shubkbTheme" />
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress-Docs" />
+	<rule ref="WordPress-Extra" />
+	<rule ref="PHPCompatibilityWP"/>
+
+	<config name="testVersion" value="8.0-"/>
+
+	<arg name="extensions" value="php"/>
+	<arg value="s"/>
+
+	<exclude-pattern>*/dev-lib/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>.github/</exclude-pattern>
+</ruleset>

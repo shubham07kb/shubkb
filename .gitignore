@@ -1,0 +1,19 @@
+# Uploads directory
+/uploads
+
+# IDE or OS
+.idea/
+.DS_Store
+
+# Log files
+*.log
+
+# Build artifact
+.grunt
+
+# local
+node_modules/
+
+# Lint report files
+lint-css-report.json
+lint-js-report.json
