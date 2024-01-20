@@ -12,7 +12,5 @@ jobs:
           composer install
       - name: Run PHPCS
         run: |
-          composer require "squizlabs/php_codesniffer=*"
-          composer require "wp-coding-standards/wpcs" --working-dir=vendor/wp-coding-standards
-          composer require --dev phpcompatibility/phpcompatibility-wp --working-dir=vendor/phpcompatibility-wp
+          php vendor/bin/phpcs .
           
