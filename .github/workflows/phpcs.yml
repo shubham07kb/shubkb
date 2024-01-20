@@ -10,9 +10,16 @@ jobs:
     - name: Build Checkss
       run: |
         system_profiler SPSoftwareDataType SPHardwareDataType
-        node -v
-        npm -v
+        echo "php version"
+        php -v
+        echo "composer version"
         composer -v
+        echo "node version"
+        node -v
+        echo "npm version"
+        npm -v
+        echo "npx version"
+        npx -v
   phpcs:
       name: PHPCS WPCS Checks
       runs-on: macos-latest
@@ -27,8 +34,13 @@ jobs:
   stylelint:
       name: Stylelint Checks
       runs-on: macos-latest
+      env:
+        URL: ${{ github.event.pull_request.comments_url }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       steps:
       - uses: actions/checkout@v2
       - name: Build
         run: |
-          
+          npm i
+          npm run lint:css
+          curl -X POST $URL -H "Content-Type: application/json" -H "Authorization: token $GITHUB_TOKEN" --data '{ "body": "blah blah" }'
