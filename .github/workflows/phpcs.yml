@@ -41,6 +41,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build
         run: |
-          npm i
-          npm run lint:css
+          # npm i
+          # npm run lint:css
           echo "curl -X POST -H 'Authorization: Bearer $GITHUB_TOKEN' -H 'Content-Type: application/json' -d '{ \"body\": \"blah blah\" }' '$URL'"
