@@ -21,8 +21,9 @@ jobs:
         run: |
           echo "Run PHPCS"
           php vendor/bin/phpcs .
+          echo "Completed PHPCS"
   lint:
-      name: Stylelint Checks
+      name: Stylelint and ESLint Checks
       runs-on: macos-latest
       steps:
       - uses: actions/checkout@v2
@@ -42,7 +43,9 @@ jobs:
         run: |
           echo "Run Stylelint"
           npm run lint:css
+          echo "Completed Stylelint"
       - name: Run ESLint
         run: |
           echo "Run ESLint"
           npm run lint:js
+          echo "Completed ESLint"
