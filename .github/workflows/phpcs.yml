@@ -4,17 +4,15 @@ on: [push]
 jobs:
   phpcs:
       name: WPCS
-      runs-on: ubuntu-latest
+      runs-on: macos-latest
       steps:
-        - uses: actions/checkout@v2
-        - name: WordPress Coding Standards check
-          uses: 10up/wpcs-action@stable
-          with:
-            enable_warnings: false
-            paths: '.' # Paths to check, space separated
-            excludes: '' # Paths to excludes, space separated
-            standard: 'WordPress' # Standard to use. Accepts WordPress|WordPress-Core|WordPress-Docs|WordPress-Extra|WordPress-VIP-Go|WordPressVIPMinimum.
-            standard_repo: '' # Public (git) repository URL of the coding standard
-            repo_branch: 'main' # Branch of Standard repository
-            phpcs_bin_path: 'phpcs' # Custom PHPCS bin path
-            use_local_config: 'true' # Use local config if available
+      - uses: actions/checkout@v2
+      - name: Build
+        run: |
+          composer install
+      - name: Run PHPCS
+        run: |
+          composer require "squizlabs/php_codesniffer=*"
+          composer require "wp-coding-standards/wpcs" --working-dir=vendor/wp-coding-standards
+          composer require --dev phpcompatibility/phpcompatibility-wp --working-dir=vendor/phpcompatibility-wp
+          
