@@ -2,45 +2,47 @@ name: Require Checks
 on: [push]
 
 jobs:
-  system:
-    name: System and Software Checks
-    runs-on: macos-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Build Checkss
-      run: |
-        system_profiler SPSoftwareDataType SPHardwareDataType
-        echo "php version"
-        php -v
-        echo "composer version"
-        composer -v
-        echo "node version"
-        node -v
-        echo "npm version"
-        npm -v
-        echo "npx version"
-        npx -v
   phpcs:
       name: PHPCS WPCS Checks
       runs-on: macos-latest
       steps:
       - uses: actions/checkout@v2
+      - name: Version Check
+        run: |
+          echo "php version"
+          php -v
+          echo "composer version"
+          composer -v
       - name: Build
         run: |
+          echo "Install Composer Packages"
           composer install
       - name: Run PHPCS
         run: |
+          echo "Run PHPCS"
           php vendor/bin/phpcs .
-  stylelint:
+  lint:
       name: Stylelint Checks
       runs-on: macos-latest
-      env:
-        URL: ${{ github.event.pull_request.comments_url }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       steps:
       - uses: actions/checkout@v2
+      - name: Version Check
+        run: |
+          echo "Node Version"
+          node -v
+          echo "npm version"
+          npm -v
+          echo "npx version"
+          npx -v
       - name: Build
         run: |
-          # npm i
-          # npm run lint:css
-          echo "curl -X POST -H 'Authorization: Bearer $GITHUB_TOKEN' -H 'Content-Type: application/json' -d '{ \"body\": \"blah blah\" }' '$URL'"
+          echo "Install Node Modules"
+          npm i
+      - name: Run Stylelint
+        run: |
+          echo "Run Stylelint"
+          npm run lint:css
+      - name: Run ESLint
+        run: |
+          echo "Run ESLint"
+          npm run lint:js
