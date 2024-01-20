@@ -1,9 +1,20 @@
-name: First Workflow
+name: Require Checks
 on: [push]
 
 jobs:
+  system:
+    name: System and Software Checks
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build Checkss
+      run: |
+        system_profiler SPSoftwareDataType SPHardwareDataType
+        node -v
+        npm -v
+        composer -v
   phpcs:
-      name: WPCS
+      name: PHPCS WPCS Checks
       runs-on: macos-latest
       steps:
       - uses: actions/checkout@v2
@@ -13,4 +24,11 @@ jobs:
       - name: Run PHPCS
         run: |
           php vendor/bin/phpcs .
+  stylelint:
+      name: Stylelint Checks
+      runs-on: macos-latest
+      steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: |
           
