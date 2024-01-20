@@ -43,4 +43,4 @@ jobs:
         run: |
           npm i
           npm run lint:css
-          curl -X POST -H "Authorization: Bearer $GITHUB_TOKEN" -H "Content-Type: application/json" -d '{ "body": "blah blah" }' "$URL"
+          echo "curl -X POST -H 'Authorization: Bearer $GITHUB_TOKEN' -H 'Content-Type: application/json' -d '{ \"body\": \"blah blah\" }' '$URL'"
