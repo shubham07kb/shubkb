@@ -11,7 +11,7 @@
  * Text Domain: shubkb
  * Domain Path: /languages
  * PHP version 7.2
- * 
+ *
  * @category Plugin
  * @package  Shubkb_Plugin
  * @author   shubham <shub@shubkb.com>
