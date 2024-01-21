@@ -4,7 +4,7 @@
  *
  * This file is used to register all the functions and definitions.
  *
- * PHP version 7.2
+ * PHP version 8.0
  *
  * @category Core
  * @package  PaperSync
@@ -24,3 +24,6 @@ define( 'PAPERSYNC_THEME_DIR', get_template_directory() );
 define( 'PAPERSYNC_THEME_URL', get_template_directory_uri() );
 define( 'PAPERSYNC_THEME_BASENAME', get_template() );
 define( 'PAPERSYNC_THEME_FILE', __FILE__ );
+
+// Load autoloader.
+require_once PAPERSYNC_THEME_DIR . '/autoloader.php';
