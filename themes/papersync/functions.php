@@ -27,3 +27,13 @@ define( 'PAPERSYNC_THEME_FILE', __FILE__ );
 
 // Load autoloader.
 require_once PAPERSYNC_THEME_DIR . '/autoloader.php';
+
+/**
+ * Register Customizable Header
+ *
+ * @return void
+ */
+function customizable_header() {
+	register_block_type_from_metadata( PAPERSYNC_THEME_DIR . '/inc/blocks/customizable-header' );
+}
+add_action( 'init', 'customizable_header' );
