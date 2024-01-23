@@ -1,11 +1,9 @@
-import { useBlockProps } from '@wordpress/block-editor';
-import CustomizableHeader from './themes';
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
-export default function Save({ attributes }) {
-	const { style } = attributes;
+export default function Save() {
 	return (
-		<div {...useBlockProps.save()}>
-			<CustomizableHeader type={style} />
+		<div {...useBlockProps.Save()}>
+			<InnerBlocks.Content />
 		</div>
 	);
 }

@@ -1,7 +1,10 @@
-import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
+import {
+	useBlockProps,
+	InnerBlocks,
+	InspectorControls,
+} from '@wordpress/block-editor';
 import { useState } from '@wordpress/element';
 import { PanelBody, SelectControl } from '@wordpress/components';
-import CustomizableHeader from './themes';
 import './editor.scss';
 
 export default function Edit({ attributes, setAttributes }) {
@@ -26,8 +29,30 @@ export default function Edit({ attributes, setAttributes }) {
 					/>
 				</PanelBody>
 			</InspectorControls>
-			<h1>Header</h1>
-			<CustomizableHeader type={style} />
+			<h4>Header</h4>
+			<div>
+				{styleValue === 'simple' && (
+					<InnerBlocks
+						allowedBlocks={['papersync/customizable-header-simple']}
+						orientation="horizontal"
+						template={[['papersync/customizable-header-simple']]}
+					/>
+				)}
+				{styleValue === 'dark' && (
+					<InnerBlocks
+						allowedBlocks={['papersync/customizable-header-dark']}
+						orientation="horizontal"
+						template={[['papersync/customizable-header-dark']]}
+					/>
+				)}
+				{styleValue === 'purple' && (
+					<InnerBlocks
+						allowedBlocks={['papersync/customizable-header-purple']}
+						orientation="horizontal"
+						template={[['papersync/customizable-header-purple']]}
+					/>
+				)}
+			</div>
 		</div>
 	);
 }
