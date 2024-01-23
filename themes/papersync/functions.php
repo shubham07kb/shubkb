@@ -1,5 +1,4 @@
 <?php
-use WpOrg\Requests\Auth\Basic;
 /**
  * Functions and definitions
  *
