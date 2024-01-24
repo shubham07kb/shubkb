@@ -6,7 +6,7 @@ jobs:
       name: PHPCS WPCS Checks
       runs-on: macos-latest
       steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Version Check
         run: |
           echo "php version"
@@ -26,7 +26,7 @@ jobs:
       name: Stylelint and ESLint Checks
       runs-on: macos-latest
       steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Version Check
         run: |
           echo "Node Version"
