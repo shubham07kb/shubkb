@@ -1,0 +1,317 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hostinger AI Assistant\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-23 08:58+0000\n"
+"PO-Revision-Date: 2023-11-21 08:36+0000\n"
+"Last-Translator: Zhou Yu\n"
+"Language-Team: Chinese (China)\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.3.2\n"
+"X-Domain: hostinger-ai-assistant"
+
+#: includes/class-hostinger-ai-assistant-errors.php:10
+msgid "Action Failed. Try again or contact support. Apologies."
+msgstr "操作失败。请稍后再试，或者联系支持团队。抱歉。"
+
+#: admin/class-hostinger-ai-assistant-buttons.php:26
+#: admin/class-hostinger-ai-assistant-menus.php:24
+#: admin/class-hostinger-ai-assistant-menus.php:25
+#: assets/js/hostinger-ai-assistant-admin.js:2 assets/js/hostinger-buttons.js:1
+#: src/scripts/hostinger-buttons.js:3
+msgid "Add New with AI"
+msgstr "让人工智能添加新的"
+
+#: includes/class-hostinger-ai-assistant-errors.php:13
+msgid "An unexpected error occurred. Please try again or contact support."
+msgstr "发生意外错误。请稍后再试，或者联系支持团队。"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:217
+msgid "Are you sure you want to replace your existing content with a new one ?"
+msgstr "您确定要将现有内容替换吗？"
+
+#: admin/class-hostinger-ai-assistant-notices.php:28
+#: admin/class-hostinger-ai-assistant-notices.php:50
+msgid "Attention:"
+msgstr "注意："
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:178
+msgid "Brewing content with magic"
+msgstr "正在创建内容"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:224
+msgid "Cancel"
+msgstr "取消"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:195
+msgid "characters"
+msgstr "字数"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:125
+msgid "Choose the length of generated content"
+msgstr "选择创建内容的长度"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:72
+msgid "Choose the type of content that will be generated"
+msgstr "选择创建内容的种类"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:93
+msgid "Choose your desired emotional impact on readers"
+msgstr "选择您期望的阅读者心理效果"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:220
+msgid ""
+"Clicking <b>Generate new content</b> will permanently delete your existing "
+"content and generate a new one on your recent inputs."
+msgstr "点击 <b>创建新内容</b>将会永久删除已有内容并且在最近输入创建新的内容"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:100
+msgid "Content length"
+msgstr "内容长度"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:49
+msgid "Content Type"
+msgstr "内容种类"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:22
+msgid "Create Your Content with AI"
+msgstr "用人工智能帮助您创建内容"
+
+#: admin/class-hostinger-ai-assistant-notices.php:38
+msgid "Deactivate and delete the Hostinger AI Assistant plugin."
+msgstr "解除并删除Hostinger人工智能小助理插件。"
+
+#: admin/partials/hostinger-ai-assistant-seo-meta-view.php:40
+msgid "Description"
+msgstr "详情描述"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:202
+msgid "Edit as a draft"
+msgstr "编辑草稿"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:33
+msgid "Effortless and time-saving"
+msgstr "简单省时"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:148
+#: assets/js/hostinger-ai-assistant-admin.js:2
+#: src/scripts/hostinger-ai-assistant-admin.js:37
+#: src/scripts/hostinger-ai-assistant-admin.js:41
+msgid "Enter at least 10 characters"
+msgstr "输入至少10个字符"
+
+#: assets/js/hostinger-ai-assistant-admin.js:2
+#: src/scripts/hostinger-focus-keywords.js:12
+msgid "Example: website development, wordpress tutorial, ..."
+msgstr "例如：网站开发，Wordpress教程，..."
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:85
+msgid "Formal"
+msgstr "正式"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:87
+msgid "Friendly"
+msgstr "友好的"
+
+#: admin/class-hostinger-ai-assistant-notices.php:39
+msgid ""
+"From your Hostinger member area (hPanel) reinstall the Hostinger AI "
+"Assistant plugin."
+msgstr "从Hostinger会员区域（hPanel) 重新安装Hostinger人工智能小助理插件。"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:168
+msgid "Generate content"
+msgstr "创建内容"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:227
+msgid "Generate new content"
+msgstr "创建新内容"
+
+#. Author of the plugin
+msgid "Hostinger"
+msgstr "Hostinger"
+
+#. Plugin Name of the plugin
+msgid "Hostinger AI Assistant"
+msgstr "Hostinger 人工智能小助理"
+
+#. Description of the plugin
+msgid "Hostinger AI Assistant plugin."
+msgstr "Hostinger 人工智能小助理插件。"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://hostinger.com"
+msgstr "https://hostinger.com"
+
+#: admin/class-hostinger-ai-assistant-notices.php:34
+msgid ""
+"If it is deactivated, click on the \"Activate\" button below the plugin's "
+"name."
+msgstr "如果已停用的，点击插件名称下面的“激活”按钮。"
+
+#: admin/class-hostinger-ai-assistant-notices.php:36
+msgid ""
+"If the main Hostinger plugin is not listed in the Plugins section, follow "
+"these steps instead:"
+msgstr "如果Hostinger主插件没有在插件板块内，请按照以下步骤："
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:155
+msgid ""
+"If you skip this part, AI will automatically generate keyword suggestions "
+"after you generate the content"
+msgstr "如您跳过此步骤，我们的人工智能将自动为您生成关键词"
+
+#: admin/partials/hostinger-ai-assistant-seo-meta-view.php:9
+msgid "Keywords"
+msgstr "关键词"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:135
+msgid "Let us know more about your content idea"
+msgstr "让我们了解您的内容灵感"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:137
+msgid ""
+"Let us know more about your content idea. For example: Article about how to "
+"use WordPress to dive into website development including tutorials how to "
+"use it in a simple way..."
+msgstr "让我们了解您的内容灵感。比如：文章有关如何使用WordPress辅助网站开发，包括如何以简单的方式使用它的教程…"
+
+#: assets/js/hostinger-ai-assistant-admin.js:2
+#: src/scripts/hostinger-ai-assistant-admin.js:45
+msgid ""
+"Let us now more about your post idea. Share more details for better results"
+msgstr "让我们了解您的发布内容想法。通过分享更多细节是内容更理想"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:116
+msgid "Long"
+msgstr "长"
+
+#: admin/class-hostinger-ai-assistant-notices.php:33
+msgid "Look for the Hostinger plugin in the list of installed plugins."
+msgstr "在已安装的插件里查找Hostinger插件。"
+
+#: admin/partials/hostinger-ai-assistant-seo-meta-view.php:29
+msgid "Meta description"
+msgstr "元描述"
+
+#: admin/class-hostinger-ai-assistant-notices.php:32
+#| msgid "Navigate to the \"Plugins\" section in the left-hand menu."
+msgid "Navigate to the Plugins section in the left-hand menu."
+msgstr "从左手边菜单找到插件板块。"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:84
+msgid "Neutral"
+msgstr "正常"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:152
+msgid "Optional"
+msgstr "可选"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:159
+msgid "Press Enter key to finalize a keyword"
+msgstr "按回车键确认关键词"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:208
+msgid "Publish"
+msgstr "发布"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:37
+msgid "SEO-friendly content"
+msgstr "SEO友好内容"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:104
+#: admin/partials/hostinger-ai-assistant-tab-view.php:110
+msgid "Short"
+msgstr "短"
+
+#: admin/class-hostinger-ai-assistant-notices.php:28
+msgid ""
+"The Hostinger AI Assistant plugin requires the main Hostinger plugin to work "
+"properly."
+msgstr "为使Hostinger人工智能小助理插件正常运作，您需要确保Hostinger主插件的正常运作。"
+
+#: admin/class-hostinger-ai-assistant-notices.php:40
+msgid "The main Hostinger plugin will be installed along with it."
+msgstr "Hostinger主插件将一并安装。"
+
+#: admin/partials/hostinger-ai-assistant-seo-meta-view.php:20
+msgid ""
+"These keywords can help your article and website rank higher in search "
+"engines. You can input up to 5 keywords."
+msgstr "这些关键词可以帮助你的文章和网站在搜索引擎中排名更高。您最多可以输入5个关键词。"
+
+#: admin/class-hostinger-ai-assistant-notices.php:30
+msgid "To activate the main Hostinger plugin, follow these steps: "
+msgstr "激活Hostinger主插件，跟随以下步骤："
+
+#: admin/class-hostinger-ai-assistant-notices.php:50
+msgid ""
+"To unlock the exclusive features of <b>Hostinger AI Assistant</b>, you must "
+"possess a unique API token, which is exclusively provided to Hostinger "
+"clients"
+msgstr "为了确保您的网站正常运行，请激活Hostinger主插件。它是提供重要特性和功能的基本组件。"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:79
+msgid "Tone of voice"
+msgstr "语气"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:86
+msgid "Trustworthy"
+msgstr "值得信赖"
+
+#: includes/class-hostinger-ai-assistant-errors.php:27
+msgid "Unknown error code."
+msgstr "未知错误代码。"
+
+#: includes/content/class-hostinger-ai-assistant-content-generation.php:178
+msgid "Unsplash"
+msgstr "Unsplash"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:112
+msgid "Usually used for video, infographics, or product descriptions"
+msgstr "通常用于视频，信息图表或产品描述。"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:118
+msgid "Usually used to make high-ranked articles that will generate more leads"
+msgstr "通常用于制作高排名的文章，将会创造更多的机会"
+
+#: includes/class-hostinger-ai-assistant-errors.php:16
+msgid ""
+"We apologize for the inconvenience. The AI content generation process "
+"encountered a server error. Please try again later."
+msgstr "给您带来不便，我们深表歉意。人工智能内容生成过程遇到服务器错误。请稍后重试。"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:152
+msgid "What are the focus keywords of your content?"
+msgstr "您的内容关键字是什么？"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:42
+msgid "What do you want to make today?"
+msgstr "您想创建什么样的内容？"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:130
+msgid "What is your content about?"
+msgstr "您的内容是有关什么？"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:88
+msgid "Witty"
+msgstr "有趣的"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:193
+msgid "words"
+msgstr "字"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:29
+msgid "Write your main topic"
+msgstr "键入您的主要题目"
+
+#: assets/js/hostinger-ai-assistant-admin.js:2
+#: src/scripts/hostinger-ai-assistant-admin.js:49
+msgid "You're good to go, but you can share more details for better results"
+msgstr "分享更多细节，创建出更理想的结果"

@@ -1,0 +1,484 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hostinger\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-23 08:27+0000\n"
+"PO-Revision-Date: 2023-09-18 02:47+0000\n"
+"Last-Translator: Zhou Yu\n"
+"Language-Team: Chinese (China)\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.4; wp-6.3.1\n"
+"X-Domain: hostinger"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:15
+msgid "Access the Site identity and edit title"
+msgstr "访问站点标识并编辑标题"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:43
+msgid "Add a gallery block"
+msgstr "添加一个画廊模块"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:13
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:54
+msgid "Add a new page"
+msgstr "添加一个新页面"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:58
+msgid "Add a title"
+msgstr ""
+"添加一个标题\n"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:62
+msgid "Add content"
+msgstr "添加内容"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:15
+msgid "Add products image and price"
+msgstr "添加产品图片和价格"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:28
+msgid "Add the content and images that represent your services"
+msgstr "添加代表您的服务的内容和图片"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:59
+msgid ""
+"Add the title of the page, for example, About. Click the Add Title text to "
+"open the text box where you will add your title. The title of your page "
+"should be descriptive of the information the page will have."
+msgstr "添加页面的标题，例如，”关于“。单击“添加标题”文本以打开文本框，在其中添加标题。您的页面标题应该是描述此页面的信息。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:5
+msgid "Add your first product"
+msgstr "添加您的第一款产品"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:11
+msgid "Add your product"
+msgstr "添加您的产品"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:12
+msgid ""
+"Adding a logo is a great way to personalize a website or add branding "
+"information. You can use your existing logo or create a new one using the <a "
+"href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
+"target=\"_blank\">Ai Logo Maker</a>."
+msgstr ""
+"添加标识是个性化网站或宣传品牌信息的好方法。您可以使用现有的标识，也可以使用 <a href=\"https://logo.hostinger.com/?"
+"ref=wordpress-onboarding\" target=\"_blank\">Ai Logo Maker</a>。"
+
+#: includes/admin/class-hostinger-admin-menu.php:46
+#: includes/admin/class-hostinger-admin-menu.php:47
+#: includes/admin/views/hostinger-onboarding-view.php:67
+#| msgid "AI Assistant"
+msgid "AI assistant"
+msgstr "人工智能小助理 "
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:67
+msgid ""
+"Before publishing, you can preview your created page by clicking on the "
+"Preview button. If you are happy with the result, click the Publish button."
+msgstr "在发布之前，您可以通过单击“预览”按钮预览创建的页面。如果您对结果满意，请单击”发布“按钮。"
+
+#: includes/admin/views/hostinger-onboarding-view.php:181
+msgid "Close"
+msgstr "关闭"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:25
+msgid ""
+"Come up with a clear and concise name for the page that accurately reflects "
+"the services you provide."
+msgstr "为页面准备一个清晰简洁的名称，准确地反映您提供的服务。"
+
+#: includes/views/hostinger-coming-soon.php:6
+#: includes/views/hostinger-coming-soon.php:25
+msgid "Coming Soon"
+msgstr "即将推出"
+
+#: includes/admin/class-hostinger-admin-ajax.php:38
+msgid "Congratulations! Your website is online."
+msgstr "恭喜！您的网站已经上线。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:63
+msgid ""
+"Content can be anything you wish, for example, text, images, videos, tables, "
+"and lots more. Click on a plus sign and choose any block you want to add to "
+"the page."
+msgstr "内容可以是任何内容，例如文本、图像、视频、表格等等。单击加号选择您想添加的模块至页面。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:11
+msgid "Create a catchy headline"
+msgstr "创建一个引人注目的标题"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:12
+msgid ""
+"Create a headline that grabs your visitors attention and accurately "
+"represents the content of your post."
+msgstr "创建一个标题，既能够吸引访问者的注意力，同时准确地代表发布的内容。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:11
+msgid "Create a logo"
+msgstr "创建标识"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:39
+msgid "Create a new page called “My projects”"
+msgstr "创建一个“我的项目”新页面"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:9
+msgid "Create a page describing your services"
+msgstr "创建一个可以描述您的服务的页面"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:5
+msgid "Create your first blog post"
+msgstr "创建您的第一个博客"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:15
+msgid "Draft your post"
+msgstr "起草您的发布内容"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:19
+msgid "Edit an image"
+msgstr "编辑图片"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:25
+msgid "Edit description"
+msgstr "编辑详情"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:21
+msgid "Edit post"
+msgstr "编辑发布内容"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:11
+msgid "Edit post description"
+msgstr "编辑发布内容描述"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:5
+msgid "Edit site title"
+msgstr "编辑网站标题"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:32
+msgid "Finalize the page"
+msgstr "完成页面"
+
+#: includes/admin/views/hostinger-onboarding-view.php:251
+msgid "Find the answers you need in our Knowledge Base"
+msgstr "在我们的知识数据库中查找答案"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:11
+msgid "Find the Media page"
+msgstr "查找媒体库页面"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:70
+msgid "Follow our guided checklist to setup your website"
+msgstr "按照我们的指导清单设置您的网站"
+
+#: includes/admin/views/hostinger-onboarding-view.php:262
+msgid "Get in touch with our live specialists"
+msgstr "联系我们的在线专家"
+
+#: includes/admin/class-hostinger-admin-menu.php:26
+#: includes/admin/class-hostinger-admin-menu.php:27
+#: includes/admin/views/hostinger-onboarding-view.php:60
+#| msgid "Get Started"
+msgid "Get started"
+msgstr "立即开始"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:24
+msgid "Give a page a short title such as “Our Services”"
+msgstr "给页面一个简短的标题,如“我们的服务”"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:40
+msgid ""
+"Give your page a name (e.g. \"My Portfolio\"), then click the \"+\" button "
+"in the editor to add a new block."
+msgstr "给页面起个名字(例如:“我的作品集”)，然后在编辑器中点击“+”按钮添加一个新模块。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:17
+msgid "Go to Posts"
+msgstr "转至发布内容"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:12
+msgid ""
+"Go to Products → Add New or Create Product and enter your product name and "
+"description."
+msgstr "转至产品→ 添加新产品，并输入产品名称及详情"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:11
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:15
+msgid "Go to the Customize page"
+msgstr "转至自定义页面"
+
+#: includes/admin/views/hostinger-onboarding-view.php:111
+msgid "Got it!"
+msgstr "了解！"
+
+#: includes/admin/views/hostinger-onboarding-view.php:261
+msgid "Help Center"
+msgstr "帮助中心"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: includes/admin/class-hostinger-admin-menu.php:15
+#: includes/admin/class-hostinger-admin-menu.php:16
+msgid "Hostinger"
+msgstr "Hostinger"
+
+#: includes/admin/views/hostinger-onboarding-view.php:198
+msgid "Hostinger Academy"
+msgstr "Hostinger学院"
+
+#. Description of the plugin
+msgid "Hostinger WordPress plugin."
+msgstr "Hostinger WordPress 插件。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:22
+msgid ""
+"Hover over the chosen post to see the options menu. Click on the Edit button "
+"to open the post editor."
+msgstr "将鼠标悬停在选定的发布内容上以查看“选项”菜单。单击”编辑“按钮打开内容编辑器。"
+
+#: includes/admin/views/hostinger-onboarding-view.php:17
+#: includes/admin/views/hostinger-onboarding-view.php:209
+msgid "How to Add Your WordPress Website to Google Search Console"
+msgstr "如何将您的WordPress网站添加到谷歌搜索控制台"
+
+#: includes/admin/views/hostinger-onboarding-view.php:42
+msgid "How to Back Up a WordPress Site"
+msgstr "如何备份WordPress网站"
+
+#: includes/admin/views/hostinger-onboarding-view.php:27
+msgid "How to Clear Cache in WordPress Website"
+msgstr "如何清除WordPress网站中的缓存"
+
+#: includes/admin/views/hostinger-onboarding-view.php:22
+msgid "How to Create a WordPress Contact Us Page"
+msgstr "如何创建一个WordPress联系我们页面"
+
+#: includes/admin/views/hostinger-onboarding-view.php:32
+msgid "How to Edit the Footer in WordPress"
+msgstr "如何在WordPress中编辑页脚"
+
+#: includes/admin/views/hostinger-onboarding-view.php:47
+msgid "How to Import Images Into WordPress Website"
+msgstr "如何在WordPress网站中导入图片"
+
+#: includes/admin/views/hostinger-onboarding-view.php:52
+msgid "How to Set Up WordPress SMTP"
+msgstr "如何设置WordPress SMTP"
+
+#. Plugin URI of the plugin
+msgid "https://hostinger.com"
+msgstr "https://hostinger.com"
+
+#. Author URI of the plugin
+msgid "https://www.hostinger.com"
+msgstr "https://www.hostinger.com"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:20
+msgid ""
+"If you wish to edit the image, click on the chosen image and click the Edit "
+"Image button. You can now crop, rotate, flip or scale the selected image."
+msgstr "如果你想编辑图像，点击选中的图像并点击“编辑图像”按钮。裁剪、旋转、翻转或缩放选定的图像。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:44
+msgid ""
+"In the block menu, search for \"Gallery\" and select the Gallery block. "
+"Upload the images you want to showcase in your portfolio, then adjust the "
+"layout and add captions if needed."
+msgstr "在模块菜单中，搜索“画廊”并选择画廊模块。上传在作品集中展示的图片，然后调整布局，如果需要的话添加标题。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:12
+msgid ""
+"In the left sidebar, click Appearance to expand the menu. In the Appearance "
+"section, click Customize. The Customize page will open."
+msgstr "在左侧栏中,单击“外观”展开菜单。在“外观”部分，单击“自定义”。自定义页面将被打开。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:16
+msgid ""
+"In the left sidebar, click Appearance to expand the menu. In the Appearance "
+"section, click Customize. The Customize page will open. "
+msgstr "在左侧栏中，单击“外观”展开菜单。在“外观”部分，单击“定制”。自定义页面将被打开。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:16
+msgid "In the left sidebar, click Site Identity and edit your site title."
+msgstr "在左侧栏中，单击“站点标识”并编辑您的站点标题。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:20
+msgid ""
+"In the left sidebar, click Site Identity, then click on the Select Site Icon "
+"button. Here, you can upload your brand logo. "
+msgstr "在左侧栏中，单击“站点标识”，然后单击“选择站点图标”按钮。在这里,您可以上传您的品牌标志。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:12
+msgid ""
+"In the left sidebar, find the Media button. The Media Library page allows "
+"you to edit, view, and delete media previously uploaded to your website."
+msgstr "在左侧栏中找到“媒体库”按钮。媒体库页面允许您编辑、查看和删除先前上传到您的网站的媒体资料。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:55
+msgid ""
+"In the left sidebar, find the Pages menu and click on Add New button. You "
+"will see the WordPress page editor. Each paragraph, image, or video in the "
+"WordPress editor is presented as a “block” of content."
+msgstr ""
+"在左侧栏中,"
+"找到“页面”菜单并点击添加新的按钮。您将看到WordPress页面编辑器。WordPress编辑器中的每个段落、图像或视频都以“模块”的形式呈现。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:18
+msgid ""
+"In the left sidebar, find the Posts button. Click on the All Posts button "
+"and find the post for which you want to change the description."
+msgstr "在左侧栏中，找到“发布内容”按钮。单击“所有发布内容”按钮，找到需要更改详情描述的内容。"
+
+#: includes/admin/class-hostinger-admin-ajax.php:65
+msgid "invalid data"
+msgstr "无效数据"
+
+#: includes/admin/views/hostinger-onboarding-view.php:250
+msgid "Knowledge Base"
+msgstr "知识数据库"
+
+#: includes/admin/class-hostinger-admin-menu.php:36
+#: includes/admin/class-hostinger-admin-menu.php:37
+#: includes/admin/views/hostinger-onboarding-view.php:61
+msgid "Learn"
+msgstr "学习"
+
+#: includes/admin/views/hostinger-onboarding-view.php:37
+msgid "LiteSpeed Cache: How to Get 100% WordPress Optimization"
+msgstr "LiteSpeed 高速缓冲存储器:如何获得100%WordPress优化功能"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:33
+msgid ""
+"Make the page easy to read and navigate by using headings and bullet points. "
+"Include a clear call-to-action (CTA) to encourage visitors to take the next "
+"step for example, to contact you via email or contact form."
+msgstr "通过使用标题和项目符号让页面易于阅读。包括一些明确的行动按钮(CTA)，以鼓励访客采取下一步行动，例如，通过电子邮件或联系表单与您取得联系。"
+
+#: includes/views/hostinger-coming-soon.php:26
+msgid "New WordPress website is being built and will be published soon"
+msgstr "新的WordPress网站正在建设中，将很快发布"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:20
+msgid ""
+"Once fields are filled, and your item has an image, description, and price, "
+"it’s time to publish it online. You will find the “publish” button at the "
+"top of the page, near the description field."
+msgstr "成功填入所有所需内容，同时您的产品具备图片，描述，价格，就可以在网上发布了。您可以在页面顶部的描述附近找到“发布”按钮。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:20
+msgid ""
+"Once you have finished drafting your post, read it over to check for errors, "
+"make any necessary revisions, and then publish it to your blog."
+msgstr "起草了您的发布内容草稿后，请仔细阅读，检查错误，进行必要的修订，最后发布到博客。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:48
+msgid ""
+"Once you're happy with your portfolio post, click the \"Publish\" button to "
+"make it live on your website. You can add a link to your main navigation "
+"menu or other relevant posts to make it easy for visitors to find."
+msgstr "如果您的作品集内容准备好了，点击“发布”按钮，在你的网站上实时发布。您可以将链接添加到主导航菜单或其他相关的帖子里，让访问者容易找到。"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:61
+msgid "Preview website"
+msgstr "预览网站"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:19
+msgid "Proofread and publish"
+msgstr "校正并发布"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:66
+msgid "Publish the page"
+msgstr "发布页面"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:19
+msgid "Publish the setup"
+msgstr "发布设置"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:71
+#: includes/admin/onboarding/class-hostinger-onboarding.php:73
+msgid "Publish website"
+msgstr "发布网站"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:47
+msgid "Publish your page"
+msgstr "发布您的页面"
+
+#: includes/admin/views/hostinger-onboarding-view.php:178
+msgid "Publishing website"
+msgstr "正在发布网站"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:69
+msgid "Set up your website"
+msgstr "设置您的网站"
+
+#: includes/admin/views/hostinger-onboarding-view.php:116
+msgid "Take me there"
+msgstr "转至界面"
+
+#: includes/admin/views/hostinger-onboarding-view.php:179
+msgid "This can take some time"
+msgstr "这可能需要花费一些时间"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:16
+msgid ""
+"To make the product stand out, upload a picture of it. During the setup of "
+"your wanted item, be sure to add its price and any other relevant "
+"information. Product categories and tags to help organize your products."
+msgstr "为了让产品能够脱颖而出，上传一张它的照片。在设置产品时，一定要添加它的价格和其他相关信息。产品类别和标签可以帮助您对产品进行整理。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:16
+msgid ""
+"To upload a new image, click on Add New button on the Media Library page and "
+"select files."
+msgstr "要上传新图片，请单击媒体库页面上的“添加新的”按钮并选择“文档”。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:5
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:15
+msgid "Upload an image"
+msgstr "上传一张图片"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:5
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:19
+msgid "Upload your logo"
+msgstr "上传您的品牌图标"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:11
+msgid "Upload your portfolio projects"
+msgstr "上传您的作品集产品"
+
+#: includes/admin/class-hostinger-admin-ajax.php:37
+#: includes/admin/onboarding/class-hostinger-onboarding.php:58
+msgid "Website is published"
+msgstr "网站已发布"
+
+#: includes/admin/views/hostinger-onboarding-view.php:191
+msgid "WordPress tutorials"
+msgstr "WordPress 教程"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:29
+msgid ""
+"Write a brief introduction to your business, provide an overview of your "
+"services with descriptions and benefits, and use relevant images to support "
+"your content. Keep it simple and straightforward."
+msgstr "简要介绍您的业务，概述服务详情和优势，并使用相关的图片来支持你的内容。尽量让内容简单明了。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:16
+msgid ""
+"Write your content, making sure to include relevant keywords and images. You "
+"can use different blocks to create headings, paragraphs, lists, and other "
+"types of content."
+msgstr "当编辑内容时，确保其涵盖了相关的关键词和图片。可以使用不同的模块来创建标题、段落、列表和其他类型的内容。"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:59
+msgid "You can access this guide material any time when updating your website"
+msgstr "在您更新网站时，您可以随时访问此教程资料。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:26
+msgid ""
+"You can see the whole post in the editor. Find the description part and "
+"change it to your preferences."
+msgstr "您可以在编辑器中看到完整内容。找到描述部分并进行更改。"

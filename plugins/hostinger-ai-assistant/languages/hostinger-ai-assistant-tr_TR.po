@@ -1,0 +1,347 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hostinger AI Assistant\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-23 08:58+0000\n"
+"PO-Revision-Date: 2023-11-15 23:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: Turkish\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.4; wp-6.3.1\n"
+"X-Domain: hostinger-ai-assistant"
+
+#: includes/class-hostinger-ai-assistant-errors.php:10
+msgid "Action Failed. Try again or contact support. Apologies."
+msgstr "İşlem başarısız. Tekrar deneyin veya desteğe başvurun. Özür dileriz."
+
+#: admin/class-hostinger-ai-assistant-buttons.php:26
+#: admin/class-hostinger-ai-assistant-menus.php:24
+#: admin/class-hostinger-ai-assistant-menus.php:25
+#: assets/js/hostinger-ai-assistant-admin.js:2 assets/js/hostinger-buttons.js:1
+#: src/scripts/hostinger-buttons.js:3
+msgid "Add New with AI"
+msgstr "Yapay Zeka ile Yenisini Ekle"
+
+#: includes/class-hostinger-ai-assistant-errors.php:13
+msgid "An unexpected error occurred. Please try again or contact support."
+msgstr ""
+"Bir hata oluştu. Lütfen tekrar deneyin veya destek ekibiyle iletişime geçin."
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:217
+msgid "Are you sure you want to replace your existing content with a new one ?"
+msgstr "Mevcut içeriğinizi yenisiyle değiştirmek istediğinizden emin misiniz?"
+
+#: admin/class-hostinger-ai-assistant-notices.php:28
+#: admin/class-hostinger-ai-assistant-notices.php:50
+msgid "Attention:"
+msgstr "Dikkat:"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:178
+msgid "Brewing content with magic"
+msgstr "İçerik demleniyor"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:224
+msgid "Cancel"
+msgstr "İptal"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:195
+msgid "characters"
+msgstr "karakter"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:125
+msgid "Choose the length of generated content"
+msgstr "Oluşturulan içeriğin uzunluğunu seçin"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:72
+msgid "Choose the type of content that will be generated"
+msgstr "Oluşturulacak içerik türünü seçin"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:93
+msgid "Choose your desired emotional impact on readers"
+msgstr "Okurlarınız üzerinde yaratmak istediğiniz duygusal etkiyi seçin"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:220
+msgid ""
+"Clicking <b>Generate new content</b> will permanently delete your existing "
+"content and generate a new one on your recent inputs."
+msgstr ""
+"<b>Yeni içerik oluştur</b>'a tıkladığınızda mevcut içeriğiniz kalıcı olarak "
+"silinir ve son girdilerinizden faydalanılarak yeni bir içerik oluşturulur."
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:100
+msgid "Content length"
+msgstr "İçerik uzunluğu"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:49
+msgid "Content Type"
+msgstr "İçerik Türü"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:22
+msgid "Create Your Content with AI"
+msgstr "İçeriğinizi Yapay Zeka ile Oluşturun"
+
+#: admin/class-hostinger-ai-assistant-notices.php:38
+msgid "Deactivate and delete the Hostinger AI Assistant plugin."
+msgstr "Hostinger AI Asistan eklentisini devre dışı bırakın ve silin."
+
+#: admin/partials/hostinger-ai-assistant-seo-meta-view.php:40
+msgid "Description"
+msgstr "Açıklama"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:202
+msgid "Edit as a draft"
+msgstr "Taslak olarak düzenle"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:33
+msgid "Effortless and time-saving"
+msgstr "Zahmetsiz ve hızlı"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:148
+#: assets/js/hostinger-ai-assistant-admin.js:2
+#: src/scripts/hostinger-ai-assistant-admin.js:37
+#: src/scripts/hostinger-ai-assistant-admin.js:41
+msgid "Enter at least 10 characters"
+msgstr "En az 10 karakter girin"
+
+#: assets/js/hostinger-ai-assistant-admin.js:2
+#: src/scripts/hostinger-focus-keywords.js:12
+msgid "Example: website development, wordpress tutorial, ..."
+msgstr "Örnek: web sitesi geliştirme, WordPress öğreticileri..."
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:85
+msgid "Formal"
+msgstr "Resmi"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:87
+msgid "Friendly"
+msgstr "Samimi"
+
+#: admin/class-hostinger-ai-assistant-notices.php:39
+msgid ""
+"From your Hostinger member area (hPanel) reinstall the Hostinger AI "
+"Assistant plugin."
+msgstr ""
+"Hostinger üye alanınızdan (hPanel) Hostinger AI Asistan eklentisini yeniden "
+"yükleyin."
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:168
+msgid "Generate content"
+msgstr "İçerik üret"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:227
+msgid "Generate new content"
+msgstr "Yeni içerik üret"
+
+#. Author of the plugin
+msgid "Hostinger"
+msgstr "Hostinger"
+
+#. Plugin Name of the plugin
+msgid "Hostinger AI Assistant"
+msgstr "Hostinger AI Asistan"
+
+#. Description of the plugin
+msgid "Hostinger AI Assistant plugin."
+msgstr "Hostinger AI Asistan eklentisi."
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://hostinger.com"
+msgstr "https://hostinger.com.tr"
+
+#: admin/class-hostinger-ai-assistant-notices.php:34
+msgid ""
+"If it is deactivated, click on the \"Activate\" button below the plugin's "
+"name."
+msgstr ""
+"Devre dışıysa, eklentinin altındaki \"Etkinleştir\" düğmesine tıklayın."
+
+#: admin/class-hostinger-ai-assistant-notices.php:36
+msgid ""
+"If the main Hostinger plugin is not listed in the Plugins section, follow "
+"these steps instead:"
+msgstr ""
+"Ana Hostinger eklentisi Eklentiler bölümünde listelenmiyorsa, o zaman "
+"aşağıdaki adımları izleyin:"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:155
+msgid ""
+"If you skip this part, AI will automatically generate keyword suggestions "
+"after you generate the content"
+msgstr ""
+"Bu kısmı atlarsanız, siz içerik oluşturduktan sonra yapay zeka otomatik "
+"biçimde anahtar kelime önerileri oluşturur."
+
+#: admin/partials/hostinger-ai-assistant-seo-meta-view.php:9
+msgid "Keywords"
+msgstr "Anahtar kelimeler"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:135
+msgid "Let us know more about your content idea"
+msgstr "İçeriğiniz hakkında bize daha fazla bilgi verin"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:137
+msgid ""
+"Let us know more about your content idea. For example: Article about how to "
+"use WordPress to dive into website development including tutorials how to "
+"use it in a simple way..."
+msgstr ""
+"İçeriğiniz hakkında bize daha fazla bilgi verin. Örneğin: WordPress'in basit "
+"bir şekilde nasıl kullanılacağına dair rehberler de dahil olmak üzere web "
+"sitesi kurmak için nasıl kullanılacağı hakkında derinlemesine bir makale..."
+
+#: assets/js/hostinger-ai-assistant-admin.js:2
+#: src/scripts/hostinger-ai-assistant-admin.js:45
+msgid ""
+"Let us now more about your post idea. Share more details for better results"
+msgstr ""
+"Gönderi fikriniz hakkında bize daha fazla bilgi verin. Daha iyi sonuçlar "
+"için daha fazla ayrıntı paylaşın"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:116
+msgid "Long"
+msgstr "Uzun"
+
+#: admin/class-hostinger-ai-assistant-notices.php:33
+msgid "Look for the Hostinger plugin in the list of installed plugins."
+msgstr "Yüklü eklentiler listesinde Hostinger eklentisini arayın."
+
+#: admin/partials/hostinger-ai-assistant-seo-meta-view.php:29
+msgid "Meta description"
+msgstr "Meta açıklaması"
+
+#: admin/class-hostinger-ai-assistant-notices.php:32
+#| msgid "Navigate to the \"Plugins\" section in the left-hand menu."
+msgid "Navigate to the Plugins section in the left-hand menu."
+msgstr "Sol taraftaki menüden \"Eklentiler\" bölümüne gidin."
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:84
+msgid "Neutral"
+msgstr "Nötr"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:152
+msgid "Optional"
+msgstr "Tercihe bağlı"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:159
+msgid "Press Enter key to finalize a keyword"
+msgstr "Bir anahtar kelimeyi tamamlamak için Giriş tuşuna basın"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:208
+msgid "Publish"
+msgstr "Yayınla"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:37
+msgid "SEO-friendly content"
+msgstr "SEO dostu içerik"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:104
+#: admin/partials/hostinger-ai-assistant-tab-view.php:110
+msgid "Short"
+msgstr "Kısa"
+
+#: admin/class-hostinger-ai-assistant-notices.php:28
+msgid ""
+"The Hostinger AI Assistant plugin requires the main Hostinger plugin to work "
+"properly."
+msgstr ""
+"Hostinger AI Asistan eklentisinin, düzgün çalışması için ana Hostinger "
+"eklentisi gereklidir."
+
+#: admin/class-hostinger-ai-assistant-notices.php:40
+msgid "The main Hostinger plugin will be installed along with it."
+msgstr "Ana Hostinger eklentisi onunla birlikte yüklenecektir."
+
+#: admin/partials/hostinger-ai-assistant-seo-meta-view.php:20
+msgid ""
+"These keywords can help your article and website rank higher in search "
+"engines. You can input up to 5 keywords."
+msgstr ""
+"Bu anahtar kelimeler makalenizin ve web sitenizin arama motorlarında daha "
+"üst sıralarda yer almasına yardımcı olabilir. En fazla 5 anahtar kelime "
+"girebilirsiniz."
+
+#: admin/class-hostinger-ai-assistant-notices.php:30
+msgid "To activate the main Hostinger plugin, follow these steps: "
+msgstr ""
+"Ana Hostinger eklentisini etkinleştirmek için aşağıdaki adımları izleyin:"
+
+#: admin/class-hostinger-ai-assistant-notices.php:50
+msgid ""
+"To unlock the exclusive features of <b>Hostinger AI Assistant</b>, you must "
+"possess a unique API token, which is exclusively provided to Hostinger "
+"clients"
+msgstr ""
+"<b>Hostinger AI Asistan</b>'ın özelliklerinin kilidini açmak için, yalnızca "
+"Hostinger müşterilerine sağlanan benzersiz bir API anahtarına sahip olmanız "
+"gerekir"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:79
+msgid "Tone of voice"
+msgstr "Hitap şekli"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:86
+msgid "Trustworthy"
+msgstr "Güvenilir"
+
+#: includes/class-hostinger-ai-assistant-errors.php:27
+msgid "Unknown error code."
+msgstr "Bilinmeyen hata kodu."
+
+#: includes/content/class-hostinger-ai-assistant-content-generation.php:178
+msgid "Unsplash"
+msgstr "Unsplash"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:112
+msgid "Usually used for video, infographics, or product descriptions"
+msgstr "Genellikle video, infografik veya ürün açıklamaları için kullanılır"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:118
+msgid "Usually used to make high-ranked articles that will generate more leads"
+msgstr ""
+"Genellikle daha fazla potansiyel müşteri getirecek daha popüler yazılar "
+"yazmak için kullanılır"
+
+#: includes/class-hostinger-ai-assistant-errors.php:16
+msgid ""
+"We apologize for the inconvenience. The AI content generation process "
+"encountered a server error. Please try again later."
+msgstr ""
+"Verdiğimiz rahatsızlık için özür dileriz. Yapay zeka içerik oluşturma süreci "
+"bir sunucu hatasıyla karşılaştı. Lütfen daha sonra tekrar deneyin.\n"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:152
+msgid "What are the focus keywords of your content?"
+msgstr "İçeriğinizin odak anahtar kelimeleri nelerdir?"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:42
+msgid "What do you want to make today?"
+msgstr "Bugün ne yapmak istersiniz?"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:130
+msgid "What is your content about?"
+msgstr "İçeriğiniz ne hakkında?"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:88
+msgid "Witty"
+msgstr "Zeki"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:193
+msgid "words"
+msgstr "kelime"
+
+#: admin/partials/hostinger-ai-assistant-tab-view.php:29
+msgid "Write your main topic"
+msgstr "Ana konunuzu yazın"
+
+#: assets/js/hostinger-ai-assistant-admin.js:2
+#: src/scripts/hostinger-ai-assistant-admin.js:49
+msgid "You're good to go, but you can share more details for better results"
+msgstr ""
+"Artık kullanabilirsiniz ancak daha iyi sonuçlar için daha fazla ayrıntı "
+"paylaşabilirsiniz"
