@@ -1,0 +1,553 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hostinger\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-23 08:27+0000\n"
+"PO-Revision-Date: 2023-09-08 11:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.4; wp-6.3.1\n"
+"X-Domain: hostinger"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:15
+msgid "Access the Site identity and edit title"
+msgstr "Доступ до айдентики сайту та редагування заголовка"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:43
+msgid "Add a gallery block"
+msgstr "Додайте блок галереї"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:13
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:54
+msgid "Add a new page"
+msgstr "Додайте нову сторінку"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:58
+msgid "Add a title"
+msgstr "Додайте заголовок"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:62
+msgid "Add content"
+msgstr "Додайте контент"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:15
+msgid "Add products image and price"
+msgstr "Додайте зображення та ціну товару"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:28
+msgid "Add the content and images that represent your services"
+msgstr "Додайте контент і зображення, які описують ваші послуги"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:59
+msgid ""
+"Add the title of the page, for example, About. Click the Add Title text to "
+"open the text box where you will add your title. The title of your page "
+"should be descriptive of the information the page will have."
+msgstr ""
+"Додайте заголовок сторінки, наприклад \"Про нас\". Натисніть \"Додати "
+"заголовок\", щоб відкрити текстове поле та ввести заголовок. Він має "
+"відображати вміст сторінки."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:5
+msgid "Add your first product"
+msgstr "Додайте перший продукт"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:11
+msgid "Add your product"
+msgstr "Додати продукт"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:12
+msgid ""
+"Adding a logo is a great way to personalize a website or add branding "
+"information. You can use your existing logo or create a new one using the <a "
+"href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
+"target=\"_blank\">Ai Logo Maker</a>."
+msgstr ""
+"Логотип – чудовий спосіб ідентифікувати бренд. Ви можете використати наявний "
+"логотип або створити новий за допомогою <a href=\"https://logo.hostinger."
+"com/?ref=wordpress-onboarding\" target=\"_blank\">конструктора лого ШІ</a>."
+
+#: includes/admin/class-hostinger-admin-menu.php:46
+#: includes/admin/class-hostinger-admin-menu.php:47
+#: includes/admin/views/hostinger-onboarding-view.php:67
+#, fuzzy
+#| msgid "AI Assistant"
+msgid "AI assistant"
+msgstr "AI Assistant"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:67
+msgid ""
+"Before publishing, you can preview your created page by clicking on the "
+"Preview button. If you are happy with the result, click the Publish button."
+msgstr ""
+"Перед публікацією ви можете переглянути створену сторінку, натиснувши кнопку "
+"\"Попередній перегляд\". Якщо ви задоволені результатом, натисніть "
+"\"Опублікувати\"."
+
+#: includes/admin/views/hostinger-onboarding-view.php:181
+msgid "Close"
+msgstr "Закрити"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:25
+msgid ""
+"Come up with a clear and concise name for the page that accurately reflects "
+"the services you provide."
+msgstr ""
+"Придумайте чітку та лаконічну назву для сторінки, яка найкраще відображатиме "
+"ваші послуги."
+
+#: includes/views/hostinger-coming-soon.php:6
+#: includes/views/hostinger-coming-soon.php:25
+msgid "Coming Soon"
+msgstr "Незабаром"
+
+#: includes/admin/class-hostinger-admin-ajax.php:38
+msgid "Congratulations! Your website is online."
+msgstr "Вітаємо! Ваш сайт онлайн."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:63
+msgid ""
+"Content can be anything you wish, for example, text, images, videos, tables, "
+"and lots more. Click on a plus sign and choose any block you want to add to "
+"the page."
+msgstr ""
+"Ви можете використовувати різні типи контенту, наприклад, текст, зображення, "
+"відео, таблиці тощо. Натисніть на знак плюс і виберіть будь-який контент, "
+"який ви хочете додати на сторінку."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:11
+msgid "Create a catchy headline"
+msgstr "Створіть привабливий заголовок"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:12
+msgid ""
+"Create a headline that grabs your visitors attention and accurately "
+"represents the content of your post."
+msgstr ""
+"Створіть заголовок, який приверне увагу відвідувачів і відображатиме вміст "
+"сторінки."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:11
+msgid "Create a logo"
+msgstr "Створіть логотип"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:39
+msgid "Create a new page called “My projects”"
+msgstr "Створіть нову сторінку \"Мої проєкти\""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:9
+msgid "Create a page describing your services"
+msgstr "Створіть сторінку з описом ваших послуг"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:5
+msgid "Create your first blog post"
+msgstr "Створіть першу публікацію в блозі"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:15
+msgid "Draft your post"
+msgstr "Створіть чернетку публікації"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:19
+msgid "Edit an image"
+msgstr "Редагувати зображення"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:25
+msgid "Edit description"
+msgstr "Редагувати опис"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:21
+msgid "Edit post"
+msgstr "Редагувати пост"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:11
+msgid "Edit post description"
+msgstr "Редагувати опис публікації"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:5
+msgid "Edit site title"
+msgstr "Редагувати назву сайту"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:32
+msgid "Finalize the page"
+msgstr "Завершіть налаштування сторінки"
+
+#: includes/admin/views/hostinger-onboarding-view.php:251
+msgid "Find the answers you need in our Knowledge Base"
+msgstr "Знайдіть необхідну інформацію в нашій базі знань"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:11
+msgid "Find the Media page"
+msgstr "Знайдіть сторінку «Медіа»"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:70
+msgid "Follow our guided checklist to setup your website"
+msgstr "Скористайтеся нашим чек-листом, щоб налаштувати сайт"
+
+#: includes/admin/views/hostinger-onboarding-view.php:262
+msgid "Get in touch with our live specialists"
+msgstr "Зв'яжіться з нашими фахівцями через онлайн-чат"
+
+#: includes/admin/class-hostinger-admin-menu.php:26
+#: includes/admin/class-hostinger-admin-menu.php:27
+#: includes/admin/views/hostinger-onboarding-view.php:60
+#, fuzzy
+#| msgid "Get Started"
+msgid "Get started"
+msgstr "Почати"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:24
+msgid "Give a page a short title such as “Our Services”"
+msgstr "Створіть короткий заголовок сторінки, наприклад \"Наші послуги\""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:40
+msgid ""
+"Give your page a name (e.g. \"My Portfolio\"), then click the \"+\" button "
+"in the editor to add a new block."
+msgstr ""
+"Створіть заголовок сторінки (наприклад, \"Моє портфоліо\"), а потім "
+"натисніть кнопку «+» у редакторі, щоб додати новий розділ."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:17
+msgid "Go to Posts"
+msgstr "Перейти до публікації"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:12
+msgid ""
+"Go to Products → Add New or Create Product and enter your product name and "
+"description."
+msgstr ""
+"Перейдіть до продуктів → Додайте новий або створіть продукт і введіть назву "
+"та опис продукту."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:11
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:15
+msgid "Go to the Customize page"
+msgstr "Перейти на сторінку налаштування"
+
+#: includes/admin/views/hostinger-onboarding-view.php:111
+msgid "Got it!"
+msgstr "Зрозуміло!"
+
+#: includes/admin/views/hostinger-onboarding-view.php:261
+msgid "Help Center"
+msgstr "Команда підтримки"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: includes/admin/class-hostinger-admin-menu.php:15
+#: includes/admin/class-hostinger-admin-menu.php:16
+msgid "Hostinger"
+msgstr "Hostinger"
+
+#: includes/admin/views/hostinger-onboarding-view.php:198
+msgid "Hostinger Academy"
+msgstr "Hostinger Academy"
+
+#. Description of the plugin
+msgid "Hostinger WordPress plugin."
+msgstr "Плагін WordPress Hostinger."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:22
+msgid ""
+"Hover over the chosen post to see the options menu. Click on the Edit button "
+"to open the post editor."
+msgstr ""
+"Наведіть курсор на потрібну публікацію, щоб побачити меню параметрів. "
+"Натисніть кнопку \"Редагувати\", щоб відкрити редактор публікацій."
+
+#: includes/admin/views/hostinger-onboarding-view.php:17
+#: includes/admin/views/hostinger-onboarding-view.php:209
+msgid "How to Add Your WordPress Website to Google Search Console"
+msgstr "Як додати сайт WordPress до Google Search Console"
+
+#: includes/admin/views/hostinger-onboarding-view.php:42
+msgid "How to Back Up a WordPress Site"
+msgstr "Як створити резервну копію сайту WordPress"
+
+#: includes/admin/views/hostinger-onboarding-view.php:27
+msgid "How to Clear Cache in WordPress Website"
+msgstr "Як очистити кеш сайту WordPress"
+
+#: includes/admin/views/hostinger-onboarding-view.php:22
+msgid "How to Create a WordPress Contact Us Page"
+msgstr "Як створити сторінку \"Контакти\" в WordPress"
+
+#: includes/admin/views/hostinger-onboarding-view.php:32
+msgid "How to Edit the Footer in WordPress"
+msgstr "Як редагувати нижній колонтитул у WordPress"
+
+#: includes/admin/views/hostinger-onboarding-view.php:47
+msgid "How to Import Images Into WordPress Website"
+msgstr "Як імпортувати зображення на сайт WordPress"
+
+#: includes/admin/views/hostinger-onboarding-view.php:52
+msgid "How to Set Up WordPress SMTP"
+msgstr "Як налаштувати SMTP у WordPress"
+
+#. Plugin URI of the plugin
+msgid "https://hostinger.com"
+msgstr "https://hostinger.com"
+
+#. Author URI of the plugin
+msgid "https://www.hostinger.com"
+msgstr "https://www.hostinger.com"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:20
+msgid ""
+"If you wish to edit the image, click on the chosen image and click the Edit "
+"Image button. You can now crop, rotate, flip or scale the selected image."
+msgstr ""
+"Якщо ви бажаєте відредагувати зображення, натисніть на вибране зображення та "
+"натисніть кнопку \"Редагувати зображення\". Тепер ви можете обрізати, "
+"обертати, перевертати або масштабувати вибране зображення."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:44
+msgid ""
+"In the block menu, search for \"Gallery\" and select the Gallery block. "
+"Upload the images you want to showcase in your portfolio, then adjust the "
+"layout and add captions if needed."
+msgstr ""
+"Виберіть блок \"Галерея\". Завантажте зображення, які ви хочете "
+"продемонструвати у своєму портфоліо, потім відредагуйте макет і за потреби "
+"додайте підписи."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:12
+msgid ""
+"In the left sidebar, click Appearance to expand the menu. In the Appearance "
+"section, click Customize. The Customize page will open."
+msgstr ""
+"На лівій бічній панелі натисніть «Вигляд», щоб розгорнути меню. У розділі "
+"«Вигляд» натисніть «Налаштувати». Відкриється сторінка Налаштувати."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:16
+msgid ""
+"In the left sidebar, click Appearance to expand the menu. In the Appearance "
+"section, click Customize. The Customize page will open. "
+msgstr ""
+"У лівій бічній панелі натисніть \"Вигляд\", щоб відкрити меню. У розділі "
+"\"Вигляд\" натисніть \"Налаштувати\". Відкриється сторінка налаштування."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:16
+msgid "In the left sidebar, click Site Identity and edit your site title."
+msgstr ""
+"У лівій бічній панелі натисніть \"Айдентика сайту\" та відредагуйте назву "
+"сайту."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:20
+msgid ""
+"In the left sidebar, click Site Identity, then click on the Select Site Icon "
+"button. Here, you can upload your brand logo. "
+msgstr ""
+"У лівій бічній панелі виберіть \"Айдентика сайту\" та натисніть кнопку "
+"\"Вибрати піктограму сайту\". Тут ви можете завантажити логотип вашого "
+"бренду."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:12
+msgid ""
+"In the left sidebar, find the Media button. The Media Library page allows "
+"you to edit, view, and delete media previously uploaded to your website."
+msgstr ""
+"У лівій бічній панелі знайдіть \"Медіа\". Сторінка медіатеки дозволяє "
+"редагувати, переглядати та видаляти медіафайли, раніше завантажені на ваш "
+"сайт."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:55
+msgid ""
+"In the left sidebar, find the Pages menu and click on Add New button. You "
+"will see the WordPress page editor. Each paragraph, image, or video in the "
+"WordPress editor is presented as a “block” of content."
+msgstr ""
+"На лівій бічній панелі знайдіть меню \"Сторінки\" та натисніть кнопку "
+"\"Додати нову\". Ви побачите редактор сторінки WordPress. Кожен абзац, "
+"зображення або відео в редакторі WordPress представлено як «блок» вмісту."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:18
+msgid ""
+"In the left sidebar, find the Posts button. Click on the All Posts button "
+"and find the post for which you want to change the description."
+msgstr ""
+"У лівій бічній панелі знайдіть кнопку \"Публікації\". Натисніть кнопку \"Усі "
+"публікації\" та виберіть публікацію, опис якої потрібно змінити."
+
+#: includes/admin/class-hostinger-admin-ajax.php:65
+msgid "invalid data"
+msgstr "неправильні дані"
+
+#: includes/admin/views/hostinger-onboarding-view.php:250
+msgid "Knowledge Base"
+msgstr "База знань"
+
+#: includes/admin/class-hostinger-admin-menu.php:36
+#: includes/admin/class-hostinger-admin-menu.php:37
+#: includes/admin/views/hostinger-onboarding-view.php:61
+msgid "Learn"
+msgstr "Навчайтеся"
+
+#: includes/admin/views/hostinger-onboarding-view.php:37
+msgid "LiteSpeed Cache: How to Get 100% WordPress Optimization"
+msgstr "Кеш LiteSpeed: як отримати 100% оптимізацію WordPress"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:33
+msgid ""
+"Make the page easy to read and navigate by using headings and bullet points. "
+"Include a clear call-to-action (CTA) to encourage visitors to take the next "
+"step for example, to contact you via email or contact form."
+msgstr ""
+"Зробіть сторінку зручною для читання та навігації, використовуючи заголовки "
+"та абзаци. Використовуйте чіткі заклики до дії (CTA), щоб спонукати "
+"відвідувачів зробити наступний крок, наприклад, зв’язатися з вами "
+"електронною поштою або через контактну форму."
+
+#: includes/views/hostinger-coming-soon.php:26
+msgid "New WordPress website is being built and will be published soon"
+msgstr "Новий сайт WordPress створюється та незабаром буде опублікований"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:20
+msgid ""
+"Once fields are filled, and your item has an image, description, and price, "
+"it’s time to publish it online. You will find the “publish” button at the "
+"top of the page, near the description field."
+msgstr ""
+"Якщо ви додали опис і ціни продукту, опублікуйте його в інтернеті. Ви "
+"знайдете кнопку \"Опублікувати\" у верхній частині сторінки, біля поля опису."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:20
+msgid ""
+"Once you have finished drafting your post, read it over to check for errors, "
+"make any necessary revisions, and then publish it to your blog."
+msgstr ""
+"Написавши допис, прочитайте його, щоб перевірити наявність помилок, внесіть "
+"необхідні зміни, а потім опублікуйте його у своєму блозі."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:48
+msgid ""
+"Once you're happy with your portfolio post, click the \"Publish\" button to "
+"make it live on your website. You can add a link to your main navigation "
+"menu or other relevant posts to make it easy for visitors to find."
+msgstr ""
+"Якщо ви задоволені портфоліо, натисніть кнопку \"Опублікувати\", щоб воно "
+"з'явилося на сайті. Ви можете додати посилання на головне меню навігації або "
+"в інші публікації, щоб полегшити відвідувачам пошук."
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:61
+msgid "Preview website"
+msgstr "Попередній перегляд сайту"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:19
+msgid "Proofread and publish"
+msgstr "Відредагувати та опублікувати"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:66
+msgid "Publish the page"
+msgstr "Опублікувати сторінку"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:19
+msgid "Publish the setup"
+msgstr "Опублікувати налаштування"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:71
+#: includes/admin/onboarding/class-hostinger-onboarding.php:73
+msgid "Publish website"
+msgstr "Опублікувати сайт"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:47
+msgid "Publish your page"
+msgstr "Опублікуйте сторінку"
+
+#: includes/admin/views/hostinger-onboarding-view.php:178
+msgid "Publishing website"
+msgstr "Публікування сайту"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:69
+msgid "Set up your website"
+msgstr "Налаштуйте свій сайт"
+
+#: includes/admin/views/hostinger-onboarding-view.php:116
+msgid "Take me there"
+msgstr "Перейти"
+
+#: includes/admin/views/hostinger-onboarding-view.php:179
+msgid "This can take some time"
+msgstr "Це може зайняти деякий час"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:16
+msgid ""
+"To make the product stand out, upload a picture of it. During the setup of "
+"your wanted item, be sure to add its price and any other relevant "
+"information. Product categories and tags to help organize your products."
+msgstr ""
+"Щоб виділити продукт, завантажте його фото. Під час налаштування товару "
+"обов’язково додайте його ціну та іншу інформацію. Категорії продуктів і теги "
+"допоможуть упорядкувати їх упорядкувати."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:16
+msgid ""
+"To upload a new image, click on Add New button on the Media Library page and "
+"select files."
+msgstr ""
+"Щоб завантажити нове зображення, натисніть кнопку \"Додати нове\" на "
+"сторінці медіатеки та виберіть файли."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:5
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:15
+msgid "Upload an image"
+msgstr "Завантажте зображення"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:5
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:19
+msgid "Upload your logo"
+msgstr "Завантажте логотип"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:11
+msgid "Upload your portfolio projects"
+msgstr "Завантажте портфоліо"
+
+#: includes/admin/class-hostinger-admin-ajax.php:37
+#: includes/admin/onboarding/class-hostinger-onboarding.php:58
+msgid "Website is published"
+msgstr "Сайт опубліковано"
+
+#: includes/admin/views/hostinger-onboarding-view.php:191
+msgid "WordPress tutorials"
+msgstr "Посібники з WordPress"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:29
+msgid ""
+"Write a brief introduction to your business, provide an overview of your "
+"services with descriptions and benefits, and use relevant images to support "
+"your content. Keep it simple and straightforward."
+msgstr ""
+"Коротко опишіть ваш бізнес, розкажіть про послуги та їх переваги, "
+"використовуйте зображення, які допоможуть краще зрозуміти надану інформацію. "
+"Будьте лаконічними та чіткими."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:16
+msgid ""
+"Write your content, making sure to include relevant keywords and images. You "
+"can use different blocks to create headings, paragraphs, lists, and other "
+"types of content."
+msgstr ""
+"Напишіть свій контент, обов’язково додайте ключові слова та зображення. Ви "
+"можете використовувати різні блоки для створення заголовків, абзаців, "
+"списків тощо."
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:59
+msgid "You can access this guide material any time when updating your website"
+msgstr ""
+"Ви можете будь-коли отримати доступ до цього посібника під час оновлення "
+"свого сайту"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:26
+msgid ""
+"You can see the whole post in the editor. Find the description part and "
+"change it to your preferences."
+msgstr ""
+"Ви можете переглянути весь текстовий вміст у редакторі. Знайдіть частину "
+"опису та змініть її під свої потреби."
