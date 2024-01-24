@@ -32,4 +32,8 @@
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
 	<exclude-pattern>.github/</exclude-pattern>
+	<exclude-pattern>plugins/google-site-kit/</exclude-pattern>
+	<exclude-pattern>plugins/hostinger/</exclude-pattern>
+	<exclude-pattern>plugins/hostinger-ai-assistant/</exclude-pattern>
+	<exclude-pattern>plugins/litespeed-cache/</exclude-pattern>
 </ruleset>

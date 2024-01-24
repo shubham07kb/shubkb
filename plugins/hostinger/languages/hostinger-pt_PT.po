@@ -1,0 +1,558 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hostinger\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-23 08:27+0000\n"
+"PO-Revision-Date: 2023-09-17 09:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese (Portugal)\n"
+"Language: pt_PT\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.4; wp-6.3.1\n"
+"X-Domain: hostinger"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:15
+msgid "Access the Site identity and edit title"
+msgstr "Aceder à identidade do site e editar o título"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:43
+msgid "Add a gallery block"
+msgstr "Adicionar um bloco de galeria"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:13
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:54
+msgid "Add a new page"
+msgstr "Adicionar uma nova página"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:58
+msgid "Add a title"
+msgstr "Adicionar um título"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:62
+msgid "Add content"
+msgstr "Adicionar conteúdo"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:15
+msgid "Add products image and price"
+msgstr "Adicionar imagem e preço dos produtos"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:28
+msgid "Add the content and images that represent your services"
+msgstr "Adicione o conteúdo e as imagens que representam os seus serviços"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:59
+msgid ""
+"Add the title of the page, for example, About. Click the Add Title text to "
+"open the text box where you will add your title. The title of your page "
+"should be descriptive of the information the page will have."
+msgstr ""
+"Adicione o título da página, por exemplo, Sobre. Clique no texto Adicionar "
+"título para abrir a caixa de texto onde irá adicionar o título. O título da "
+"sua página deve ser descritivo da informação que a página terá."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:5
+msgid "Add your first product"
+msgstr "Adicione o seu primeiro produto"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:11
+msgid "Add your product"
+msgstr "Adicione o seu produto"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:12
+msgid ""
+"Adding a logo is a great way to personalize a website or add branding "
+"information. You can use your existing logo or create a new one using the <a "
+"href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
+"target=\"_blank\">Ai Logo Maker</a>."
+msgstr ""
+"Adicionar um logotipo é uma ótima maneira de personalizar um site ou "
+"adicionar informações de branding. Pode utilizar o seu logotipo existente ou "
+"criar um novo utilizando o <a href=\"https://logo.hostinger.com/?"
+"ref=wordpress-onboarding\" target=\"_blank\">Criador de Logos IA</a>."
+
+#: includes/admin/class-hostinger-admin-menu.php:46
+#: includes/admin/class-hostinger-admin-menu.php:47
+#: includes/admin/views/hostinger-onboarding-view.php:67
+#| msgid "AI Assistant"
+msgid "AI assistant"
+msgstr "Assistente IA"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:67
+msgid ""
+"Before publishing, you can preview your created page by clicking on the "
+"Preview button. If you are happy with the result, click the Publish button."
+msgstr ""
+"Antes de publicar, pode pré-visualizar a página criada, clicando no botão "
+"Pré-visualizar. Se estiver satisfeito com o resultado, clique no botão "
+"Publicar."
+
+#: includes/admin/views/hostinger-onboarding-view.php:181
+msgid "Close"
+msgstr "Fechar"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:25
+msgid ""
+"Come up with a clear and concise name for the page that accurately reflects "
+"the services you provide."
+msgstr ""
+"Crie um nome claro e conciso para a página que reflicta corretamente os "
+"serviços que presta."
+
+#: includes/views/hostinger-coming-soon.php:6
+#: includes/views/hostinger-coming-soon.php:25
+msgid "Coming Soon"
+msgstr "Brevemente"
+
+#: includes/admin/class-hostinger-admin-ajax.php:38
+msgid "Congratulations! Your website is online."
+msgstr "Parabéns! O seu site está online. "
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:63
+msgid ""
+"Content can be anything you wish, for example, text, images, videos, tables, "
+"and lots more. Click on a plus sign and choose any block you want to add to "
+"the page."
+msgstr ""
+"O conteúdo pode ser qualquer coisa que deseje, por exemplo, texto, imagens, "
+"vídeos, tabelas e muito mais. Clique no sinal de mais e selecione qualquer "
+"bloco que queira adicionar à página."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:11
+msgid "Create a catchy headline"
+msgstr "Criar um título apelativo"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:12
+msgid ""
+"Create a headline that grabs your visitors attention and accurately "
+"represents the content of your post."
+msgstr ""
+"Crie um título que chame a atenção dos seus visitantes e represente "
+"corretamente o conteúdo da sua publicação.\n"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:11
+msgid "Create a logo"
+msgstr "Criar um logo"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:39
+msgid "Create a new page called “My projects”"
+msgstr "Crie uma página nova chamada \"Meus projetos\""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:9
+msgid "Create a page describing your services"
+msgstr "Crie uma página descrevendo os seus serviços "
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:5
+msgid "Create your first blog post"
+msgstr "Crie a sua primeira publicação no blog"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:15
+msgid "Draft your post"
+msgstr "Escrever a sua publicação"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:19
+msgid "Edit an image"
+msgstr "Editar uma imagem"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:25
+msgid "Edit description"
+msgstr "Editar descrição"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:21
+msgid "Edit post"
+msgstr "Editar publicação"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:11
+msgid "Edit post description"
+msgstr "Editar descrição da publicação"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:5
+msgid "Edit site title"
+msgstr "Editar título do site"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:32
+msgid "Finalize the page"
+msgstr "Finalizar a página"
+
+#: includes/admin/views/hostinger-onboarding-view.php:251
+msgid "Find the answers you need in our Knowledge Base"
+msgstr "Encontre as respostas que precisa na nossa Base de Conhecimento"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:11
+msgid "Find the Media page"
+msgstr "Encontre a página Media"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:70
+msgid "Follow our guided checklist to setup your website"
+msgstr "Siga a nossa lista de verificação para configurar o seu site"
+
+#: includes/admin/views/hostinger-onboarding-view.php:262
+msgid "Get in touch with our live specialists"
+msgstr "Entre em contacto com os nossos especialistas ao vivo"
+
+#: includes/admin/class-hostinger-admin-menu.php:26
+#: includes/admin/class-hostinger-admin-menu.php:27
+#: includes/admin/views/hostinger-onboarding-view.php:60
+#| msgid "Get Started"
+msgid "Get started"
+msgstr "Começar"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:24
+msgid "Give a page a short title such as “Our Services”"
+msgstr "Dê um título curo à página, por exemplo: \"Os nossos serviços\""
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:40
+msgid ""
+"Give your page a name (e.g. \"My Portfolio\"), then click the \"+\" button "
+"in the editor to add a new block."
+msgstr ""
+"Dê um nome à sua página (por exemplo, \"O meu portfolio\") e, em seguida, "
+"clique no botão \"+\" no editor para adicionar um novo bloco."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:17
+msgid "Go to Posts"
+msgstr "Ir para Publicações"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:12
+msgid ""
+"Go to Products → Add New or Create Product and enter your product name and "
+"description."
+msgstr ""
+"Vá a Produtos → Adicionar novo ou Criar produto e introduza o nome e a "
+"descrição do seu produto."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:11
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:15
+msgid "Go to the Customize page"
+msgstr "Vá para a página Personalizar"
+
+#: includes/admin/views/hostinger-onboarding-view.php:111
+msgid "Got it!"
+msgstr "Já está!"
+
+#: includes/admin/views/hostinger-onboarding-view.php:261
+msgid "Help Center"
+msgstr "Centro de Ajuda"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: includes/admin/class-hostinger-admin-menu.php:15
+#: includes/admin/class-hostinger-admin-menu.php:16
+msgid "Hostinger"
+msgstr "Hostinger"
+
+#: includes/admin/views/hostinger-onboarding-view.php:198
+msgid "Hostinger Academy"
+msgstr "Academia Hostinger"
+
+#. Description of the plugin
+msgid "Hostinger WordPress plugin."
+msgstr "Plugin WordPress Hostinger."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:22
+msgid ""
+"Hover over the chosen post to see the options menu. Click on the Edit button "
+"to open the post editor."
+msgstr ""
+"Passe o rato sobre a publicação escolhida para ver o menu de opções. Clique "
+"no botão Editar para abrir o editor de publicações."
+
+#: includes/admin/views/hostinger-onboarding-view.php:17
+#: includes/admin/views/hostinger-onboarding-view.php:209
+msgid "How to Add Your WordPress Website to Google Search Console"
+msgstr "Como adicionar o seu site WordPress ao Google Search Console"
+
+#: includes/admin/views/hostinger-onboarding-view.php:42
+msgid "How to Back Up a WordPress Site"
+msgstr "Como fazer o backup de um site WordPress"
+
+#: includes/admin/views/hostinger-onboarding-view.php:27
+msgid "How to Clear Cache in WordPress Website"
+msgstr "Como limpar a cache num site WordPress"
+
+#: includes/admin/views/hostinger-onboarding-view.php:22
+msgid "How to Create a WordPress Contact Us Page"
+msgstr "Como criar uma página Contactos no WordPress"
+
+#: includes/admin/views/hostinger-onboarding-view.php:32
+msgid "How to Edit the Footer in WordPress"
+msgstr "Como editar o rodapé no WordPress"
+
+#: includes/admin/views/hostinger-onboarding-view.php:47
+msgid "How to Import Images Into WordPress Website"
+msgstr "Como importar imagens para um site WordPress"
+
+#: includes/admin/views/hostinger-onboarding-view.php:52
+msgid "How to Set Up WordPress SMTP"
+msgstr "Como configurar o SMTP do WordPress"
+
+#. Plugin URI of the plugin
+msgid "https://hostinger.com"
+msgstr "https://hostinger.pt"
+
+#. Author URI of the plugin
+msgid "https://www.hostinger.com"
+msgstr "https://www.hostinger.pt"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:20
+msgid ""
+"If you wish to edit the image, click on the chosen image and click the Edit "
+"Image button. You can now crop, rotate, flip or scale the selected image."
+msgstr ""
+"Se pretende editar a imagem, clique na imagem escolhida e clique no botão "
+"Editar imagem. Pode agora cortar, rodar, inverter ou dimensionar a imagem "
+"selecionada."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:44
+msgid ""
+"In the block menu, search for \"Gallery\" and select the Gallery block. "
+"Upload the images you want to showcase in your portfolio, then adjust the "
+"layout and add captions if needed."
+msgstr ""
+"No menu de blocos, procure \"Galeria\" e selecione o bloco Galeria. Carregue "
+"as imagens que pretende apresentar no seu portfolio, depois ajuste o layout "
+"e adicione legendas se necessário."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:12
+msgid ""
+"In the left sidebar, click Appearance to expand the menu. In the Appearance "
+"section, click Customize. The Customize page will open."
+msgstr ""
+"Na barra do lado esquerdo, clique em Aparência para expandir o menu. Na "
+"secção Aparência, clique em Personalizar. A página Personalizar será aberta."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:16
+msgid ""
+"In the left sidebar, click Appearance to expand the menu. In the Appearance "
+"section, click Customize. The Customize page will open. "
+msgstr ""
+"Na barra do lado esquerdo, clique em Aparência para expandir o menu. Na "
+"secção Aparência, clique em Personalizar. A página Personalizar será aberta."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:16
+msgid "In the left sidebar, click Site Identity and edit your site title."
+msgstr ""
+"Na barra do lado esquerdo, clique em Identidade do Site e edite o título do "
+"site."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:20
+msgid ""
+"In the left sidebar, click Site Identity, then click on the Select Site Icon "
+"button. Here, you can upload your brand logo. "
+msgstr ""
+"Na barra do lado esquerdo, clique em Identidade do Site e, em seguida, "
+"clique no botão Selecionar Ícone do Site. Aqui, pode carregar o logotipo da "
+"sua marca. "
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:12
+msgid ""
+"In the left sidebar, find the Media button. The Media Library page allows "
+"you to edit, view, and delete media previously uploaded to your website."
+msgstr ""
+"Na barra do lado esquerdo, localize o botão Média. A página da Biblioteca de "
+"Média permite-lhe editar, ver e eliminar os média carregados anteriormente "
+"no seu site."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:55
+msgid ""
+"In the left sidebar, find the Pages menu and click on Add New button. You "
+"will see the WordPress page editor. Each paragraph, image, or video in the "
+"WordPress editor is presented as a “block” of content."
+msgstr ""
+"Na barra do lado esquerdo, encontre o menu Páginas e clique no botão "
+"Adicionar nova. Verá o editor de páginas do WordPress. Cada parágrafo, "
+"imagem ou vídeo no editor do WordPress é apresentado como um \"bloco\" de "
+"conteúdo."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:18
+msgid ""
+"In the left sidebar, find the Posts button. Click on the All Posts button "
+"and find the post for which you want to change the description."
+msgstr ""
+"Na barra do lado esquerdo, encontre o botão Publicações. Clique no botão "
+"Todas as publicações e localize a publicação para a qual pretende alterar a "
+"descrição."
+
+#: includes/admin/class-hostinger-admin-ajax.php:65
+msgid "invalid data"
+msgstr "dados inválidos"
+
+#: includes/admin/views/hostinger-onboarding-view.php:250
+msgid "Knowledge Base"
+msgstr "Base de Conhecimento"
+
+#: includes/admin/class-hostinger-admin-menu.php:36
+#: includes/admin/class-hostinger-admin-menu.php:37
+#: includes/admin/views/hostinger-onboarding-view.php:61
+msgid "Learn"
+msgstr "Aprender"
+
+#: includes/admin/views/hostinger-onboarding-view.php:37
+msgid "LiteSpeed Cache: How to Get 100% WordPress Optimization"
+msgstr "Cache LiteSpeed: Como obter 100% de otimização do WordPress"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:33
+msgid ""
+"Make the page easy to read and navigate by using headings and bullet points. "
+"Include a clear call-to-action (CTA) to encourage visitors to take the next "
+"step for example, to contact you via email or contact form."
+msgstr ""
+"Torne a página fácil de ler e navegar, utilizando títulos e marcadores. "
+"Inclua um apelo à ação (CTA) claro para incentivar os visitantes a darem o "
+"passo seguinte, por exemplo, a contactá-lo por email ou através do "
+"formulário de contacto."
+
+#: includes/views/hostinger-coming-soon.php:26
+msgid "New WordPress website is being built and will be published soon"
+msgstr "O novo site WordPress está a ser construído e será publicado em breve"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:20
+msgid ""
+"Once fields are filled, and your item has an image, description, and price, "
+"it’s time to publish it online. You will find the “publish” button at the "
+"top of the page, near the description field."
+msgstr ""
+"Quando os campos estiverem preenchidos e o seu artigo tiver uma imagem, "
+"descrição e preço, é altura de o publicar online. Encontrará o botão "
+"\"publicar\" na parte superior da página, perto do campo de descrição."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:20
+msgid ""
+"Once you have finished drafting your post, read it over to check for errors, "
+"make any necessary revisions, and then publish it to your blog."
+msgstr ""
+"Quando terminar de redigir a sua publicação, leia-a para verificar se "
+"existem erros, faça as revisões necessárias e, em seguida, publique-a no seu "
+"blog."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:48
+msgid ""
+"Once you're happy with your portfolio post, click the \"Publish\" button to "
+"make it live on your website. You can add a link to your main navigation "
+"menu or other relevant posts to make it easy for visitors to find."
+msgstr ""
+"Quando estiver satisfeito com a publicação do seu portfolio, clique no botão "
+"\"Publicar\" para a publicar no seu site. Pode adicionar um link ao seu menu "
+"de navegação principal ou a outras publicações relevantes para facilitar a "
+"sua localização pelos visitantes."
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:61
+msgid "Preview website"
+msgstr "Pré-visualizar o site"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:19
+msgid "Proofread and publish"
+msgstr "Rever e publicar"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:66
+msgid "Publish the page"
+msgstr "Publicar a página"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:19
+msgid "Publish the setup"
+msgstr "Publicar a configuração"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:71
+#: includes/admin/onboarding/class-hostinger-onboarding.php:73
+msgid "Publish website"
+msgstr "Publicar o site"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:47
+msgid "Publish your page"
+msgstr "Publicar a sua página"
+
+#: includes/admin/views/hostinger-onboarding-view.php:178
+msgid "Publishing website"
+msgstr "Publicando o site"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:69
+msgid "Set up your website"
+msgstr "Configure o seu site"
+
+#: includes/admin/views/hostinger-onboarding-view.php:116
+msgid "Take me there"
+msgstr "Leve-me lá"
+
+#: includes/admin/views/hostinger-onboarding-view.php:179
+msgid "This can take some time"
+msgstr "Isto pode demorar algum tempo"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:16
+msgid ""
+"To make the product stand out, upload a picture of it. During the setup of "
+"your wanted item, be sure to add its price and any other relevant "
+"information. Product categories and tags to help organize your products."
+msgstr ""
+"Para destacar o produto, carregue uma fotografia do mesmo. Durante a "
+"configuração do artigo pretendido, não se esqueça de adicionar o preço e "
+"quaisquer outras informações relevantes. Categorias de produtos e etiquetas "
+"para ajudar a organizar os seus produtos."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:16
+msgid ""
+"To upload a new image, click on Add New button on the Media Library page and "
+"select files."
+msgstr ""
+"Para carregar uma nova imagem, clique no botão Adicionar nova na página "
+"Biblioteca de Média e selecione os ficheiros."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:5
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:15
+msgid "Upload an image"
+msgstr ""
+"Carregar uma imagem\n"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:5
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:19
+msgid "Upload your logo"
+msgstr "Carregue o seu logo"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:11
+msgid "Upload your portfolio projects"
+msgstr "Carregue os seus projetos de portfolio"
+
+#: includes/admin/class-hostinger-admin-ajax.php:37
+#: includes/admin/onboarding/class-hostinger-onboarding.php:58
+msgid "Website is published"
+msgstr "O site está publicado"
+
+#: includes/admin/views/hostinger-onboarding-view.php:191
+msgid "WordPress tutorials"
+msgstr "Tutoriais WordPress"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:29
+msgid ""
+"Write a brief introduction to your business, provide an overview of your "
+"services with descriptions and benefits, and use relevant images to support "
+"your content. Keep it simple and straightforward."
+msgstr ""
+"Escreva uma breve introdução ao seu negócio, forneça uma visão geral dos "
+"seus serviços com descrições e vantagens e utilize imagens relevantes para "
+"apoiar o seu conteúdo. Mantenha-o simples e direto."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:16
+msgid ""
+"Write your content, making sure to include relevant keywords and images. You "
+"can use different blocks to create headings, paragraphs, lists, and other "
+"types of content."
+msgstr ""
+"Escreva o seu conteúdo, certificando-se de que inclui palavras-chave e "
+"imagens relevantes. Pode utilizar diferentes blocos para criar títulos, "
+"parágrafos, listas e outros tipos de conteúdo."
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:59
+msgid "You can access this guide material any time when updating your website"
+msgstr ""
+"Pode aceder a este material de orientação a qualquer momento ao atualizar o "
+"seu site"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:26
+msgid ""
+"You can see the whole post in the editor. Find the description part and "
+"change it to your preferences."
+msgstr ""
+"Pode ver a publicação completa no editor. Localize a parte da descrição e "
+"altere-a de acordo com as suas preferências."
