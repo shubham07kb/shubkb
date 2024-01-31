@@ -1,9 +1,9 @@
 import { registerBlockType } from '@wordpress/blocks';
 import './style.scss';
 import Edit from './edit';
-import Save from './save';
+import save from './save';
 
-registerBlockType('papersync/customizable-header-simple', {
+registerBlockType('papersync/course-index', {
 	edit: Edit,
-	save: Save,
+	save,
 });

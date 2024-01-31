@@ -4,6 +4,6 @@
  *
  * This file is used to register all the functions and definitions.
  *
- * @package WiseSync
+ * @package PaperSync
  * @since 1.0.0
  */
