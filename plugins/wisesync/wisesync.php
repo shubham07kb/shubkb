@@ -67,3 +67,6 @@ function display_all_rewrite_rules() {
 // Hook the function to a specific action or filter
 // For example, you can use 'init' or 'wp_loaded'.
 add_action( 'init', 'display_all_rewrite_rules' );
+
+// Cron Log.
+add_action( 'shutdown', 'wisesync_log_cron' );
