@@ -22,8 +22,10 @@ function wisesync_log_cron() {
 		if ( ! $wp_filesystem->exists( $log_path ) ) {
 
 			$wp_filesystem->touch( $log_path );
+			$wp_filesystem->put_contents( $log_path, 'Cron Log File' . PHP_EOL, FS_CHMOD_FILE );
 		}
-		$wp_filesystem->put_contents( $log_path, $current_time . ' : Run', FS_CHMOD_FILE );
+		$pre_cron_log = $wp_filesystem->get_contents( $log_path );
+		$wp_filesystem->put_contents( $log_path, $pre_cron_log . $current_time . ' : Run' . PHP_EOL, FS_CHMOD_FILE );
 
 	}
 }

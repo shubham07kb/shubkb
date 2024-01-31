@@ -69,4 +69,4 @@ function display_all_rewrite_rules() {
 add_action( 'init', 'display_all_rewrite_rules' );
 
 // Cron Log.
-add_action( 'wp_loaded', 'wisesync_log_cron' );
+add_action( 'shutdown', 'wisesync_log_cron' );
