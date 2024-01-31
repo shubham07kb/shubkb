@@ -4,6 +4,6 @@
  *
  * This file is used to register all the shortcodes.
  *
- * @package PaperSync
+ * @package WiseSync
  * @since 1.0.0
  */

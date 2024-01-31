@@ -1,7 +1,7 @@
 === Plugin Name ===
 Tags: AI, AI assistant
 Tested up to: 6.3
-Stable tag: 1.6.8
+Stable tag: 1.6.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,3 +105,8 @@ This section describes how to install the plugin and get it working.
 
 = 1.6.8 =
 - Fixed assets load on subfolder installations
+
+= 1.6.9 =
+- Css fixes
+- Internal services improvements
+- Text changes

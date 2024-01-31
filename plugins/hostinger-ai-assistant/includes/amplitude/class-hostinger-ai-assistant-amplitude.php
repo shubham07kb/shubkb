@@ -20,14 +20,10 @@ class Hostinger_Ai_Assistant_Amplitude {
 	}
 
 	private function send_request( string $endpoint, array $params ): void {
-
-		$params   = [ 'params' => $params ];
-		$request_data = $this->client->post( $endpoint, $params );
-
 		try {
-			$response = $this->client->post($endpoint, $request_data);
-		} catch (Exception $e) {
-			error_log($e->getMessage());
+			$this->client->post( $endpoint, [ 'params' => $params ] );
+		} catch ( Exception $exception ) {
+			$this->helper->error_log( 'Error sending request: ' . $exception->getMessage() );
 		}
 	}
 
