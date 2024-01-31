@@ -10,3 +10,4 @@
 
 require_once WISESYNC_PLUGIN_DIR . 'functions/other.php';
 require_once WISESYNC_PLUGIN_DIR . 'functions/course.php';
+require_once WISESYNC_PLUGIN_DIR . 'functions/cron-log.php';
