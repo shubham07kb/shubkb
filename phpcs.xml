@@ -36,4 +36,5 @@
 	<exclude-pattern>plugins/hostinger/</exclude-pattern>
 	<exclude-pattern>plugins/hostinger-ai-assistant/</exclude-pattern>
 	<exclude-pattern>plugins/litespeed-cache/</exclude-pattern>
+	<exclude-pattern>themes/twentytwentyfour/</exclude-pattern>
 </ruleset>

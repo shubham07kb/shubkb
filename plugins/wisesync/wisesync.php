@@ -33,3 +33,37 @@ define( 'WISESYNC_PLUGIN_FILE', __FILE__ );
 
 // Load autoloader.
 require_once WISESYNC_PLUGIN_DIR . 'autoloader.php';
+require_once WISESYNC_PLUGIN_DIR . 'functions/functions.php';
+
+// Call Class.
+use WiseSync\Post_Types\Post_Types;
+
+new Post_Types();
+new \WiseSync\Rewrite\Rewrite();
+new \WiseSync\Rest_API\Rest_API();
+new \WiseSync\Ajax\Ajax();
+
+
+// Activation hook.
+register_activation_hook(
+	__FILE__,
+	function () {
+		// Flush rewrite rules.
+		\WiseSync\Rewrite\Rewrite::custom_courses_rewrite_rules();
+		flush_rewrite_rules();
+	}
+);
+
+/**
+ * Display all rewrite rules.
+ */
+function display_all_rewrite_rules() {
+	global $wp_rewrite;
+
+	// Get all rewrite rules.
+	$rewrite_rules = $wp_rewrite->rewrite_rules();
+}
+
+// Hook the function to a specific action or filter
+// For example, you can use 'init' or 'wp_loaded'.
+add_action( 'init', 'display_all_rewrite_rules' );

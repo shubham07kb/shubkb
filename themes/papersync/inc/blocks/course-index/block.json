@@ -1,0 +1,15 @@
+{
+	"$schema": "./../block-schema.json",
+	"apiVersion": 3,
+	"name": "papersync/course-index",
+	"title": "Course Index",
+	"category": "text",
+	"icon": "header",
+	"description": "This is a course index block.",
+	"keywords": ["block", "block", "editor", "wordpress", "js"],
+	"version": "1.0.0",
+	"textdomain": "papersync",
+	"style": "file:./build/style-index.css",
+	"editorScript": "file:./build/index.js",
+	"attributes": {}
+}

@@ -16,7 +16,7 @@
  * Plugin Name:       Hostinger AI Assistant
  * Plugin URI:        https://hostinger.com
  * Description:       Hostinger AI Assistant plugin.
- * Version:           1.6.8
+ * Version:           1.6.9
  * Author:            Hostinger
  * Requires PHP:      7.4
  * Requires at least: 5.0
@@ -37,7 +37,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Currently plugin version.
  */
 
-define( 'HOSTINGER_AI_ASSISTANT_VERSION', '1.6.8' );
+define( 'HOSTINGER_AI_ASSISTANT_VERSION', '1.6.9' );
 
 /**
  * Plugin path.
