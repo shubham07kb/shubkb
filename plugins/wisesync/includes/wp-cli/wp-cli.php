@@ -4,6 +4,6 @@
  *
  * This file is used to handle WP CLI commands.
  *
- * @package PaperSync
+ * @package WiseSync
  * @since 1.0.0
  */
