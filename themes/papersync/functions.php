@@ -28,3 +28,6 @@ define( 'PAPERSYNC_THEME_FILE', __FILE__ );
 // Load autoloader.
 require_once PAPERSYNC_THEME_DIR . '/autoloader.php';
 require_once PAPERSYNC_THEME_DIR . '/functions/functions.php';
+
+// Load Blocks.
+add_action( 'init', 'include_blocks' );

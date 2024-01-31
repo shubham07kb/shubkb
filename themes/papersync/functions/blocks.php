@@ -36,4 +36,3 @@ function include_blocks() {
 		}
 	}
 }
-add_action( 'init', 'include_blocks' );
