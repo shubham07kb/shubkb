@@ -25,7 +25,7 @@ class Hostinger_Frontend_Translations {
 			'at_least_ten'     => esc_html__('Enter at least 10 characters', 'hostinger-ai-assistant'),
 			'let_us_now_more'  => esc_html__('Let us now more about your post idea. Share more details for better results', 'hostinger-ai-assistant'),
 			'youre_good'       => esc_html__('You\'re good to go, but you can share more details for better results', 'hostinger-ai-assistant'),
-			'add_new_with_ai'  => esc_html__('Add New with AI', 'hostinger-ai-assistant'),
+			'add_new_with_ai'  => esc_html__('Create Post with AI', 'hostinger-ai-assistant'),
 		);
 	}
 }

@@ -23,7 +23,7 @@ class Hostinger_Ai_Assistant_Buttons {
 
 	public function add_custom_button_to_edit_page() {
 		$url         = admin_url( 'admin.php?page=hostinger#ai-assistant' );
-		$button_text = __( 'Add New with AI', 'hostinger-ai-assistant' );
+		$button_text = __( 'Create Post with AI', 'hostinger-ai-assistant' );
 		global $typenow;
 		if ($typenow === 'post') {
 			echo '<div class="notice hts-ai-notice">';

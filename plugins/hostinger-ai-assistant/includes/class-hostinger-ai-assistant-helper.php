@@ -168,6 +168,12 @@ class Hostinger_Ai_Assistant_Helper {
 
 		return false;
 	}
+
+	public function error_log( string $message ): void {
+		if ( defined( 'WP_DEBUG' ) && WP_DEBUG === true ) {
+			error_log( print_r( $message, true ) );
+		}
+	}
 }
 
 $hostiner_helper = new Hostinger_Ai_Assistant_Helper();

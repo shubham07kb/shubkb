@@ -39,6 +39,8 @@ class Hostinger_Ai_Assistant_Admin {
 	 * @var      string $version The current version of this plugin.
 	 */
 	private string $version;
+	private array $translations;
+	private array $localization_params;
 
 	/**
 	 * Initialize the class and set its properties.
@@ -49,10 +51,13 @@ class Hostinger_Ai_Assistant_Admin {
 	 * @since    1.0.0
 	 */
 	public function __construct( string $plugin_name, string $version ) {
-
-		$this->plugin_name = $plugin_name;
-		$this->version     = $version;
-
+		$this->plugin_name         = $plugin_name;
+		$this->version             = $version;
+		$translations              = new Hostinger_Frontend_Translations();
+		$this->translations        = $translations->get_frontend_translations();
+		$this->localization_params = array_merge( $this->translations, array(
+			'tabUrl' => admin_url() . 'admin.php?page=hostinger#ai-assistant',
+		) );
 	}
 
 	/**
@@ -72,19 +77,13 @@ class Hostinger_Ai_Assistant_Admin {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts(): void {
-		$translations = new Hostinger_Frontend_Translations();
-		$translations = $translations->get_frontend_translations();
-		$helper       = new Hostinger_Ai_Assistant_Helper();
-		$params = array(
-			'tabUrl' => admin_url() . 'admin.php?page=hostinger#ai-assistant',
-		);
-		$localized_params = array_merge( $translations, $params );
+		$helper = new Hostinger_Ai_Assistant_Helper();
 		if ( Hostinger_Ai_Assistant_Helper::is_plugin_active( 'hostinger' ) && $helper->is_hostinger_admin_page() ) {
-		wp_enqueue_script( $this->plugin_name, HOSTINGER_AI_ASSISTANT_ASSETS_URL . '/js/hostinger-ai-assistant-admin.js', array(
-			'jquery',
-			'wp-i18n'
-		), $this->version, false );
-			wp_localize_script( $this->plugin_name, 'hostingerAiAssistant', $localized_params );
+			wp_enqueue_script( $this->plugin_name, HOSTINGER_AI_ASSISTANT_ASSETS_URL . '/js/hostinger-ai-assistant-admin.js', array(
+				'jquery',
+				'wp-i18n'
+			), $this->version, false );
+			wp_localize_script( $this->plugin_name, 'hostingerAiAssistant', $this->localization_params );
 		}
 	}
 
@@ -95,6 +94,8 @@ class Hostinger_Ai_Assistant_Admin {
 			'wp-dom',
 			'wp-i18n'
 		), $this->version, false );
+		wp_set_script_translations( 'custom-link-in-toolbar', 'hostinger-ai-assistant' );
+		wp_localize_script( 'custom-link-in-toolbar', 'hostingerAiAssistant', $this->localization_params );
 	}
 
 	/**
@@ -103,9 +104,7 @@ class Hostinger_Ai_Assistant_Admin {
 	 * @since    1.0.0
 	 */
 	public function create_ai_assistant_tab_view(): void {
-
 		include_once HOSTINGER_AI_ASSISTANT_ABSPATH . 'admin/partials/hostinger-ai-assistant-tab-view.php';
-
 	}
 
 }

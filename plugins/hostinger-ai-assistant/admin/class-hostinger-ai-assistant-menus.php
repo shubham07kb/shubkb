@@ -21,8 +21,8 @@ class Hostinger_Ai_Assistant_Menus {
 	public function add_new_with_ai_menu_item(): void {
 		add_submenu_page(
 			'edit.php',
-			__( 'Add New with AI', 'hostinger-ai-assistant' ),
-			__( 'Add New with AI', 'hostinger-ai-assistant' ),
+			__( 'Create Post with AI', 'hostinger-ai-assistant' ),
+			__( 'Create Post with AI', 'hostinger-ai-assistant' ),
 			'manage_options',
 			'add-new-with-ai',
 			'__return_empty_string',

@@ -132,7 +132,7 @@ $menu_icon = get_post_type_object($post_types[0])->menu_icon ?? 'dashicons-admin
 			<div class="wrapper">
 				<div class="hts-input-textarea">
 					<div class="hts-label">
-						<?php echo __( 'Let us know more about your content idea', 'hostinger-ai-assistant' ) ?>
+						<?php echo __( 'Content main idea', 'hostinger-ai-assistant' ) ?>
 					</div>
 					<textarea id="hts-ai-description-input"><?= __( 'Let us know more about your content idea. For example: Article about how to use WordPress to dive into website development including tutorials how to use it in a simple way...', 'hostinger-ai-assistant' ) ?></textarea>
 				</div>
