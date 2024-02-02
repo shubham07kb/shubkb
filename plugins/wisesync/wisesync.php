@@ -69,4 +69,6 @@ function display_all_rewrite_rules() {
 add_action( 'init', 'display_all_rewrite_rules' );
 
 // Cron Log.
-add_action( 'shutdown', 'wisesync_log_cron' );
+if ( defined( 'DOING_CRON' ) && DOING_CRON ) {
+	add_action( 'shutdown', 'wisesync_log_cron' );
+}

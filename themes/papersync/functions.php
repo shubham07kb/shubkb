@@ -31,3 +31,19 @@ require_once PAPERSYNC_THEME_DIR . '/functions/functions.php';
 
 // Load Blocks.
 add_action( 'init', 'include_blocks' );
+
+/**
+ * Locate template.
+ *
+ * @param string $template Template.
+ */
+function locate_theme_templates( $template ) {
+
+	if ( is_singular( 'course' ) && 0 === get_post_field( 'post_parent', get_the_ID() ) && 'edit' !== get_post_field( 'post_name', get_the_ID() ) ) {
+		return locate_template( 'templates/single-course-parent.html', true );
+	} elseif ( is_singular( 'course' ) && 0 !== get_post_field( 'post_parent', get_the_ID() ) && 'edit' !== get_post_field( 'post_name', get_the_ID() ) ) {
+		return locate_template( 'templates/single-course-child.html', true );
+	}
+	return $template;
+}
+add_filter( 'single_template', 'locate_theme_templates' );
