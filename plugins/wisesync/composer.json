@@ -1,0 +1,20 @@
+{
+    "name": "shubham07kb/wisesync",
+    "description": "WiseSync Plugin: Multipurpose Plugin",
+    "type": "plugin",
+    "autoload": {
+        "psr-4": {
+            "Shubham07kb\\Wisesync\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shubham Kumar Bansal",
+            "email": "kumarbansal.shubham07@gmail.com"
+        }
+    ],
+    "require": {
+        "lbuchs/webauthn": "^2.1",
+        "google/apiclient": "^2.15"
+    }
+}

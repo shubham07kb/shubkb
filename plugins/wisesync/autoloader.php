@@ -10,6 +10,7 @@
  * @link     https://shubkb.com
  */
 
+// Register autoloader for Plugin.
 spl_autoload_register(
 	function ( $autoloader_class ) {
 
@@ -29,3 +30,6 @@ spl_autoload_register(
 		}
 	}
 );
+
+// Load autoloader for Composer.
+require_once WISESYNC_PLUGIN_DIR . 'vendor/autoload.php';
