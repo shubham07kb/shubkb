@@ -6,4 +6,6 @@
 **/*.php
 **/*.md
 **/*.json
+**/*.lock
 **/build/**/*
+**/vendor/**/*

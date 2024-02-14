@@ -1,8 +1,8 @@
 {
 	"$schema": "./../block-schema.json",
 	"apiVersion": 3,
-	"name": "papersync/customizable-header",
-	"title": "Customizable Header",
+	"name": "papersync/passkey-button",
+	"title": "Passkey Button",
 	"category": "text",
 	"icon": "header",
 	"description": "This is a customizable header block.",
@@ -11,10 +11,11 @@
 	"textdomain": "papersync",
 	"style": "file:./build/style-index.css",
 	"editorScript": "file:./build/index.js",
+	"viewScript": "file:./build/view.js",
 	"attributes": {
-		"style": {
+		"type": {
 			"type": "string",
-			"default": "simple"
+			"default": "register"
 		}
 	}
 }

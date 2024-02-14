@@ -11,6 +11,7 @@
 namespace WiseSync\Rest_API;
 
 use WiseSync\Rest_API\Course;
+use WiseSync\Rest_API\Passkey;
 
 /**
  * Rest API
@@ -30,6 +31,7 @@ class Rest_API {
 	 * Register Rest Routes
 	 */
 	public function register_rest_routes() {
-		$course = new Course();
+		$course  = new Course();
+		$passkey = new Passkey();
 	}
 }

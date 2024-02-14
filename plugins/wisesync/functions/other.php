@@ -8,6 +8,57 @@
  * @since 1.0.0
  */
 
+// seesion check.
+if ( session_status() === PHP_SESSION_NONE ) {
+	session_start();
+}
+
+/**
+ * Set Session variable
+ *
+ * @param mixed  $key Key for Session.
+ * @param string $value Value of Key.
+ *
+ * @return bool
+ */
+function set_session( $key, $value ) {
+	$_SESSION[ $key ] = $value;
+	if ( isset( $_SESSION[ $key ] ) && ! empty( $_SESSION[ $key ] ) ) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+/**
+ * Get Session variable
+ *
+ * @param mixed $key Key for Session.
+ *
+ * @return mixed
+ */
+function get_session( $key ) {
+	if ( isset( $_SESSION[ $key ] ) && ! empty( $_SESSION[ $key ] ) ) {
+		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+		return $_SESSION[ $key ];
+	} else {
+		return false;
+	}
+}
+
+/**
+ * Delete Session Variable
+ *
+ * @param mixed $key Key for Session.
+ *
+ * @return bool true.
+ */
+function delete_session( $key ) {
+
+	unset( $_SESSION[ $key ] );
+	return true;
+}
+
 /**
  * Get Most Ancestor Post ID
  *
@@ -20,4 +71,17 @@ function get_most_ancestor_post_id( $post_id ) {
 		return end( $ancestors );
 	}
 	return $post_id;
+}
+
+/**
+ * Remove aliasing
+ *
+ * @param string $email Email.
+ */
+function remove_aliasing( $email ) {
+
+	$parts    = explode( '@', $email );
+	$username = $parts[0];
+	$username = preg_replace( '/\+.*/', '', $username );
+	return $username . '@' . $parts[1];
 }
