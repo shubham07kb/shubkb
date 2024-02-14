@@ -208,7 +208,7 @@ class Passkey {
 						$passkey->publicKey,
 						$challenge
 					);
-					wp_send_json_success( array( 'message' => 'Challenge verified successfully.' ) );
+					wp_send_json_success( array( 'message' => 'Challenge verified successfully.', 'login'  => is_user_logged_in() ) );
 				} catch ( \Exception $ex ) {
 					wp_send_json_error(
 						array(

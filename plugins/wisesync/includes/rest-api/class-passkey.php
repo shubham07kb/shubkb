@@ -40,7 +40,7 @@ class Passkey {
 			array(
 				'methods'             => 'GET',
 				'callback'            => array( $this, 'get_child_id_tree' ),
-				'permission_callback' => '__return_true',
+				'permission_callback' => 'is_user_logged_in',
 			)
 		);
 		register_rest_route(
@@ -49,7 +49,7 @@ class Passkey {
 			array(
 				'methods'             => 'GET',
 				'callback'            => array( $this, 'get_child_id_tree' ),
-				'permission_callback' => '__return_true',
+				'permission_callback' => 'is_user_logged_in',
 			)
 		);
 		register_rest_route(
@@ -58,7 +58,9 @@ class Passkey {
 			array(
 				'methods'             => 'GET',
 				'callback'            => array( $this, 'get_child_id_tree' ),
-				'permission_callback' => '__return_true',
+				'permission_callback' => function () {
+					return ! is_user_logged_in();
+				},
 			)
 		);
 		register_rest_route(
@@ -67,7 +69,9 @@ class Passkey {
 			array(
 				'methods'             => 'GET',
 				'callback'            => array( $this, 'get_child_id_tree' ),
-				'permission_callback' => '__return_true',
+				'permission_callback' => function () {
+					return ! is_user_logged_in();
+				},
 			)
 		);
 		register_rest_route(
@@ -76,7 +80,7 @@ class Passkey {
 			array(
 				'methods'             => 'GET',
 				'callback'            => array( $this, 'get_child_id_tree' ),
-				'permission_callback' => '__return_true',
+				'permission_callback' => 'is_user_logged_in',
 			)
 		);
 	}
@@ -120,20 +124,11 @@ class Passkey {
 	 */
 	public function get_child_id_tree( \WP_REST_Request $request ) {
 
-		$post_id     = (int) sanitize_text_field( $request->get_param( 'id' ) );
-		$ancestor_id = get_post_ancestors( $post_id );
-
-		$custom_array = array(
-			'id'    => end( $ancestor_id ),
-			'url'   => get_permalink( end( $ancestor_id ) ),
-			'child' => $this->get_child_data( end( $ancestor_id ) ),
-		);
-
 		// Extract child and sub-child post IDs.
 		return array(
 			'status' => 'success',
-			'id'     => $post_id,
-			'edit'   => $custom_array,
+			'id'     => 'is it working',
+			'login'  => is_user_logged_in(),
 		);
 	}
 }
