@@ -6,20 +6,20 @@ class Hostinger_Onboarding_Add_Post extends Hostinger_Onboarding_Step {
 	}
 
 	public function get_body(): array {
-		return [
-			[
+		return array(
+			array(
 				'title'       => __( 'Create a catchy headline', 'hostinger' ),
-				'description' => __( 'Create a headline that grabs your visitors attention and accurately represents the content of your post.', 'hostinger' )
-			],
-			[
+				'description' => __( 'Create a headline that grabs your visitors attention and accurately represents the content of your post.', 'hostinger' ),
+			),
+			array(
 				'title'       => __( 'Draft your post', 'hostinger' ),
 				'description' => __( 'Write your content, making sure to include relevant keywords and images. You can use different blocks to create headings, paragraphs, lists, and other types of content.', 'hostinger' ),
-			],
-			[
+			),
+			array(
 				'title'       => __( 'Proofread and publish', 'hostinger' ),
 				'description' => __( 'Once you have finished drafting your post, read it over to check for errors, make any necessary revisions, and then publish it to your blog.', 'hostinger' ),
-			],
-		];
+			),
+		);
 	}
 
 	public function step_identifier(): string {

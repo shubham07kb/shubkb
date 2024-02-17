@@ -27,8 +27,6 @@ class Hostinger_Errors {
 			return __( 'Unknown error code.', 'hostinger' );
 		}
 	}
-
-
 }
 
-$hostiner_errors = new Hostinger_Errors();
+$hostinger_errors = new Hostinger_Errors();

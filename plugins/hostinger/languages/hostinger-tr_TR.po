@@ -3,21 +3,27 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:27+0000\n"
-"PO-Revision-Date: 2023-09-15 06:47+0000\n"
+"PO-Revision-Date: 2024-02-01 11:34+0000\n"
 "Last-Translator: \n"
-"Language-Team: Turkish\n"
+"Language-Team: Türkçe\n"
 "Language: tr_TR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.4; wp-6.3.1\n"
+"X-Loco-Version: 2.6.6; wp-6.3.2\n"
 "X-Domain: hostinger"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:15
 msgid "Access the Site identity and edit title"
 msgstr "Site kimliğine giderek başlığı düzenleyin"
+
+#: includes/class-hostinger-errors.php:10
+msgid "Action Failed. Try again or contact support. Apologies."
+msgstr ""
+"İşlem Başarısız Oldu. Lütfen tekrar deneyim veya destekle iletişime geçin. "
+"Özür dileriz."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:43
 msgid "Add a gallery block"
@@ -63,11 +69,17 @@ msgid "Add your product"
 msgstr "Ürün ekle"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:12
+#, fuzzy
+#| msgid ""
+#| "Adding a logo is a great way to personalize a website or add branding "
+#| "information. You can use your existing logo or create a new one using the "
+#| "<a href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
+#| "target=\"_blank\">Ai Logo Maker</a>."
 msgid ""
 "Adding a logo is a great way to personalize a website or add branding "
 "information. You can use your existing logo or create a new one using the <a "
 "href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
-"target=\"_blank\">Ai Logo Maker</a>."
+"target=\"_blank\">AI Logo Maker</a>."
 msgstr ""
 "Logo eklemek, bir web sitesini kişiselleştirmenin veya marka bilgileri "
 "eklemenin en iyi yoludur. <a href=\"https://logo.hostinger.com/?"
@@ -75,12 +87,17 @@ msgstr ""
 "Aracı</a>'nı kullanarak mevcut logonuzu ekleyebilir veya yeni bir logo "
 "oluşturabilirsiniz."
 
-#: includes/admin/class-hostinger-admin-menu.php:46
 #: includes/admin/class-hostinger-admin-menu.php:47
-#: includes/admin/views/hostinger-onboarding-view.php:67
-#| msgid "AI Assistant"
-msgid "AI assistant"
-msgstr "AI Asistan"
+#: includes/admin/class-hostinger-admin-menu.php:48
+#: includes/admin/views/hostinger-onboarding-view.php:74
+msgid "AI Content Creator"
+msgstr "YZ İçerik Oluşturucu"
+
+#: includes/class-hostinger-errors.php:13
+msgid "An unexpected error occurred. Please try again or contact support."
+msgstr ""
+"Beklenmedik bir hata oluştu. Lütfen tekrar deneyin veya destek ekibiyle "
+"iletişime geçin."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:67
 msgid ""
@@ -90,7 +107,7 @@ msgstr ""
 "Yayınlamadan önce Önizle düğmesine tıklayarak oluşturduğunuz sayfayı "
 "önizleyebilirsiniz. Sonuçtan memnun kalırsanız Yayınla düğmesine tıklayın."
 
-#: includes/admin/views/hostinger-onboarding-view.php:181
+#: includes/admin/views/hostinger-onboarding-view.php:207
 msgid "Close"
 msgstr "Kapat"
 
@@ -107,9 +124,41 @@ msgstr ""
 msgid "Coming Soon"
 msgstr "Yakında Geliyor"
 
-#: includes/admin/class-hostinger-admin-ajax.php:38
+#. translators: %s: link to dashboard
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:26
+msgid ""
+"Complete the form with required information related to Amazon's partnership "
+"API. Retrieve all this information from the <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Amazon Product Advertising dashboard</a> and paste it into "
+"the form."
+msgstr ""
+"Formu Amazon'un ortaklık API'sine ilişkin gerekli bilgilerle doldurun. Tüm "
+"bu bilgileri <a href=\"%s\" target=\"_blank\" rel=\"noopener\">Amazon Ürün "
+"Reklamcılığı kontrol panelinden</a> alın ve forma yapıştırın."
+
+#: includes/admin/class-hostinger-admin-ajax.php:81
 msgid "Congratulations! Your website is online."
 msgstr "Tebrikler! Web siteniz çevrimiçi!"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:40
+msgid "Connect Amazon Account"
+msgstr "Amazon Hesabını Bağla"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:8
+msgid "Connect Amazon partnership account"
+msgstr "Amazon ortaklık hesabını bağlayın"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:111
+msgid "Connect domain now"
+msgstr "Şimdi alan adınızı bağlayın"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:9
+msgid "Connect your domain"
+msgstr "Alan adınızı bağlayın"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:19
+msgid "Connect your domain to Hostinger"
+msgstr "Alan adınızı Hostinger'a bağlayın"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:63
 msgid ""
@@ -120,6 +169,10 @@ msgstr ""
 "İçerik, metin, görseller, videolar, tablolar gibi dilediğiniz herhangi bir "
 "şey olabilir. Artı işaretine tıklayın ve sayfaya eklemek istediğiniz bloğu "
 "seçin."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:24
+msgid "Copy-Paste the necessary information:"
+msgstr "Gerekli bilgileri kopyalayıp yapıştırın:"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:11
 msgid "Create a catchy headline"
@@ -149,6 +202,19 @@ msgstr "Hizmetlerinizi açıklayan bir sayfa oluşturun"
 msgid "Create your first blog post"
 msgstr "İlk blog yazınızı oluşturun"
 
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:40
+msgid "domain name searcher."
+msgstr "Domain sorgulama."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:24
+msgid ""
+"Domain propagation can take up to 24 hours. Your domain will propagate "
+"automatically, and you don't need to take any action during this time."
+msgstr ""
+"Alan adının yayılması 24 saate kadar sürebilir. Bu işlem otomatik olarak "
+"gerçekleştirilecektir ve bu süre zarfında herhangi bir işlem yapmanıza gerek "
+"yoktur."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:15
 msgid "Draft your post"
 msgstr "Yazınızın taslağını oluşturun"
@@ -173,11 +239,22 @@ msgstr "Yazı açıklamasını düzenle"
 msgid "Edit site title"
 msgstr "Site başlığını düzenle"
 
+#. translators: %s: link to plugin page
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:21
+msgid ""
+"Fill in the required details on the <a href=\"%s\" class=\"hst-open-"
+"affiliate-tab\">Amazon Affiliate plugin page</a>, where you'll find all the "
+"necessary information about the plugin."
+msgstr ""
+"Eklenti hakkında gerekli tüm bilgileri bulabileceğiniz <a href=\"%s\" "
+"class=\"hst-open-affiliate-tab\">Amazon Satış Ortaklığı eklentisi </a>"
+"sayfasındaki gerekli ayrıntıları doldurun."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:32
 msgid "Finalize the page"
 msgstr "Sayfayı sonlandır"
 
-#: includes/admin/views/hostinger-onboarding-view.php:251
+#: includes/admin/views/hostinger-onboarding-view.php:290
 msgid "Find the answers you need in our Knowledge Base"
 msgstr "Bilgi Tabanımızda ihtiyacınız olan yanıtları bulabilirsiniz"
 
@@ -185,17 +262,21 @@ msgstr "Bilgi Tabanımızda ihtiyacınız olan yanıtları bulabilirsiniz"
 msgid "Find the Media page"
 msgstr "Medya sayfasını bul"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:70
+#: includes/admin/onboarding/class-hostinger-onboarding.php:80
 msgid "Follow our guided checklist to setup your website"
 msgstr "Web sitenizi kurmak için rehberli kontrol listemizi inceleyin"
 
-#: includes/admin/views/hostinger-onboarding-view.php:262
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:15
+msgid "Get a domain"
+msgstr "Bir alan adı al"
+
+#: includes/admin/views/hostinger-onboarding-view.php:301
 msgid "Get in touch with our live specialists"
 msgstr "Canlı destek veren uzmanlarımızla irtibat kurun"
 
 #: includes/admin/class-hostinger-admin-menu.php:26
 #: includes/admin/class-hostinger-admin-menu.php:27
-#: includes/admin/views/hostinger-onboarding-view.php:60
+#: includes/admin/views/hostinger-onboarding-view.php:66
 #| msgid "Get Started"
 msgid "Get started"
 msgstr "Şimdi Başla"
@@ -229,11 +310,11 @@ msgstr ""
 msgid "Go to the Customize page"
 msgstr "Özelleştir sayfasına git"
 
-#: includes/admin/views/hostinger-onboarding-view.php:111
+#: includes/admin/views/hostinger-onboarding-view.php:137
 msgid "Got it!"
 msgstr "Anladım!"
 
-#: includes/admin/views/hostinger-onboarding-view.php:261
+#: includes/admin/views/hostinger-onboarding-view.php:300
 msgid "Help Center"
 msgstr "Yardım Merkezi"
 
@@ -244,7 +325,7 @@ msgstr "Yardım Merkezi"
 msgid "Hostinger"
 msgstr "Hostinger"
 
-#: includes/admin/views/hostinger-onboarding-view.php:198
+#: includes/admin/views/hostinger-onboarding-view.php:224
 msgid "Hostinger Academy"
 msgstr "Hostinger Academy"
 
@@ -260,32 +341,36 @@ msgstr ""
 "Seçenekler menüsünü görmek için seçilen gönderinin üzerine gelin. Gönderi "
 "düzenleyiciyi açmak için Düzenle düğmesine tıklayın."
 
-#: includes/admin/views/hostinger-onboarding-view.php:17
-#: includes/admin/views/hostinger-onboarding-view.php:209
+#: includes/admin/views/hostinger-onboarding-view.php:20
+#: includes/admin/views/hostinger-onboarding-view.php:245
 msgid "How to Add Your WordPress Website to Google Search Console"
 msgstr "WordPress Web Siteniz Google Search Console'a Nasıl Eklenir?"
 
-#: includes/admin/views/hostinger-onboarding-view.php:42
+#: includes/admin/views/hostinger-onboarding-view.php:45
 msgid "How to Back Up a WordPress Site"
 msgstr "WordPress Sitesi Nasıl Yedeklenir"
 
-#: includes/admin/views/hostinger-onboarding-view.php:27
+#: includes/admin/views/hostinger-onboarding-view.php:30
 msgid "How to Clear Cache in WordPress Website"
 msgstr "WordPress Sitesinde Önbellek Nasıl Temizlenir"
 
-#: includes/admin/views/hostinger-onboarding-view.php:22
+#: includes/admin/views/hostinger-onboarding-view.php:25
 msgid "How to Create a WordPress Contact Us Page"
 msgstr "WordPress İletişim Sayfası Nasıl Oluşturulur"
 
-#: includes/admin/views/hostinger-onboarding-view.php:32
+#: includes/admin/views/hostinger-onboarding-view.php:35
 msgid "How to Edit the Footer in WordPress"
 msgstr "WordPress'te Alt Bilgi Nasıl Düzenlenir"
 
-#: includes/admin/views/hostinger-onboarding-view.php:47
+#: includes/admin/views/hostinger-onboarding-view.php:50
 msgid "How to Import Images Into WordPress Website"
 msgstr "WordPress Web Sitesine Görseller Nasıl Taşınır?"
 
-#: includes/admin/views/hostinger-onboarding-view.php:52
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:75
+msgid "How to Point Domain Name to Web Hosting"
+msgstr "Bir Alan Adı Web Hostinge Nasıl Yönlendirilir?"
+
+#: includes/admin/views/hostinger-onboarding-view.php:55
 msgid "How to Set Up WordPress SMTP"
 msgstr "WordPress SMTP Nasıl Kurulur"
 
@@ -373,23 +458,35 @@ msgstr ""
 "Sol kenar çubuğunda Gönderiler düğmesini bulun. Tüm Gönderiler düğmesine "
 "tıklayın ve açıklamasını değiştirmek istediğiniz gönderiyi bulun."
 
-#: includes/admin/class-hostinger-admin-ajax.php:65
-msgid "invalid data"
-msgstr "geçersiz veri"
+#: includes/admin/views/partials/hostinger-promotional-banner.php:5
+msgid "Invite a Friend, Earn Up to $100"
+msgstr "Arkadaşınızı Davet Edin, 100 $'a Kadar Ödül Kazanın"
 
-#: includes/admin/views/hostinger-onboarding-view.php:250
+#: includes/admin/views/hostinger-onboarding-view.php:289
 msgid "Knowledge Base"
 msgstr "Bilgi Tabanı"
 
 #: includes/admin/class-hostinger-admin-menu.php:36
 #: includes/admin/class-hostinger-admin-menu.php:37
-#: includes/admin/views/hostinger-onboarding-view.php:61
+#: includes/admin/views/hostinger-onboarding-view.php:67
 msgid "Learn"
 msgstr "Öğren"
 
-#: includes/admin/views/hostinger-onboarding-view.php:37
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:67
+msgid ""
+"Learn how to connect your domain to Hostinger by watching this tutorial on "
+"YouTube for a step-by-step guide:"
+msgstr ""
+"Adım adım talimatlar için YouTube'daki bu rehberi izleyerek alan adınızı "
+"Hostinger'a nasıl bağlayacağınızı öğrenin:"
+
+#: includes/admin/views/hostinger-onboarding-view.php:40
 msgid "LiteSpeed Cache: How to Get 100% WordPress Optimization"
 msgstr "LiteSpeed Cache: %100 WordPress Optimizasyonu Nasıl Elde Edilir"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:14
+msgid "Login to the Amazon Product Advertising dashboard"
+msgstr "Amazon Ürün Reklamcılığı kontrol paneline giriş yapın"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:33
 msgid ""
@@ -402,9 +499,29 @@ msgstr ""
 "posta veya iletişim formu aracılığıyla irtibata geçmeye teşvik etmek için "
 "net bir eyleme geçirici mesaj (CTA) ekleyin."
 
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:54
+msgid "Nameserver 1"
+msgstr "Ad Sunucusu 1"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:60
+msgid "Nameserver 2"
+msgstr "Ad Sunucusu 2"
+
 #: includes/views/hostinger-coming-soon.php:26
 msgid "New WordPress website is being built and will be published soon"
 msgstr "Yeni WordPress web sitesi oluşturuluyor ve yakında yayınlanacak"
+
+#: includes/admin/views/partials/hostinger-rate-us.php:36
+msgid ""
+"on <a\n"
+"\t\t\t   href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-"
+"post\"\n"
+"\t\t\t   target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
+msgstr ""
+"-<a\n"
+"\t\t\t   href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-"
+"post\"\n"
+"\t\t\t   target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:20
 msgid ""
@@ -436,7 +553,11 @@ msgstr ""
 "için ana gezinme menünüze veya diğer ilgili yayınlarınıza bir bağlantı "
 "ekleyebilirsiniz."
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:61
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:19
+msgid "Open the Amazon Affiliate plugin configuration"
+msgstr "Amazon Satış Ortaklığı eklentisi yapılandırmasını açın"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:71
 msgid "Preview website"
 msgstr "Siteyi önizle"
 
@@ -452,8 +573,8 @@ msgstr "Sayfayı yayınla"
 msgid "Publish the setup"
 msgstr "Kurulumu yayınla"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:71
-#: includes/admin/onboarding/class-hostinger-onboarding.php:73
+#: includes/admin/onboarding/class-hostinger-onboarding.php:81
+#: includes/admin/onboarding/class-hostinger-onboarding.php:83
 msgid "Publish website"
 msgstr "Siteyi yayınla"
 
@@ -461,21 +582,54 @@ msgstr "Siteyi yayınla"
 msgid "Publish your page"
 msgstr "Sayfanızı yayınlayın"
 
-#: includes/admin/views/hostinger-onboarding-view.php:178
+#: includes/admin/views/hostinger-onboarding-view.php:204
 msgid "Publishing website"
 msgstr "Siteyi yayınlamak"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:69
+#: includes/admin/views/partials/hostinger-rate-us.php:2
+msgid "Rate this plugin"
+msgstr "Bu eklentiyi değerlendir"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:79
 msgid "Set up your website"
 msgstr "Sitenizi kurun"
 
-#: includes/admin/views/hostinger-onboarding-view.php:116
+#: includes/admin/views/partials/hostinger-promotional-banner.php:6
+msgid ""
+"Share your referral link with friends and family and <b>receive 20% "
+"commission</b> for every successful referral."
+msgstr ""
+"Yönlendirme bağlantınızı arkadaşlarınızla ve ailenizle paylaşın ve her "
+"başarılı yönlendirme için <b>%20 komisyon kazanın</b>."
+
+#: includes/admin/views/partials/hostinger-promotional-banner.php:11
+msgid "Start earning"
+msgstr "Kazanmaya başla"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:83
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:41
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:30
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:34
 msgid "Take me there"
 msgstr "Beni götür"
 
-#: includes/admin/views/hostinger-onboarding-view.php:179
+#: includes/admin/views/hostinger-onboarding-view.php:205
 msgid "This can take some time"
 msgstr "Bu biraz sürebilir"
+
+#. translators: %s: link to dashboard
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:16
+msgid ""
+"To gather the necessary information, log in to your <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener\">Amazon Product Advertising dashboard</a> "
+"using your personal Amazon partnership account."
+msgstr ""
+"Gerekli bilgileri toplamak için kişisel Amazon ortaklık hesabınızı "
+"kullanarak <a href=\"%s\" target=\"_blank\" rel=\"noopener\">Amazon Ürün "
+"Reklamcılığı kontrol panelinize</a> giriş yapın."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:16
 msgid ""
@@ -495,6 +649,10 @@ msgstr ""
 "Yeni bir görsel yüklemek için Medya Kütüphanesi sayfasındaki Yeni Ekle "
 "düğmesine tıklayın ve dosyaları seçin."
 
+#: includes/class-hostinger-errors.php:27
+msgid "Unknown error code."
+msgstr "Bilinmeyen hata kodu."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:5
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:15
 msgid "Upload an image"
@@ -509,12 +667,30 @@ msgstr "Logonuzu yükleyin"
 msgid "Upload your portfolio projects"
 msgstr "Portfolyo projelerinizi yükleyin"
 
-#: includes/admin/class-hostinger-admin-ajax.php:37
-#: includes/admin/onboarding/class-hostinger-onboarding.php:58
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:23
+msgid "Wait for domain propagation"
+msgstr "Alan adı yayılımını bekleyin"
+
+#: includes/class-hostinger-errors.php:16
+msgid ""
+"We apologize for the inconvenience. The AI content generation process "
+"encountered a server error. Please try again later, and if the issue "
+"persists, kindly contact our support team for assistance."
+msgstr ""
+"Verdiğimiz rahatsızlık için özür dileriz. Yapay zeka içerik oluştururken bir "
+"sunucu hatasıyla karşılaştı. Lütfen daha sonra tekrar deneyin ve sorun devam "
+"ederse yardım için lütfen destek ekibimizle iletişime geçin."
+
+#: includes/admin/class-hostinger-admin-ajax.php:80
+#: includes/admin/onboarding/class-hostinger-onboarding.php:68
 msgid "Website is published"
 msgstr "Siteniz yayınlandı"
 
-#: includes/admin/views/hostinger-onboarding-view.php:191
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:36
+msgid "Website URL"
+msgstr "Web sitesi URL'si"
+
+#: includes/admin/views/hostinger-onboarding-view.php:217
 msgid "WordPress tutorials"
 msgstr "WordPress rehberleri"
 
@@ -538,10 +714,20 @@ msgstr ""
 "içeriğinizi yazın. Başlıklar, paragraflar, listeler ve diğer içerik "
 "türlerini oluşturmak için farklı bloklar kullanabilirsiniz."
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:59
+#: includes/admin/onboarding/class-hostinger-onboarding.php:69
 msgid "You can access this guide material any time when updating your website"
 msgstr ""
 "Web sitenizi güncellerken bu rehbere istediğiniz zaman erişebilirsiniz."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:50
+msgid ""
+"You can connect domain to Hostinger by changing the nameservers. Different "
+"domain providers are have unique procedures for changing nameservers. Here "
+"are Hostinger's nameservers:"
+msgstr ""
+"Ad sunucularını değiştirerek alan adınızı Hostinger'a bağlayabilirsiniz. "
+"Farklı alan adı sağlayıcılarının, ad sunucularını değiştirmek için farklı "
+"prosedürleri vardır. İşte Hostinger'ın ad sunucuları:"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:26
 msgid ""
@@ -550,3 +736,20 @@ msgid ""
 msgstr ""
 "Yazının tamamını düzenleyicide görebilirsiniz. Açıklama bölümünü bulun ve "
 "tercihlerinize göre değiştirin."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:39
+msgid ""
+"You need to purchase a domain for your website before the preview domain "
+"becomes inaccessible. Find a desired website name using a"
+msgstr ""
+"Önizleme alan adına erişilemez hale gelmeden önce web siteniz için bir alan "
+"adı satın almanız gerekir. İstediğiniz web sitesi adını şuradan "
+"bulabilirsiniz:"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:33
+msgid ""
+"Your website is already published and can be accessed using Hostinger free "
+"temporary subdomain right now. Here is the current URL of your website:"
+msgstr ""
+"Web siteniz  yayınlanmış durumda. Şu anda Hostinger'ın ücretsiz geçici alt "
+"alan adı kullanılarak erişilebilir. İşte web sitenizin mevcut URL'si:"

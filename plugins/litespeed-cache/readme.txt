@@ -2,8 +2,8 @@
 Contributors: LiteSpeedTech
 Tags: caching, optimize, performance, pagespeed, core web vitals, seo, speed, image optimize, compress, object cache, redis, memcached, database cleaner
 Requires at least: 4.0
-Tested up to: 6.4.2
-Stable tag: 6.0.0.1
+Tested up to: 6.4.3
+Stable tag: 6.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -249,6 +249,20 @@ For more detailed information about crawler setup, please see [the Crawler docum
 The vast majority of plugins and themes are compatible with LiteSpeed Cache. The most up-to-date compatibility information can be found [in our documentation](https://docs.litespeedtech.com/lscache/lscwp/thirdparty/)
 
 == Changelog ==
+
+= 6.1 - Feb 5 2024 =
+* 🌱**Database** New Clear Orphaned Post Meta optimizer function.
+* **Image Optimize** Fixed possible PHP warning for WP requests library response.
+* **Image Optimize** Unlocked `noabort` to all async tasks to avoid image optimization timeout. (Peter Wells)
+* **Image Optimize** Fixed an issue where images weren't being pulled with older versions of WordPress. (PR#608)
+* **Image Optimize** Improved exception handling when node server cert expire.
+* 🐞**Image Optimize** The failed to pull images due to 404 expiry will now be able to send the request again.
+* **Crawler** CLI will now be able to force crawling even if a crawl was recently initiated within the plugin GUI.
+* **Page Optimize** Fixed a dynamic property creation warning in PHP8. (PR#606)
+* **Page Optimize** Fixed an issue where getimagesize could cause page optimization to fail. (PR#607)
+* **Tag** Fixed an array to string conversion warning. (PR#604)
+* **Object Cache** Return false to prevent PHP warning when Redis fails to set a value. (PR#612)
+* **Cache Tag** Fixed an issue where $wp_query is null when getting cache tags. (PR#589)
 
 = 6.0.0.1 - Dec 15 2023 =
 * 🐞**Image Optimize** Grouped the taken notification to regional center servers to reduce the load after image pulled.

@@ -1,23 +1,28 @@
+# Translation of Plugins - Hostinger - Stable (latest release) in Indonesian
+# This file is distributed under the same license as the Plugins - Hostinger - Stable (latest release) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Hostinger\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-23 08:27+0000\n"
-"PO-Revision-Date: 2023-09-14 03:27+0000\n"
-"Last-Translator: \n"
-"Language-Team: Indonesian\n"
-"Language: id_ID\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"PO-Revision-Date: 2024-02-06 04:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.4; wp-6.3.1\n"
-"X-Domain: hostinger"
+"Language: id_ID\n"
+"Project-Id-Version: Plugins - Hostinger - Stable (latest release)\n"
+"Language-Team: Indonesian\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-06 04:37+0000\n"
+"Last-Translator: \n"
+"X-Loco-Version: 2.6.6; wp-6.3.3"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:15
 msgid "Access the Site identity and edit title"
 msgstr "Buka Site identity dan edit judul"
+
+#: includes/class-hostinger-errors.php:10
+msgid "Action Failed. Try again or contact support. Apologies."
+msgstr "Maaf, terjadi kesalahan. Silakan coba lagi atau hubungi tim support."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:43
 msgid "Add a gallery block"
@@ -67,29 +72,32 @@ msgid ""
 "Adding a logo is a great way to personalize a website or add branding "
 "information. You can use your existing logo or create a new one using the <a "
 "href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
-"target=\"_blank\">Ai Logo Maker</a>."
-msgstr ""
-"Menambahkan logo adalah cara terbaik untuk membangun identitas situs web dan "
-"brand. Anda dapat menggunakan logo yang sudah ada atau membuat logo baru "
-"menggunakan <a href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
 "target=\"_blank\">AI Logo Maker</a>."
+msgstr ""
+"Tambahkan logo untuk membangun identitas website atau memberikan informasi "
+"tentang brand. Anda dapat menggunakan logo yang sudah ada atau membuat logo "
+"baru menggunakan <a href=\"https://logo.hostinger.com/?ref=wordpress-"
+"onboarding\" target=\"_blank\">AI Logo Maker</a>."
 
-#: includes/admin/class-hostinger-admin-menu.php:46
 #: includes/admin/class-hostinger-admin-menu.php:47
-#: includes/admin/views/hostinger-onboarding-view.php:67
-#| msgid "AI Assistant"
-msgid "AI assistant"
-msgstr "AI assistant"
+#: includes/admin/class-hostinger-admin-menu.php:48
+#: includes/admin/views/hostinger-onboarding-view.php:74
+msgid "AI Content Creator"
+msgstr "AI Content Creator"
+
+#: includes/class-hostinger-errors.php:13
+msgid "An unexpected error occurred. Please try again or contact support."
+msgstr "Maaf, terjadi kesalahan. Silakan coba lagi atau hubungi tim support."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:67
 msgid ""
 "Before publishing, you can preview your created page by clicking on the "
 "Preview button. If you are happy with the result, click the Publish button."
 msgstr ""
-"Anda dapat melihat halaman yang sudah Anda buat sebelum online dengan cara "
-"klik tombol Preview. Jika sudah puas, Anda bisa klik tombol Publish."
+"Klik Preview untuk melihat halaman sebelum dionlinekan. Jika sudah puas, "
+"Anda bisa klik tombol Publish."
 
-#: includes/admin/views/hostinger-onboarding-view.php:181
+#: includes/admin/views/hostinger-onboarding-view.php:207
 msgid "Close"
 msgstr "Tutup"
 
@@ -105,9 +113,42 @@ msgstr ""
 msgid "Coming Soon"
 msgstr "Segera Hadir"
 
-#: includes/admin/class-hostinger-admin-ajax.php:38
+#. translators: %s: link to dashboard
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:26
+msgid ""
+"Complete the form with required information related to Amazon's partnership "
+"API. Retrieve all this information from the <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Amazon Product Advertising dashboard</a> and paste it into "
+"the form."
+msgstr ""
+"Lengkapi formulir dengan informasi yang diperlukan terkait API kemitraan "
+"Amazon. Ambil semua informasi ini dari <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">dasbor Periklanan Produk Amazon</a> dan tempelkan ke dalam "
+"formulir."
+
+#: includes/admin/class-hostinger-admin-ajax.php:81
 msgid "Congratulations! Your website is online."
-msgstr "Selamat! Situs web Anda berhasil online."
+msgstr "Selamat! Website Anda berhasil online."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:40
+msgid "Connect Amazon Account"
+msgstr "Hubungkan Akun Amazon"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:8
+msgid "Connect Amazon partnership account"
+msgstr "Hubungkan akun Amazon partnership"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:111
+msgid "Connect domain now"
+msgstr "Hubungkan domain sekarang"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:9
+msgid "Connect your domain"
+msgstr "Hubungkan domain"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:19
+msgid "Connect your domain to Hostinger"
+msgstr "Hubungkan domain ke Hostinger"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:63
 msgid ""
@@ -115,8 +156,12 @@ msgid ""
 "and lots more. Click on a plus sign and choose any block you want to add to "
 "the page."
 msgstr ""
-"Konten dapat berupa teks, gambar, video, tabel, dan masih banyak lagi. Klik "
-"tanda tambah untuk memilih blok untuk halaman Anda."
+"Konten dapat berupa teks, gambar, video, tabel, dan lain-lain. Klik tanda "
+"tambah untuk memilih blok untuk halaman Anda."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:24
+msgid "Copy-Paste the necessary information:"
+msgstr "Masukkan informasi yang dibutuhkan:"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:11
 msgid "Create a catchy headline"
@@ -146,9 +191,21 @@ msgstr "Buat halaman tentang layanan Anda"
 msgid "Create your first blog post"
 msgstr "Buat blog pertama Anda"
 
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:40
+msgid "domain name searcher."
+msgstr "tool cek domain."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:24
+msgid ""
+"Domain propagation can take up to 24 hours. Your domain will propagate "
+"automatically, and you don't need to take any action during this time."
+msgstr ""
+"Propagasi domain memerlukan waktu hingga 24 jam dan berlangsung secara "
+"otomatis. Silakan tunggu hingga proses selesai."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:15
 msgid "Draft your post"
-msgstr "Buat draft postingan Anda "
+msgstr "Buat draft postingan Anda"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:19
 msgid "Edit an image"
@@ -170,11 +227,22 @@ msgstr "Edit deskripsi postingan"
 msgid "Edit site title"
 msgstr "Edit judul situs"
 
+#. translators: %s: link to plugin page
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:21
+msgid ""
+"Fill in the required details on the <a href=\"%s\" class=\"hst-open-"
+"affiliate-tab\">Amazon Affiliate plugin page</a>, where you'll find all the "
+"necessary information about the plugin."
+msgstr ""
+"Lengkapi detail dan temukan informasi yang dibutuhkan terkait plugin di <a "
+"href=\"%s\" class=\"hst-open-affiliate-tab\">halaman plugin Amazon "
+"Affiliate</a>."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:32
 msgid "Finalize the page"
 msgstr "Selesaikan halaman"
 
-#: includes/admin/views/hostinger-onboarding-view.php:251
+#: includes/admin/views/hostinger-onboarding-view.php:290
 msgid "Find the answers you need in our Knowledge Base"
 msgstr "Temukan jawaban yang Anda butuhkan di bagian Pengetahuan Dasar kami"
 
@@ -182,18 +250,21 @@ msgstr "Temukan jawaban yang Anda butuhkan di bagian Pengetahuan Dasar kami"
 msgid "Find the Media page"
 msgstr "Temukan halaman Media"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:70
+#: includes/admin/onboarding/class-hostinger-onboarding.php:80
 msgid "Follow our guided checklist to setup your website"
-msgstr "Ikuti panduan kami untuk setup situs web Anda"
+msgstr "Ikuti panduan kami untuk setup website Anda"
 
-#: includes/admin/views/hostinger-onboarding-view.php:262
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:15
+msgid "Get a domain"
+msgstr "Beli domain"
+
+#: includes/admin/views/hostinger-onboarding-view.php:301
 msgid "Get in touch with our live specialists"
 msgstr "Hubungi Customer Success kami kapan saja."
 
 #: includes/admin/class-hostinger-admin-menu.php:26
 #: includes/admin/class-hostinger-admin-menu.php:27
-#: includes/admin/views/hostinger-onboarding-view.php:60
-#| msgid "Get Started"
+#: includes/admin/views/hostinger-onboarding-view.php:66
 msgid "Get started"
 msgstr "Mulai sekarang"
 
@@ -218,7 +289,7 @@ msgid ""
 "Go to Products → Add New or Create Product and enter your product name and "
 "description."
 msgstr ""
-"Klik Product → Add New atau Create Product, lalu ketik nama dan deskripsi "
+"Klik Produk → Tambah Baru atau Buat Produk, lalu ketik nama dan deskripsi "
 "produk."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:11
@@ -226,11 +297,11 @@ msgstr ""
 msgid "Go to the Customize page"
 msgstr "Buka halaman Customize"
 
-#: includes/admin/views/hostinger-onboarding-view.php:111
+#: includes/admin/views/hostinger-onboarding-view.php:137
 msgid "Got it!"
 msgstr "Selesai!"
 
-#: includes/admin/views/hostinger-onboarding-view.php:261
+#: includes/admin/views/hostinger-onboarding-view.php:300
 msgid "Help Center"
 msgstr "Pusat Bantuan"
 
@@ -241,13 +312,13 @@ msgstr "Pusat Bantuan"
 msgid "Hostinger"
 msgstr "Hostinger"
 
-#: includes/admin/views/hostinger-onboarding-view.php:198
+#: includes/admin/views/hostinger-onboarding-view.php:224
 msgid "Hostinger Academy"
 msgstr "Hostinger Indonesia"
 
 #. Description of the plugin
 msgid "Hostinger WordPress plugin."
-msgstr "Plugin WordPress Hostinger"
+msgstr "Plugin WordPress Hostinger."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:22
 msgid ""
@@ -257,49 +328,53 @@ msgstr ""
 "Arahkan kursor ke postingan yang diinginkan untuk melihat menu opsi. Klik "
 "tombol Edit untuk membuka post editor."
 
-#: includes/admin/views/hostinger-onboarding-view.php:17
-#: includes/admin/views/hostinger-onboarding-view.php:209
+#: includes/admin/views/hostinger-onboarding-view.php:20
+#: includes/admin/views/hostinger-onboarding-view.php:245
 msgid "How to Add Your WordPress Website to Google Search Console"
 msgstr "Cara Menambahkan Situs WordPress Anda ke Google Search Console"
 
-#: includes/admin/views/hostinger-onboarding-view.php:42
+#: includes/admin/views/hostinger-onboarding-view.php:45
 msgid "How to Back Up a WordPress Site"
 msgstr "Cara Backup Situs WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:27
+#: includes/admin/views/hostinger-onboarding-view.php:30
 msgid "How to Clear Cache in WordPress Website"
 msgstr "Cara Menghapus Cache di Situs WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:22
+#: includes/admin/views/hostinger-onboarding-view.php:25
 msgid "How to Create a WordPress Contact Us Page"
 msgstr "Cara Buat Halaman Hubungi Kami di WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:32
+#: includes/admin/views/hostinger-onboarding-view.php:35
 msgid "How to Edit the Footer in WordPress"
 msgstr "Cara Edit Footer di WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:47
+#: includes/admin/views/hostinger-onboarding-view.php:50
 msgid "How to Import Images Into WordPress Website"
 msgstr "Cara Impor Gambar Ke Situs WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:52
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:75
+msgid "How to Point Domain Name to Web Hosting"
+msgstr "Cara Mengarahkan Domain ke Web Hosting"
+
+#: includes/admin/views/hostinger-onboarding-view.php:55
 msgid "How to Set Up WordPress SMTP"
 msgstr "Cara Setup SMTP WordPress"
 
 #. Plugin URI of the plugin
 msgid "https://hostinger.com"
-msgstr "https://hostinger.co.id"
+msgstr "https://hostinger.com"
 
 #. Author URI of the plugin
 msgid "https://www.hostinger.com"
-msgstr "https://www.hostinger.co.id"
+msgstr "https://www.hostinger.com"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:20
 msgid ""
 "If you wish to edit the image, click on the chosen image and click the Edit "
 "Image button. You can now crop, rotate, flip or scale the selected image."
 msgstr ""
-"Untuk edit gambar, klik gambar dan klik tombol Edit Image. Anda bisa "
+"Untuk edit gambar, klik gambar dan klik tombol Edit Gambar. Anda bisa "
 "memotong, memutar, membalik, atau mengatur ukuran gambar."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:44
@@ -326,7 +401,7 @@ msgid ""
 "section, click Customize. The Customize page will open. "
 msgstr ""
 "Di sidebar kiri, klik Appearance untuk melihat menu lainnya. Di bagian "
-"Appearance, klik  Customize. Halaman Customize akan terbuka."
+"Appearance, klik  Customize. Halaman Customize akan terbuka. "
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:16
 msgid "In the left sidebar, click Site Identity and edit your site title."
@@ -338,7 +413,7 @@ msgid ""
 "button. Here, you can upload your brand logo. "
 msgstr ""
 "Di sidebar kiri, klik Site Identity, lalu klik tombol Select Site untuk "
-"upload logo brand Anda."
+"upload logo brand Anda. "
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:12
 msgid ""
@@ -366,23 +441,35 @@ msgstr ""
 "Di sidebar kiri, klik tombol Posts. Klik tombol All Posts dan klik postingan "
 "yang ingin diubah deskripsinya."
 
-#: includes/admin/class-hostinger-admin-ajax.php:65
-msgid "invalid data"
-msgstr "data tidak valid"
+#: includes/admin/views/partials/hostinger-promotional-banner.php:5
+msgid "Invite a Friend, Earn Up to $100"
+msgstr "Undang Teman, Dapat Komisi $100"
 
-#: includes/admin/views/hostinger-onboarding-view.php:250
+#: includes/admin/views/hostinger-onboarding-view.php:289
 msgid "Knowledge Base"
 msgstr "Pengetahuan Dasar"
 
 #: includes/admin/class-hostinger-admin-menu.php:36
 #: includes/admin/class-hostinger-admin-menu.php:37
-#: includes/admin/views/hostinger-onboarding-view.php:61
+#: includes/admin/views/hostinger-onboarding-view.php:67
 msgid "Learn"
 msgstr "Lihat"
 
-#: includes/admin/views/hostinger-onboarding-view.php:37
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:67
+msgid ""
+"Learn how to connect your domain to Hostinger by watching this tutorial on "
+"YouTube for a step-by-step guide:"
+msgstr ""
+"Tonton tutorial lengkap cara menghubungkan domain ke Hostinger di video "
+"YouTube berikut ini:"
+
+#: includes/admin/views/hostinger-onboarding-view.php:40
 msgid "LiteSpeed Cache: How to Get 100% WordPress Optimization"
 msgstr "LiteSpeed Cache: Tool Optimasi Efektif untuk Performa Website"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:14
+msgid "Login to the Amazon Product Advertising dashboard"
+msgstr "Login ke dashboard Amazon Product Advertising"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:33
 msgid ""
@@ -394,10 +481,30 @@ msgstr ""
 "Sertakan CTA (call-to-action) yang jelas bagi pengunjung. Misalnya, cara "
 "menghubungi Anda melalui email atau formulir kontak."
 
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:54
+msgid "Nameserver 1"
+msgstr "Nameserver 1"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:60
+msgid "Nameserver 2"
+msgstr "Nameserver 2"
+
 #: includes/views/hostinger-coming-soon.php:26
 msgid "New WordPress website is being built and will be published soon"
 msgstr ""
-"Situs web Wordpress yang baru masih dalam proses dan akan segera diluncurkan."
+"Website WordPress yang baru sedang diproses dan akan segera dionlinekan."
+
+#: includes/admin/views/partials/hostinger-rate-us.php:36
+msgid ""
+"on <a\n"
+"\t\t\t   href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-"
+"post\"\n"
+"\t\t\t   target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
+msgstr ""
+"di <a\n"
+"\t\t\t   href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-"
+"post\"\n"
+"\t\t\t   target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:20
 msgid ""
@@ -428,9 +535,13 @@ msgstr ""
 "Anda. Selain itu, Anda dapat menambahkan link ke menu navigasi utama atau "
 "postingan yang relevan agar pengunjung dapat menemukannya dengan lebih mudah."
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:61
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:19
+msgid "Open the Amazon Affiliate plugin configuration"
+msgstr "Buka konfigurasi plugin Amazon Affiliate"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:71
 msgid "Preview website"
-msgstr "Pratinjau situs web"
+msgstr "Lihat website"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:19
 msgid "Proofread and publish"
@@ -444,30 +555,63 @@ msgstr "Onlinekan halaman"
 msgid "Publish the setup"
 msgstr "Onlinekan setup"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:71
-#: includes/admin/onboarding/class-hostinger-onboarding.php:73
+#: includes/admin/onboarding/class-hostinger-onboarding.php:81
+#: includes/admin/onboarding/class-hostinger-onboarding.php:83
 msgid "Publish website"
-msgstr "Onlinekan situs web"
+msgstr "Onlinekan website"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:47
 msgid "Publish your page"
 msgstr "Onlinekan halaman"
 
-#: includes/admin/views/hostinger-onboarding-view.php:178
+#: includes/admin/views/hostinger-onboarding-view.php:204
 msgid "Publishing website"
-msgstr "Onlinekan situs web"
+msgstr "Onlinekan website"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:69
+#: includes/admin/views/partials/hostinger-rate-us.php:2
+msgid "Rate this plugin"
+msgstr "Beri nilai plugin ini"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:79
 msgid "Set up your website"
-msgstr "Setup situs web Anda"
+msgstr "Setup website Anda"
 
-#: includes/admin/views/hostinger-onboarding-view.php:116
+#: includes/admin/views/partials/hostinger-promotional-banner.php:6
+msgid ""
+"Share your referral link with friends and family and <b>receive 20% "
+"commission</b> for every successful referral."
+msgstr ""
+"Bagikan link referral ke teman dan keluarga Anda dan dapatkan <b>komisi "
+"20%</b> untuk setiap referral yang berhasil."
+
+#: includes/admin/views/partials/hostinger-promotional-banner.php:11
+msgid "Start earning"
+msgstr "Bagikan link"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:83
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:41
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:30
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:34
 msgid "Take me there"
 msgstr "Buka"
 
-#: includes/admin/views/hostinger-onboarding-view.php:179
+#: includes/admin/views/hostinger-onboarding-view.php:205
 msgid "This can take some time"
 msgstr "Silakan tunggu beberapa saat"
+
+#. translators: %s: link to dashboard
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:16
+msgid ""
+"To gather the necessary information, log in to your <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener\">Amazon Product Advertising dashboard</a> "
+"using your personal Amazon partnership account."
+msgstr ""
+"Untuk mendapatkan informasi yang diperlukan, login ke <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener\">dashboard Amazon Product Advertising</a> "
+"menggunakan akun Amazon partnership Anda."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:16
 msgid ""
@@ -487,6 +631,10 @@ msgstr ""
 "Untuk upload gambar, klik tombol Add New di Media Library dan pilih file "
 "yang ingin diupload."
 
+#: includes/class-hostinger-errors.php:27
+msgid "Unknown error code."
+msgstr "Kode eror yang tidak dikenal."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:5
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:15
 msgid "Upload an image"
@@ -501,12 +649,30 @@ msgstr "Upload logo Anda"
 msgid "Upload your portfolio projects"
 msgstr "Upload portfolio Anda"
 
-#: includes/admin/class-hostinger-admin-ajax.php:37
-#: includes/admin/onboarding/class-hostinger-onboarding.php:58
-msgid "Website is published"
-msgstr "Situs web berhasil online"
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:23
+msgid "Wait for domain propagation"
+msgstr "Tunggu propagasi domain"
 
-#: includes/admin/views/hostinger-onboarding-view.php:191
+#: includes/class-hostinger-errors.php:16
+msgid ""
+"We apologize for the inconvenience. The AI content generation process "
+"encountered a server error. Please try again later, and if the issue "
+"persists, kindly contact our support team for assistance."
+msgstr ""
+"Terjadi kesalahan server saat AI memproses konten Anda. Kami mohon maaf atas "
+"ketidaknyamanan ini. Silakan coba lagi nanti atau hubungi tim support kami "
+"untuk mendapatkan bantuan."
+
+#: includes/admin/class-hostinger-admin-ajax.php:80
+#: includes/admin/onboarding/class-hostinger-onboarding.php:68
+msgid "Website is published"
+msgstr "Website berhasil online"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:36
+msgid "Website URL"
+msgstr "URL Website"
+
+#: includes/admin/views/hostinger-onboarding-view.php:217
 msgid "WordPress tutorials"
 msgstr "Tutorial WordPress"
 
@@ -530,9 +696,18 @@ msgstr ""
 "dapat menggunakan blok berbeda untuk membuat judul, paragraf, daftar, dan "
 "jenis konten lainnya."
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:59
+#: includes/admin/onboarding/class-hostinger-onboarding.php:69
 msgid "You can access this guide material any time when updating your website"
-msgstr "Anda dapat mengakses materi panduan ini kapan saja"
+msgstr "Anda dapat mengakses materi panduan ini saat update website"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:50
+msgid ""
+"You can connect domain to Hostinger by changing the nameservers. Different "
+"domain providers are have unique procedures for changing nameservers. Here "
+"are Hostinger's nameservers:"
+msgstr ""
+"Ubah nameserver untuk menghubungkan domain ke Hostinger. Tiap domain "
+"provider memiliki prosedur yang berbeda. Berikut nameserver Hostinger:"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:26
 msgid ""
@@ -541,3 +716,19 @@ msgid ""
 msgstr ""
 "Anda dapat melihat semua postingan di editor. Klik bagian deskripsi dan edit "
 "sesuai kebutuhan Anda."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:39
+msgid ""
+"You need to purchase a domain for your website before the preview domain "
+"becomes inaccessible. Find a desired website name using a"
+msgstr ""
+"Beli domain website sebelum preview domain tidak dapat diakses. Temukan "
+"domain impian Anda di"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:33
+msgid ""
+"Your website is already published and can be accessed using Hostinger free "
+"temporary subdomain right now. Here is the current URL of your website:"
+msgstr ""
+"Website Anda sudah online dan dapat diakses menggunakan subdomain gratis "
+"sementara dari Hostinger. Berikut URL website Anda."

@@ -10,10 +10,10 @@ class Hostinger_Default_Options {
 	}
 
 	private function options(): array {
-		return [
+		return array(
 			'optin_monster_api_activation_redirect_disabled' => 'true',
-			'wpforms_activation_redirect'                    => 'true',
-			'aioseo_activation_redirect'                     => 'false',
-		];
+			'wpforms_activation_redirect' => 'true',
+			'aioseo_activation_redirect'  => 'false',
+		);
 	}
 }

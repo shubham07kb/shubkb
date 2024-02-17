@@ -91,7 +91,7 @@ class Media extends Root
 				if ((defined('LITESPEED_GUEST_OPTM') || $this->conf(Base::O_IMG_OPTM_WEBP)) && $this->webp_support()) {
 					$featured_image_url = $this->replace_webp($featured_image_url) ?: $featured_image_url;
 				}
-				$content .= '<link rel="preload" as="image" href="' . $featured_image_url . '">';
+				$content .= '<link rel="preload" as="image" href="' . $featured_image_url . '">'; // TODO: use imagesrcset
 			}
 		}
 
@@ -731,7 +731,11 @@ class Media extends Root
 			$src = 'https:' . $src;
 		}
 
-		$sizes = getimagesize($src);
+		try {
+			$sizes = getimagesize($src);
+		} catch (\Exception $e) {
+			return false;
+		}
 
 		if (!empty($sizes[0]) && !empty($sizes[1])) {
 			return $sizes;

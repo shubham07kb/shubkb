@@ -485,6 +485,11 @@ class Core extends Root
 
 		$this->send_headers(true);
 
+		// Log ESI nonce buffer empty issue
+		if (defined('LSCACHE_IS_ESI') && strlen($buffer) == 0) {
+			// TODO: log ref somewhere
+		}
+
 		// Init comment info
 		$running_info_showing = defined('LITESPEED_IS_HTML') || defined('LSCACHE_IS_ESI');
 		if (defined('LSCACHE_ESI_SILENCE')) {
@@ -519,7 +524,6 @@ class Core extends Root
 				Debug2::debug($buffer);
 			}
 			Debug2::debug('[Core] ESI End 👆');
-			Debug2::debug($buffer);
 		}
 
 		if (apply_filters('litespeed_is_json', false)) {

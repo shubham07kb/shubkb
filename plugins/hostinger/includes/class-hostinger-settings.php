@@ -5,18 +5,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class Hostinger_Settings {
-	public const MYSELF = 'myself';
-	public const FREELANCER = 'freelancer';
-	public const DEVELOPER = 'developer';
-	public const OTHER = 'other';
+	public const MYSELF                    = 'myself';
+	public const FREELANCER                = 'freelancer';
+	public const DEVELOPER                 = 'developer';
+	public const OTHER                     = 'other';
 	public const BUSINESS_BEGINNER_SEGMENT = 'business_beginner';
-	public const LEARNER_SEGMENT = 'learner';
-	public const BUSINESS_OWNER_SEGMENT = 'business_owner';
-	public const WEBSITE_TYPE_BUSINESS = 'business';
-	public const WEBSITE_TYPE_PORTFOLIO = 'portfolio';
-	public const WEBSITE_TYPE_STORE = 'online-store';
-	public const WEBSITE_TYPE_BLOG = 'blog';
-	public const SITE_TITLE_OPTION = 'blogname';
+	public const LEARNER_SEGMENT           = 'learner';
+	public const BUSINESS_OWNER_SEGMENT    = 'business_owner';
+	public const WEBSITE_TYPE_BUSINESS     = 'business';
+	public const WEBSITE_TYPE_PORTFOLIO    = 'portfolio';
+	public const WEBSITE_TYPE_STORE        = 'online-store';
+	public const WEBSITE_TYPE_BLOG         = 'blog';
+	public const SITE_TITLE_OPTION         = 'blogname';
 
 	public function __construct() {
 		if ( ! $this->get_setting( 'user_segment' ) ) {
@@ -69,7 +69,6 @@ class Hostinger_Settings {
 		if ( $setting ) {
 			update_option( 'hostinger_' . $setting, $value, $autoload );
 		}
-
 	}
 }
 

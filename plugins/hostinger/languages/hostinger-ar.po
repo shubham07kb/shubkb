@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:19+0000\n"
-"PO-Revision-Date: 2023-09-13 12:14+0000\n"
-"Last-Translator: Maher Souilah\n"
+"PO-Revision-Date: 2024-02-05 09:37+0000\n"
+"Last-Translator: Mohamed Doukkali\n"
 "Language-Team: Arabic\n"
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100 >= 3 "
@@ -13,12 +13,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.4; wp-6.3.1\n"
+"X-Loco-Version: 2.6.6; wp-6.3.3\n"
 "X-Domain: hostinger"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:15
 msgid "Access the Site identity and edit title"
 msgstr "أدخل إلى هوية الموقع وابدأ تحرير العنوان"
+
+#: includes/class-hostinger-errors.php:10
+msgid "Action Failed. Try again or contact support. Apologies."
+msgstr "عفوا، لقد فشلت المحاولة. حاول مرة أخرى أو اتصل بالدعم."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:43
 msgid "Add a gallery block"
@@ -65,22 +69,31 @@ msgid "Add your product"
 msgstr "أضف منتجك"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:12
+#, fuzzy
+#| msgid ""
+#| "Adding a logo is a great way to personalize a website or add branding "
+#| "information. You can use your existing logo or create a new one using the "
+#| "<a href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
+#| "target=\"_blank\">Ai Logo Maker</a>."
 msgid ""
 "Adding a logo is a great way to personalize a website or add branding "
 "information. You can use your existing logo or create a new one using the <a "
 "href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
-"target=\"_blank\">Ai Logo Maker</a>."
+"target=\"_blank\">AI Logo Maker</a>."
 msgstr ""
 "تعد إضافة شعار طريقة رائعة لتخصيص موقع إلكتروني أو إضافة معلومات العلامة "
 "التجارية. يمكنك استخدام شعارك الحالي أو إنشاء شعار جديد باستخدام منشئ "
 "الشعارات بالذكاء الاصطناعي."
 
-#: includes/admin/class-hostinger-admin-menu.php:46
 #: includes/admin/class-hostinger-admin-menu.php:47
-#: includes/admin/views/hostinger-onboarding-view.php:67
-#| msgid "AI Assistant"
-msgid "AI assistant"
-msgstr "مساعد الذكاء الاصطناعي"
+#: includes/admin/class-hostinger-admin-menu.php:48
+#: includes/admin/views/hostinger-onboarding-view.php:74
+msgid "AI Content Creator"
+msgstr "مُنشئ المحتوى AI"
+
+#: includes/class-hostinger-errors.php:13
+msgid "An unexpected error occurred. Please try again or contact support."
+msgstr "لقد حدث خطأ غير متوقّع. حاول مرة أخرى أو اتصل بالدعم."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:67
 msgid ""
@@ -90,7 +103,7 @@ msgstr ""
 "قبل النشر، يمكنك معاينة الصفحة التي تم إنشاؤها عن طريق النقر على زر المعاينة."
 " إذا كنت راضيًا عن النتيجة، فانقر فوق الزر نشر."
 
-#: includes/admin/views/hostinger-onboarding-view.php:181
+#: includes/admin/views/hostinger-onboarding-view.php:207
 msgid "Close"
 msgstr "غلق"
 
@@ -105,9 +118,41 @@ msgstr "ابتكر اسما واضحا ومختصرا للصفحة يعكس ال
 msgid "Coming Soon"
 msgstr "قريباً"
 
-#: includes/admin/class-hostinger-admin-ajax.php:38
+#. translators: %s: link to dashboard
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:26
+msgid ""
+"Complete the form with required information related to Amazon's partnership "
+"API. Retrieve all this information from the <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Amazon Product Advertising dashboard</a> and paste it into "
+"the form."
+msgstr ""
+"املأ النموذج بالمعلومات المطلوبة المتعلقة بواجهة برمجة تطبيقات شراكة Amazon. "
+"يمكنك إيجاد كل هذه المعلومات في<a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">لوحة إعلانات منتجات Amazon</a> ثم لصقها في النموذج."
+
+#: includes/admin/class-hostinger-admin-ajax.php:81
 msgid "Congratulations! Your website is online."
 msgstr "تهانينا! لقد أصبح موقعك الإلكتروني يعمل الآن."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:40
+msgid "Connect Amazon Account"
+msgstr "ربط حساب Amazon"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:8
+msgid "Connect Amazon partnership account"
+msgstr "ربط حساب Amazon partnership"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:111
+msgid "Connect domain now"
+msgstr "قم بتوصيل الدومين الآن"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:9
+msgid "Connect your domain"
+msgstr "قم بتوصيل دومينك"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:19
+msgid "Connect your domain to Hostinger"
+msgstr "قم بتوصيل دومينك مع Hostinger"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:63
 msgid ""
@@ -117,6 +162,10 @@ msgid ""
 msgstr ""
 "يمكن أن يكون المحتوى أي شيء تريده، مثل النصوص والصور ومقاطع الفيديو والجداول "
 "وغير ذلك الكثير. انقر فوق علامة زائد واختر أي كتلة تريد إضافتها إلى الصفحة."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:24
+msgid "Copy-Paste the necessary information:"
+msgstr "انسخ والصق المعلومات الضرورية:"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:11
 msgid "Create a catchy headline"
@@ -144,6 +193,18 @@ msgstr "أنشئ صفحة تصف خدماتك"
 msgid "Create your first blog post"
 msgstr "أنشئ أول مشاركة في مدونتك"
 
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:40
+msgid "domain name searcher."
+msgstr "أداة البحث عن أسماء الدومينات"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:24
+msgid ""
+"Domain propagation can take up to 24 hours. Your domain will propagate "
+"automatically, and you don't need to take any action during this time."
+msgstr ""
+"يمكن أن يستغرق نشر الدومين إلى غاية 24 ساعة. سيتم نشر دومينك تلقائيًا، ولن "
+"تحتاج إلى اتخاذ أي إجراء خلال هذه الفترة."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:15
 msgid "Draft your post"
 msgstr "ابدأ صياغة رسالتك"
@@ -168,11 +229,22 @@ msgstr "تحرير وصف المشاركة"
 msgid "Edit site title"
 msgstr "تحرير عنوان الموقع"
 
+#. translators: %s: link to plugin page
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:21
+msgid ""
+"Fill in the required details on the <a href=\"%s\" class=\"hst-open-"
+"affiliate-tab\">Amazon Affiliate plugin page</a>, where you'll find all the "
+"necessary information about the plugin."
+msgstr ""
+"املأ التفاصيل المطلوبة في <a href=\"%s\" class=\"hst-open-affiliate-tab\">"
+"صفحة إضافة Amazon Affiliate</a>، حيث ستجد جميع المعلومات الضرورية حول "
+"الإضافة."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:32
 msgid "Finalize the page"
 msgstr "وضع اللمسات النهائية على الصفحة"
 
-#: includes/admin/views/hostinger-onboarding-view.php:251
+#: includes/admin/views/hostinger-onboarding-view.php:290
 msgid "Find the answers you need in our Knowledge Base"
 msgstr "ابحث عن الإجابات التي تحتاجها في قاعدة المعرفة الخاصة بنا"
 
@@ -180,17 +252,21 @@ msgstr "ابحث عن الإجابات التي تحتاجها في قاعدة �
 msgid "Find the Media page"
 msgstr "ابحث عن صفحة الوسائط"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:70
+#: includes/admin/onboarding/class-hostinger-onboarding.php:80
 msgid "Follow our guided checklist to setup your website"
 msgstr "اتبع قائمتنا المرجعية الإرشادية لإعداد موقعك الإلكتروني"
 
-#: includes/admin/views/hostinger-onboarding-view.php:262
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:15
+msgid "Get a domain"
+msgstr "احصل على دومين"
+
+#: includes/admin/views/hostinger-onboarding-view.php:301
 msgid "Get in touch with our live specialists"
 msgstr "تواصل مع متخصصينا المباشرين"
 
 #: includes/admin/class-hostinger-admin-menu.php:26
 #: includes/admin/class-hostinger-admin-menu.php:27
-#: includes/admin/views/hostinger-onboarding-view.php:60
+#: includes/admin/views/hostinger-onboarding-view.php:66
 #| msgid "Get Started"
 msgid "Get started"
 msgstr "ابدأ"
@@ -223,11 +299,11 @@ msgstr ""
 msgid "Go to the Customize page"
 msgstr "انتقل إلى صفحة التخصيص"
 
-#: includes/admin/views/hostinger-onboarding-view.php:111
+#: includes/admin/views/hostinger-onboarding-view.php:137
 msgid "Got it!"
 msgstr "فهمت!"
 
-#: includes/admin/views/hostinger-onboarding-view.php:261
+#: includes/admin/views/hostinger-onboarding-view.php:300
 msgid "Help Center"
 msgstr "مركز المساعدة"
 
@@ -238,7 +314,7 @@ msgstr "مركز المساعدة"
 msgid "Hostinger"
 msgstr "Hostinger"
 
-#: includes/admin/views/hostinger-onboarding-view.php:198
+#: includes/admin/views/hostinger-onboarding-view.php:224
 msgid "Hostinger Academy"
 msgstr "أكاديمية Hostinger"
 
@@ -254,32 +330,36 @@ msgstr ""
 "مرّر المؤشّر فوق المنشور المختار لرؤية قائمة الخيارات. انقر فوق الزر "
 "\"تحرير\" لفتح محرّر المشاركات."
 
-#: includes/admin/views/hostinger-onboarding-view.php:17
-#: includes/admin/views/hostinger-onboarding-view.php:209
+#: includes/admin/views/hostinger-onboarding-view.php:20
+#: includes/admin/views/hostinger-onboarding-view.php:245
 msgid "How to Add Your WordPress Website to Google Search Console"
 msgstr "كيفية إضافة موقع ووردبرؤيس الخاص بك إلى Google Search Console"
 
-#: includes/admin/views/hostinger-onboarding-view.php:42
+#: includes/admin/views/hostinger-onboarding-view.php:45
 msgid "How to Back Up a WordPress Site"
 msgstr "كيفية عمل نسخة احتياطية لموقع ووردبريس"
 
-#: includes/admin/views/hostinger-onboarding-view.php:27
+#: includes/admin/views/hostinger-onboarding-view.php:30
 msgid "How to Clear Cache in WordPress Website"
 msgstr "كيفية مسح ذاكرة التخزين المؤقت في موقع ووردبريس"
 
-#: includes/admin/views/hostinger-onboarding-view.php:22
+#: includes/admin/views/hostinger-onboarding-view.php:25
 msgid "How to Create a WordPress Contact Us Page"
 msgstr "كيفية إنشاء صفحة اتصل بنا على ووردبريس"
 
-#: includes/admin/views/hostinger-onboarding-view.php:32
+#: includes/admin/views/hostinger-onboarding-view.php:35
 msgid "How to Edit the Footer in WordPress"
 msgstr "كيفية تعديل التذييل في ووردبريس"
 
-#: includes/admin/views/hostinger-onboarding-view.php:47
+#: includes/admin/views/hostinger-onboarding-view.php:50
 msgid "How to Import Images Into WordPress Website"
 msgstr "كيفية استيراد الصور إلى موقع ووردبريس"
 
-#: includes/admin/views/hostinger-onboarding-view.php:52
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:75
+msgid "How to Point Domain Name to Web Hosting"
+msgstr "كيفية توجيه اسم الدومين إلى استضافة المواقع"
+
+#: includes/admin/views/hostinger-onboarding-view.php:55
 msgid "How to Set Up WordPress SMTP"
 msgstr "كيفية إعداد ووردبريس SMTP"
 
@@ -364,23 +444,35 @@ msgstr ""
 "في الشريط الجانبي الأيسر، ابحث عن زر المنشورات. انقر فوق الزر \"جميع "
 "المشاركات\" وابحث عن المنشور الذي تريد تغيير وصفه."
 
-#: includes/admin/class-hostinger-admin-ajax.php:65
-msgid "invalid data"
-msgstr "بيانات غير صالحة"
+#: includes/admin/views/partials/hostinger-promotional-banner.php:5
+msgid "Invite a Friend, Earn Up to $100"
+msgstr "بادر بدعوة صديق واكسب ما يصل إلى 100 دولار"
 
-#: includes/admin/views/hostinger-onboarding-view.php:250
+#: includes/admin/views/hostinger-onboarding-view.php:289
 msgid "Knowledge Base"
 msgstr "قاعدة المعرفة"
 
 #: includes/admin/class-hostinger-admin-menu.php:36
 #: includes/admin/class-hostinger-admin-menu.php:37
-#: includes/admin/views/hostinger-onboarding-view.php:61
+#: includes/admin/views/hostinger-onboarding-view.php:67
 msgid "Learn"
 msgstr "تعلم"
 
-#: includes/admin/views/hostinger-onboarding-view.php:37
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:67
+msgid ""
+"Learn how to connect your domain to Hostinger by watching this tutorial on "
+"YouTube for a step-by-step guide:"
+msgstr ""
+"تعلّم كيفية ربط دومينك بـHostinger من خلال هذا الفيديو التعليمي المفصّل على "
+"اليوتيوب."
+
+#: includes/admin/views/hostinger-onboarding-view.php:40
 msgid "LiteSpeed Cache: How to Get 100% WordPress Optimization"
 msgstr "النسخ الاحتياطي من LiteSpeed: كيفية تحسين ووردبريس بنسبة 100%"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:14
+msgid "Login to the Amazon Product Advertising dashboard"
+msgstr "سجّل الدخول إلى لوحة إعلانات منتجات Amazon"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:33
 msgid ""
@@ -392,9 +484,27 @@ msgstr ""
 "واضحة تحث المستخدم على اتخاذ إجراء (CTA) لتشجيع الزائرين على اتخاذ الخطوة "
 "التالية، مثل الاتصال بك عبر البريد الإلكتروني أو نموذج الاتصال."
 
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:54
+msgid "Nameserver 1"
+msgstr "اسم الدومين 1"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:60
+msgid "Nameserver 2"
+msgstr "اسم الدومين 1"
+
 #: includes/views/hostinger-coming-soon.php:26
 msgid "New WordPress website is being built and will be published soon"
 msgstr "يتم الآن إنشاء موقع ووردبريس الجديد وسيتم نشره قريبًا"
+
+#: includes/admin/views/partials/hostinger-rate-us.php:36
+msgid ""
+"on <a\n"
+"\t\t\t   href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-"
+"post\"\n"
+"\t\t\t   target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
+msgstr ""
+"على <a href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-"
+"post\" target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:20
 msgid ""
@@ -423,7 +533,11 @@ msgstr ""
 "الإلكتروني. يمكنك إضافة رابط إلى قائمة التنقل الرئيسية أو المنشورات الأخرى "
 "ذات الصلة لتُسهل على الزائرين العثور عليها."
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:61
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:19
+msgid "Open the Amazon Affiliate plugin configuration"
+msgstr "افتح تكوين إضافة Amazon Affiliate"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:71
 msgid "Preview website"
 msgstr "معاينة الموقع"
 
@@ -439,8 +553,8 @@ msgstr "نشر الصفحة"
 msgid "Publish the setup"
 msgstr "نشر الإعداد"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:71
-#: includes/admin/onboarding/class-hostinger-onboarding.php:73
+#: includes/admin/onboarding/class-hostinger-onboarding.php:81
+#: includes/admin/onboarding/class-hostinger-onboarding.php:83
 msgid "Publish website"
 msgstr "نشر الموقع"
 
@@ -448,21 +562,54 @@ msgstr "نشر الموقع"
 msgid "Publish your page"
 msgstr "نشر صفحتك"
 
-#: includes/admin/views/hostinger-onboarding-view.php:178
+#: includes/admin/views/hostinger-onboarding-view.php:204
 msgid "Publishing website"
 msgstr "نشر موقعا"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:69
+#: includes/admin/views/partials/hostinger-rate-us.php:2
+msgid "Rate this plugin"
+msgstr "قيّم هذه الإضافة"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:79
 msgid "Set up your website"
 msgstr "قم بإعداد موقعك الإلكتروني"
 
-#: includes/admin/views/hostinger-onboarding-view.php:116
+#: includes/admin/views/partials/hostinger-promotional-banner.php:6
+msgid ""
+"Share your referral link with friends and family and <b>receive 20% "
+"commission</b> for every successful referral."
+msgstr ""
+"شارك رابط إحالتك مع الأصدقاء والعائلة <b>واحصل على عمولة 20%</b> لكل إحالة "
+"ناجحة."
+
+#: includes/admin/views/partials/hostinger-promotional-banner.php:11
+msgid "Start earning"
+msgstr "ابدأ في الربح"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:83
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:41
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:30
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:34
 msgid "Take me there"
 msgstr "خذني هناك"
 
-#: includes/admin/views/hostinger-onboarding-view.php:179
+#: includes/admin/views/hostinger-onboarding-view.php:205
 msgid "This can take some time"
 msgstr "يمكن أن يستغرق هذا الأمر بعض الوقت"
+
+#. translators: %s: link to dashboard
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:16
+msgid ""
+"To gather the necessary information, log in to your <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener\">Amazon Product Advertising dashboard</a> "
+"using your personal Amazon partnership account."
+msgstr ""
+"لجمع المعلومات اللازمة، سجّل الدخول إلى <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">لوحة إعلانات منتجات Amazon</a> باستخدام حساب Amazon "
+"partnership الخاص بك."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:16
 msgid ""
@@ -482,6 +629,10 @@ msgstr ""
 "لتحميل صورة جديدة، انقر فوق الزر \"إضافة جديد\" في صفحة \"مكتبة الوسائط\" "
 "وحدد الملفات."
 
+#: includes/class-hostinger-errors.php:27
+msgid "Unknown error code."
+msgstr "رمز خطأ غير معروف."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:5
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:15
 msgid "Upload an image"
@@ -496,12 +647,30 @@ msgstr "تحميل شعارك"
 msgid "Upload your portfolio projects"
 msgstr "تحميل محفظة مشاريعك"
 
-#: includes/admin/class-hostinger-admin-ajax.php:37
-#: includes/admin/onboarding/class-hostinger-onboarding.php:58
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:23
+msgid "Wait for domain propagation"
+msgstr "انتظر انتشار الدومين"
+
+#: includes/class-hostinger-errors.php:16
+msgid ""
+"We apologize for the inconvenience. The AI content generation process "
+"encountered a server error. Please try again later, and if the issue "
+"persists, kindly contact our support team for assistance."
+msgstr ""
+"نعتذر عن الإزعاج. لقد واجهت عملية إنشاء محتوى الذكاء الاصطناعي خطأً على "
+"مستوى الخادم. يرجى المحاولة مرة أخرى لاحقًا، وإذا استمرت المشكلة، فيرجى "
+"الاتصال بفريق الدعم للحصول على المساعدة."
+
+#: includes/admin/class-hostinger-admin-ajax.php:80
+#: includes/admin/onboarding/class-hostinger-onboarding.php:68
 msgid "Website is published"
 msgstr "يتم نشر الموقع"
 
-#: includes/admin/views/hostinger-onboarding-view.php:191
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:36
+msgid "Website URL"
+msgstr "عنوان الموقع"
+
+#: includes/admin/views/hostinger-onboarding-view.php:217
 msgid "WordPress tutorials"
 msgstr "دروس ووردبريس"
 
@@ -523,9 +692,18 @@ msgstr ""
 "اكتب محتوى اموقعك، وتأكد من تضمين الكلمات الرئيسية والصور ذات الصلة. يمكنك "
 "استخدام كتل مختلفة لإنشاء عناوين وفقرات وقوائم وأنواع أخرى من المحتوى."
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:59
+#: includes/admin/onboarding/class-hostinger-onboarding.php:69
 msgid "You can access this guide material any time when updating your website"
 msgstr "يمكنك الوصول إلى مادة الدليل هذه في أي وقت عند تحديث موقعك الإلكتروني"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:50
+msgid ""
+"You can connect domain to Hostinger by changing the nameservers. Different "
+"domain providers are have unique procedures for changing nameservers. Here "
+"are Hostinger's nameservers:"
+msgstr ""
+"يمكنك ربط دومين بـ Hostinger عن طريق تغيير خوادم الأسماء. لدى موفري الدومين "
+"المختلفين إجراءات فريدة لتغيير خوادم الأسماء. فيما يلي خوادم أسماء Hostinger:"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:26
 msgid ""
@@ -534,3 +712,19 @@ msgid ""
 msgstr ""
 "يمكنك رؤية المنشور بأكمله في المحرر. ابحث عن جزء الوصف وقم بتغييره حسب "
 "تفضيلاتك."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:39
+msgid ""
+"You need to purchase a domain for your website before the preview domain "
+"becomes inaccessible. Find a desired website name using a"
+msgstr ""
+"يتعيّن عليك شراء دومين لموقعك الإلكتروني قبل أن يتعذر الوصول إلى دومين "
+"المعاينة. ابحث عن اسم الموقع الإلكتروني المطلوب باستخدام"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:33
+msgid ""
+"Your website is already published and can be accessed using Hostinger free "
+"temporary subdomain right now. Here is the current URL of your website:"
+msgstr ""
+"لقد سبق نشر موقعك الإلكتروني ويمكن الوصول إليه باستخدام الدومين الفرعي "
+"المؤقت المجاني لـ Hostinger الآن. وإليك عنوان موقعك الإلكتروني الحالي:"

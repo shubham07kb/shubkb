@@ -3,21 +3,25 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:27+0000\n"
-"PO-Revision-Date: 2023-09-18 02:47+0000\n"
+"PO-Revision-Date: 2024-01-23 05:34+0000\n"
 "Last-Translator: Zhou Yu\n"
-"Language-Team: Chinese (China)\n"
+"Language-Team: 简体中文\n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.4; wp-6.3.1\n"
+"X-Loco-Version: 2.6.6; wp-6.3.2\n"
 "X-Domain: hostinger"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:15
 msgid "Access the Site identity and edit title"
 msgstr "访问站点标识并编辑标题"
+
+#: includes/class-hostinger-errors.php:10
+msgid "Action Failed. Try again or contact support. Apologies."
+msgstr "抱歉，操作失败。请重试或联系客户支持。"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:43
 msgid "Add a gallery block"
@@ -61,21 +65,29 @@ msgid "Add your product"
 msgstr "添加您的产品"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:12
+#| msgid ""
+#| "Adding a logo is a great way to personalize a website or add branding "
+#| "information. You can use your existing logo or create a new one using the "
+#| "<a href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
+#| "target=\"_blank\">Ai Logo Maker</a>."
 msgid ""
 "Adding a logo is a great way to personalize a website or add branding "
 "information. You can use your existing logo or create a new one using the <a "
 "href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
-"target=\"_blank\">Ai Logo Maker</a>."
+"target=\"_blank\">AI Logo Maker</a>."
 msgstr ""
 "添加标识是个性化网站或宣传品牌信息的好方法。您可以使用现有的标识，也可以使用 <a href=\"https://logo.hostinger.com/?"
-"ref=wordpress-onboarding\" target=\"_blank\">Ai Logo Maker</a>。"
+"ref=wordpress-onboarding\" target=\"_blank\">人工智能标识制作器</a>。"
 
-#: includes/admin/class-hostinger-admin-menu.php:46
 #: includes/admin/class-hostinger-admin-menu.php:47
-#: includes/admin/views/hostinger-onboarding-view.php:67
-#| msgid "AI Assistant"
-msgid "AI assistant"
-msgstr "人工智能小助理 "
+#: includes/admin/class-hostinger-admin-menu.php:48
+#: includes/admin/views/hostinger-onboarding-view.php:71
+msgid "AI Content Creator"
+msgstr "人工智能内容编辑器"
+
+#: includes/class-hostinger-errors.php:13
+msgid "An unexpected error occurred. Please try again or contact support."
+msgstr "发生未知错误。请重试或联系客户支持。"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:67
 msgid ""
@@ -83,7 +95,7 @@ msgid ""
 "Preview button. If you are happy with the result, click the Publish button."
 msgstr "在发布之前，您可以通过单击“预览”按钮预览创建的页面。如果您对结果满意，请单击”发布“按钮。"
 
-#: includes/admin/views/hostinger-onboarding-view.php:181
+#: includes/admin/views/hostinger-onboarding-view.php:204
 msgid "Close"
 msgstr "关闭"
 
@@ -98,9 +110,40 @@ msgstr "为页面准备一个清晰简洁的名称，准确地反映您提供的
 msgid "Coming Soon"
 msgstr "即将推出"
 
-#: includes/admin/class-hostinger-admin-ajax.php:38
+#. translators: %s: link to dashboard
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:26
+msgid ""
+"Complete the form with required information related to Amazon's partnership "
+"API. Retrieve all this information from the <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Amazon Product Advertising dashboard</a> and paste it into "
+"the form."
+msgstr ""
+"使用与亚马逊合作伙伴API相关的必要信息完成表单。从 <a href=\"%s\" target=\"_blank\" rel=\"noopener\">"
+"亚马逊产品广告控制面板</a>获取所有所需信息，并将其粘贴到表单中。"
+
+#: includes/admin/class-hostinger-admin-ajax.php:45
 msgid "Congratulations! Your website is online."
 msgstr "恭喜！您的网站已经上线。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:40
+msgid "Connect Amazon Account"
+msgstr "连接亚马逊账号"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:8
+msgid "Connect Amazon partnership account"
+msgstr "连接亚马逊合作伙伴账号"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:111
+msgid "Connect domain now"
+msgstr "连接域名"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:9
+msgid "Connect your domain"
+msgstr "链接您的域名"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:19
+msgid "Connect your domain to Hostinger"
+msgstr "将您的域名连接至Hostinger"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:63
 msgid ""
@@ -108,6 +151,10 @@ msgid ""
 "and lots more. Click on a plus sign and choose any block you want to add to "
 "the page."
 msgstr "内容可以是任何内容，例如文本、图像、视频、表格等等。单击加号选择您想添加的模块至页面。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:24
+msgid "Copy-Paste the necessary information:"
+msgstr "复制粘贴必要信息"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:11
 msgid "Create a catchy headline"
@@ -135,6 +182,16 @@ msgstr "创建一个可以描述您的服务的页面"
 msgid "Create your first blog post"
 msgstr "创建您的第一个博客"
 
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:40
+msgid "domain name searcher."
+msgstr "域名搜索器"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:24
+msgid ""
+"Domain propagation can take up to 24 hours. Your domain will propagate "
+"automatically, and you don't need to take any action during this time."
+msgstr "域名转移将需要24小时。您的域名将自动转移，在此阶段无需进行任何操作。"
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:15
 msgid "Draft your post"
 msgstr "起草您的发布内容"
@@ -159,11 +216,21 @@ msgstr "编辑发布内容描述"
 msgid "Edit site title"
 msgstr "编辑网站标题"
 
+#. translators: %s: link to plugin page
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:21
+msgid ""
+"Fill in the required details on the <a href=\"%s\" class=\"hst-open-"
+"affiliate-tab\">Amazon Affiliate plugin page</a>, where you'll find all the "
+"necessary information about the plugin."
+msgstr ""
+"按照要求，在 <a href=\"%s\" class=\"hst-open-affiliate-tab\">亚马逊联盟插件页面</a>"
+"上填写详细信息，在这里您可以找到有关插件的所有必要信息。"
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:32
 msgid "Finalize the page"
 msgstr "完成页面"
 
-#: includes/admin/views/hostinger-onboarding-view.php:251
+#: includes/admin/views/hostinger-onboarding-view.php:284
 msgid "Find the answers you need in our Knowledge Base"
 msgstr "在我们的知识数据库中查找答案"
 
@@ -171,17 +238,21 @@ msgstr "在我们的知识数据库中查找答案"
 msgid "Find the Media page"
 msgstr "查找媒体库页面"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:70
+#: includes/admin/onboarding/class-hostinger-onboarding.php:80
 msgid "Follow our guided checklist to setup your website"
 msgstr "按照我们的指导清单设置您的网站"
 
-#: includes/admin/views/hostinger-onboarding-view.php:262
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:15
+msgid "Get a domain"
+msgstr "获取一个域名"
+
+#: includes/admin/views/hostinger-onboarding-view.php:295
 msgid "Get in touch with our live specialists"
 msgstr "联系我们的在线专家"
 
 #: includes/admin/class-hostinger-admin-menu.php:26
 #: includes/admin/class-hostinger-admin-menu.php:27
-#: includes/admin/views/hostinger-onboarding-view.php:60
+#: includes/admin/views/hostinger-onboarding-view.php:64
 #| msgid "Get Started"
 msgid "Get started"
 msgstr "立即开始"
@@ -211,11 +282,11 @@ msgstr "转至产品→ 添加新产品，并输入产品名称及详情"
 msgid "Go to the Customize page"
 msgstr "转至自定义页面"
 
-#: includes/admin/views/hostinger-onboarding-view.php:111
+#: includes/admin/views/hostinger-onboarding-view.php:134
 msgid "Got it!"
 msgstr "了解！"
 
-#: includes/admin/views/hostinger-onboarding-view.php:261
+#: includes/admin/views/hostinger-onboarding-view.php:294
 msgid "Help Center"
 msgstr "帮助中心"
 
@@ -226,7 +297,7 @@ msgstr "帮助中心"
 msgid "Hostinger"
 msgstr "Hostinger"
 
-#: includes/admin/views/hostinger-onboarding-view.php:198
+#: includes/admin/views/hostinger-onboarding-view.php:221
 msgid "Hostinger Academy"
 msgstr "Hostinger学院"
 
@@ -240,32 +311,36 @@ msgid ""
 "to open the post editor."
 msgstr "将鼠标悬停在选定的发布内容上以查看“选项”菜单。单击”编辑“按钮打开内容编辑器。"
 
-#: includes/admin/views/hostinger-onboarding-view.php:17
-#: includes/admin/views/hostinger-onboarding-view.php:209
+#: includes/admin/views/hostinger-onboarding-view.php:18
+#: includes/admin/views/hostinger-onboarding-view.php:242
 msgid "How to Add Your WordPress Website to Google Search Console"
 msgstr "如何将您的WordPress网站添加到谷歌搜索控制台"
 
-#: includes/admin/views/hostinger-onboarding-view.php:42
+#: includes/admin/views/hostinger-onboarding-view.php:43
 msgid "How to Back Up a WordPress Site"
 msgstr "如何备份WordPress网站"
 
-#: includes/admin/views/hostinger-onboarding-view.php:27
+#: includes/admin/views/hostinger-onboarding-view.php:28
 msgid "How to Clear Cache in WordPress Website"
 msgstr "如何清除WordPress网站中的缓存"
 
-#: includes/admin/views/hostinger-onboarding-view.php:22
+#: includes/admin/views/hostinger-onboarding-view.php:23
 msgid "How to Create a WordPress Contact Us Page"
 msgstr "如何创建一个WordPress联系我们页面"
 
-#: includes/admin/views/hostinger-onboarding-view.php:32
+#: includes/admin/views/hostinger-onboarding-view.php:33
 msgid "How to Edit the Footer in WordPress"
 msgstr "如何在WordPress中编辑页脚"
 
-#: includes/admin/views/hostinger-onboarding-view.php:47
+#: includes/admin/views/hostinger-onboarding-view.php:48
 msgid "How to Import Images Into WordPress Website"
 msgstr "如何在WordPress网站中导入图片"
 
-#: includes/admin/views/hostinger-onboarding-view.php:52
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:75
+msgid "How to Point Domain Name to Web Hosting"
+msgstr "如何将域名指向虚拟主机"
+
+#: includes/admin/views/hostinger-onboarding-view.php:53
 msgid "How to Set Up WordPress SMTP"
 msgstr "如何设置WordPress SMTP"
 
@@ -333,23 +408,29 @@ msgid ""
 "and find the post for which you want to change the description."
 msgstr "在左侧栏中，找到“发布内容”按钮。单击“所有发布内容”按钮，找到需要更改详情描述的内容。"
 
-#: includes/admin/class-hostinger-admin-ajax.php:65
-msgid "invalid data"
-msgstr "无效数据"
-
-#: includes/admin/views/hostinger-onboarding-view.php:250
+#: includes/admin/views/hostinger-onboarding-view.php:283
 msgid "Knowledge Base"
 msgstr "知识数据库"
 
 #: includes/admin/class-hostinger-admin-menu.php:36
 #: includes/admin/class-hostinger-admin-menu.php:37
-#: includes/admin/views/hostinger-onboarding-view.php:61
+#: includes/admin/views/hostinger-onboarding-view.php:65
 msgid "Learn"
 msgstr "学习"
 
-#: includes/admin/views/hostinger-onboarding-view.php:37
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:67
+msgid ""
+"Learn how to connect your domain to Hostinger by watching this tutorial on "
+"YouTube for a step-by-step guide:"
+msgstr "请通过在Youtube上观看此教学视频，学习如何将您的域名连接到Hostinger："
+
+#: includes/admin/views/hostinger-onboarding-view.php:38
 msgid "LiteSpeed Cache: How to Get 100% WordPress Optimization"
 msgstr "LiteSpeed 高速缓冲存储器:如何获得100%WordPress优化功能"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:14
+msgid "Login to the Amazon Product Advertising dashboard"
+msgstr "登录至亚马逊产品广告控制面板"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:33
 msgid ""
@@ -357,6 +438,14 @@ msgid ""
 "Include a clear call-to-action (CTA) to encourage visitors to take the next "
 "step for example, to contact you via email or contact form."
 msgstr "通过使用标题和项目符号让页面易于阅读。包括一些明确的行动按钮(CTA)，以鼓励访客采取下一步行动，例如，通过电子邮件或联系表单与您取得联系。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:54
+msgid "Nameserver 1"
+msgstr "域名服务器1"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:60
+msgid "Nameserver 2"
+msgstr "域名服务器2"
 
 #: includes/views/hostinger-coming-soon.php:26
 msgid "New WordPress website is being built and will be published soon"
@@ -382,7 +471,11 @@ msgid ""
 "menu or other relevant posts to make it easy for visitors to find."
 msgstr "如果您的作品集内容准备好了，点击“发布”按钮，在你的网站上实时发布。您可以将链接添加到主导航菜单或其他相关的帖子里，让访问者容易找到。"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:61
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:19
+msgid "Open the Amazon Affiliate plugin configuration"
+msgstr "打开亚马逊联盟插件配置"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:71
 msgid "Preview website"
 msgstr "预览网站"
 
@@ -398,8 +491,8 @@ msgstr "发布页面"
 msgid "Publish the setup"
 msgstr "发布设置"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:71
-#: includes/admin/onboarding/class-hostinger-onboarding.php:73
+#: includes/admin/onboarding/class-hostinger-onboarding.php:81
+#: includes/admin/onboarding/class-hostinger-onboarding.php:83
 msgid "Publish website"
 msgstr "发布网站"
 
@@ -407,21 +500,37 @@ msgstr "发布网站"
 msgid "Publish your page"
 msgstr "发布您的页面"
 
-#: includes/admin/views/hostinger-onboarding-view.php:178
+#: includes/admin/views/hostinger-onboarding-view.php:201
 msgid "Publishing website"
 msgstr "正在发布网站"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:69
+#: includes/admin/onboarding/class-hostinger-onboarding.php:79
 msgid "Set up your website"
 msgstr "设置您的网站"
 
-#: includes/admin/views/hostinger-onboarding-view.php:116
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:83
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:41
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:30
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:34
 msgid "Take me there"
 msgstr "转至界面"
 
-#: includes/admin/views/hostinger-onboarding-view.php:179
+#: includes/admin/views/hostinger-onboarding-view.php:202
 msgid "This can take some time"
 msgstr "这可能需要花费一些时间"
+
+#. translators: %s: link to dashboard
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:16
+msgid ""
+"To gather the necessary information, log in to your <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener\">Amazon Product Advertising dashboard</a> "
+"using your personal Amazon partnership account."
+msgstr ""
+"请用您的个人亚马逊合作伙伴账号登录您的<a href=\"%s\" target=\"_blank\" rel=\"noopener\">"
+"亚马逊产品广告控制面板</a>，获取所有必要信息。"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:16
 msgid ""
@@ -435,6 +544,10 @@ msgid ""
 "To upload a new image, click on Add New button on the Media Library page and "
 "select files."
 msgstr "要上传新图片，请单击媒体库页面上的“添加新的”按钮并选择“文档”。"
+
+#: includes/class-hostinger-errors.php:27
+msgid "Unknown error code."
+msgstr "未知错误代码。"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:5
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:15
@@ -450,12 +563,27 @@ msgstr "上传您的品牌图标"
 msgid "Upload your portfolio projects"
 msgstr "上传您的作品集产品"
 
-#: includes/admin/class-hostinger-admin-ajax.php:37
-#: includes/admin/onboarding/class-hostinger-onboarding.php:58
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:23
+msgid "Wait for domain propagation"
+msgstr "请等待域名迁移"
+
+#: includes/class-hostinger-errors.php:16
+msgid ""
+"We apologize for the inconvenience. The AI content generation process "
+"encountered a server error. Please try again later, and if the issue "
+"persists, kindly contact our support team for assistance."
+msgstr "给您带来不便，我们深表歉意。人工智能内容生成过程遇到服务器错误。请稍后重试，如果问题仍然存在，请联系我们的客户支持团队寻求帮助。"
+
+#: includes/admin/class-hostinger-admin-ajax.php:44
+#: includes/admin/onboarding/class-hostinger-onboarding.php:68
 msgid "Website is published"
 msgstr "网站已发布"
 
-#: includes/admin/views/hostinger-onboarding-view.php:191
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:36
+msgid "Website URL"
+msgstr "网站网址"
+
+#: includes/admin/views/hostinger-onboarding-view.php:214
 msgid "WordPress tutorials"
 msgstr "WordPress 教程"
 
@@ -473,12 +601,32 @@ msgid ""
 "types of content."
 msgstr "当编辑内容时，确保其涵盖了相关的关键词和图片。可以使用不同的模块来创建标题、段落、列表和其他类型的内容。"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:59
+#: includes/admin/onboarding/class-hostinger-onboarding.php:69
 msgid "You can access this guide material any time when updating your website"
 msgstr "在您更新网站时，您可以随时访问此教程资料。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:50
+msgid ""
+"You can connect domain to Hostinger by changing the nameservers. Different "
+"domain providers are have unique procedures for changing nameservers. Here "
+"are Hostinger's nameservers:"
+msgstr ""
+"您可以通过更改域名服务器将域名连接至Hostinger。不同的域名提供商在更改域名服务器时具有不同的操作过程。以下是Hostinger的域名服务器:"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:26
 msgid ""
 "You can see the whole post in the editor. Find the description part and "
 "change it to your preferences."
 msgstr "您可以在编辑器中看到完整内容。找到描述部分并进行更改。"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:39
+msgid ""
+"You need to purchase a domain for your website before the preview domain "
+"becomes inaccessible. Find a desired website name using a"
+msgstr "您需要在域名预览变为不可访问之前为您的网站购买一个域名。立即找到一个合适的域名"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:33
+msgid ""
+"Your website is already published and can be accessed using Hostinger free "
+"temporary subdomain right now. Here is the current URL of your website:"
+msgstr "您已发布网站，现在您可以用Hostinger临时子域名进行访问。您目前的网址是："

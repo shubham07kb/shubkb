@@ -4,8 +4,8 @@ defined( 'ABSPATH' ) || exit;
 
 class Hostinger_Coming_Soon {
 	public function __construct() {
-		add_action( 'wp_footer', [ $this, 'register_styles' ] );
-		add_action( 'template_redirect', [ $this, 'coming_soon' ] );
+		add_action( 'wp_footer', array( $this, 'register_styles' ) );
+		add_action( 'template_redirect', array( $this, 'coming_soon' ) );
 	}
 
 	public function coming_soon(): void {
@@ -16,7 +16,7 @@ class Hostinger_Coming_Soon {
 	}
 
 	public function register_styles(): void {
-		wp_enqueue_style( 'hostinger_main_styles', HOSTINGER_ASSETS_URL . '/css/coming-soon.css', [], HOSTINGER_VERSION );
+		wp_enqueue_style( 'hostinger_main_styles', HOSTINGER_ASSETS_URL . '/css/coming-soon.css', array(), HOSTINGER_VERSION );
 	}
 }
 

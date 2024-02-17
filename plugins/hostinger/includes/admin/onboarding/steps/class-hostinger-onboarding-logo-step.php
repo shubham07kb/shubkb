@@ -6,20 +6,20 @@ class Hostinger_Onboarding_Logo_Step extends Hostinger_Onboarding_Step {
 	}
 
 	public function get_body(): array {
-		return [
-			[
+		return array(
+			array(
 				'title'       => __( 'Create a logo', 'hostinger' ),
 				'description' => __( 'Adding a logo is a great way to personalize a website or add branding information. You can use your existing logo or create a new one using the <a href="https://logo.hostinger.com/?ref=wordpress-onboarding" target="_blank">AI Logo Maker</a>.', 'hostinger' ),
-			],
-			[
+			),
+			array(
 				'title'       => __( 'Go to the Customize page', 'hostinger' ),
-				'description' => __( 'In the left sidebar, click Appearance to expand the menu. In the Appearance section, click Customize. The Customize page will open. ', 'hostinger' )
-			],
-			[
+				'description' => __( 'In the left sidebar, click Appearance to expand the menu. In the Appearance section, click Customize. The Customize page will open. ', 'hostinger' ),
+			),
+			array(
 				'title'       => __( 'Upload your logo', 'hostinger' ),
-				'description' => __( 'In the left sidebar, click Site Identity, then click on the Select Site Icon button. Here, you can upload your brand logo. ', 'hostinger' )
-			],
-		];
+				'description' => __( 'In the left sidebar, click Site Identity, then click on the Select Site Icon button. Here, you can upload your brand logo. ', 'hostinger' ),
+			),
+		);
 	}
 
 	public function step_identifier(): string {

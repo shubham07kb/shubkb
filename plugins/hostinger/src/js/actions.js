@@ -71,5 +71,22 @@
 				}
 			} )
 		} )
+
+		$( ".hsr-promotional-banner .hsr-buttons .close-btn" ).click( function () {
+			$.ajax( {
+				type: 'post',
+				url: hostingerContainer.url,
+				data: {
+					action: 'hostinger_hide_promotional_banner',
+					nonce: hostingerContainer.nonce,
+				},
+				success: function () {
+					$('.hsr-banner-container').hide();
+				},
+				error: function ( xhr, status, error ) {
+					console.log( 'AJAX request failed: ' + error );
+				}
+			} )
+		} );
 	} );
 } )( jQuery );

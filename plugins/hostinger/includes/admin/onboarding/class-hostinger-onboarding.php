@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class Hostinger_Onboarding {
 	private function load_steps(): array {
-		$steps        = [];
+		$steps        = array();
 		$path         = HOSTINGER_ABSPATH . 'includes/admin/onboarding/steps/';
 		$website_type = Hostinger_Settings::get_setting( 'survey.website.type' );
 		$helper       = new Hostinger_Helper();
@@ -24,7 +24,6 @@ class Hostinger_Onboarding {
 		require_once $path . 'class-hostinger-onboarding-add-page.php';
 		require_once $path . 'class-hostinger-onboarding-connect-domain.php';
 
-
 		if ( $website_type === Hostinger_Settings::WEBSITE_TYPE_BLOG ) {
 			require_once $path . 'class-hostinger-onboarding-add-post.php';
 			$steps[] = new Hostinger_Onboarding_Add_Post();
@@ -33,8 +32,8 @@ class Hostinger_Onboarding {
 			$steps[] = new Hostinger_Onboarding_Description();
 		}
 
-		if ( $website_type === Hostinger_Settings::WEBSITE_TYPE_STORE && class_exists( 'WooCommerce' ) ) {
-			require_once $path . 'class-hostinger-onboarding-add-product.php';
+		if ( class_exists( 'WooCommerce' ) ) {
+			require_once $path . 'class-hostinger-onboarding-add-product-step.php';
 			$steps[] = new Hostinger_Onboarding_Add_Product_Step();
 		}
 
@@ -64,26 +63,26 @@ class Hostinger_Onboarding {
 
 	public function get_content(): array {
 		if ( ! $this->maintenance_mode_enabled() ) {
-			return [
+			return array(
 				'title'       => __( 'Website is published', 'hostinger' ),
 				'description' => __( 'You can access this guide material any time when updating your website', 'hostinger' ),
-				'btn'         => [
+				'btn'         => array(
 					'text'  => __( 'Preview website', 'hostinger' ),
 					'class' => 'hsr-btn hsr-primary-btn hsr-publish-btn',
 					'url'   => home_url(),
-				]
-			];
+				),
+			);
 		}
 
-		return [
+		return array(
 			'title'       => __( 'Set up your website', 'hostinger' ),
 			'description' => __( 'Follow our guided checklist to setup your website', 'hostinger' ),
 			'btn_text'    => __( 'Publish website', 'hostinger' ),
-			'btn'         => [
+			'btn'         => array(
 				'text'  => __( 'Publish website', 'hostinger' ),
 				'class' => 'hsr-btn hsr-primary-btn hsr-publish-btn',
 				'url'   => '#',
-			]
-		];
+			),
+		);
 	}
 }

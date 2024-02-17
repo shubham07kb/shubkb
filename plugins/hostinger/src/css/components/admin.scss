@@ -2,15 +2,18 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 32px;
 }
 
 .hsr-onboarding-navbar__wrapper {
-  width: 730px;
-  height: 56px;
+  width: 100%;
+  height: 72px;
   background: #FFFFFF;
-  border: 1px solid #DADCE0;
-  border-radius: 8px;
+  border-bottom: 1px solid #DADCE0;
+
+  @media(max-width: 1000px) {
+    height: 56px;
+  }
+
 }
 
 .hsr-wrapper__list {
@@ -22,11 +25,11 @@
 }
 
 .hsr-list__item {
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: normal;
+  font-size: 16px;
   line-height: 24px;
   color: $gray-base;
-  padding: 16px 24px;
+  padding: 24px 30px;
   cursor: pointer;
   margin: 0;
   display: flex;
@@ -41,11 +44,20 @@
     }
 
   }
+  @media( max-width: 1170px) {
+    padding: 24px 15px;
+    font-size: 14px;
+  }
+  @media( max-width: 1000px) {
+    display: none;
+  }
 }
 
 .hsr-active {
   color: $primary-purple;
-  border-bottom: $primary-purple 1px solid;
+  border-bottom: $primary-purple 2px solid;
+  background-color: $light-purple;
+  padding-top: 25px;
 
   svg {
     margin-right: 5px;
@@ -230,7 +242,7 @@
 
 @media only screen and (max-width: 768px) {
   .hsr-onboarding-step {
-    width: 80%;
+    width: 100%;
   }
 
   .hsr-publish-modal .hsr-publish-modal--body {
@@ -312,6 +324,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0 15px;
 }
 .hsr-page-container-wrapper {
   width: 100%;
@@ -338,6 +351,10 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+
+  @media( max-width: 500px ) {
+    font-size: 14px;
+  }
 }
 
 .hsr-header-youtube {
@@ -495,12 +512,11 @@
 @media only screen and (max-width: 768px) {
   .hsr-wrapper-header {
     justify-content: center;
-    width: max-content;
+    flex-wrap: wrap;
   }
 
   .hsr-tutorial-wrapper, .hsr-page-container-wrapper {
     width: 100%;
-    max-width: 370px;
   }
 
   .hsr-main-video {
@@ -532,7 +548,6 @@
 
   .hsr-help-card {
     margin-bottom: 24px;
-    max-width: 370px;
     width: 100%;
   }
 }

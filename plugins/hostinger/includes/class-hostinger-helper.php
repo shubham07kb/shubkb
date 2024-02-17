@@ -4,6 +4,20 @@ class Hostinger_Helper {
 	public const HOSTINGER_FREE_SUBDOMAIN_URL = 'hostingersite.com';
 	public const HOSTINGER_PAGE = '/wp-admin/admin.php?page=hostinger';
 	public const CLIENT_WOO_COMPLETED_ACTIONS = 'woocommerce_task_list_tracked_completed_tasks';
+	private const PROMOTIONAL_LINKS = array(
+		'fr_FR' => 'https://www.hostinger.fr/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
+		'es_ES' => 'https://www.hostinger.es/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
+		'ar'    => 'https://www.hostinger.ae/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
+		'zh_CN' => 'https://www.hostinger.com.hk/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
+		'id_ID' => 'https://www.hostinger.co.id/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
+		'lt_LT' => 'https://www.hostinger.lt/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
+		'pt_PT' => 'https://www.hostinger.pt/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
+		'uk'    => 'https://www.hostinger.com.ua/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
+		'tr_TR' => 'https://www.hostinger.com.tr/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
+		'en_US' => 'https://www.hostinger.com/cpanel-login?r=%2Fjump-to%2Fnew-panel%2Fsection%2Freferrals&utm_source=Banner&utm_medium=HostingerWPplugin',
+	);
+
+	private const HPANEL_DOMAIN_URL = 'https://hpanel.hostinger.com/websites/';
 
 	/**
 	 *
@@ -30,7 +44,6 @@ class Hostinger_Helper {
 		if ( file_exists( $token_file ) && ! empty( file_get_contents( $token_file ) ) ) {
 			$api_token = file_get_contents( $token_file );
 		}
-
 		return $api_token;
 	}
 
@@ -41,9 +54,8 @@ class Hostinger_Helper {
 	 * @since    1.7.0
 	 * @access   public
 	 */
-
 	public function get_host_info(): string {
-		$host     = $_SERVER['HTTP_HOST'] ?? '';
+		$host     = isset( $_SERVER['HTTP_HOST'] ) ? sanitize_text_field( $_SERVER['HTTP_HOST'] ) : '';
 		$site_url = get_site_url();
 		$site_url = preg_replace( '#^https?://#', '', $site_url );
 
@@ -78,7 +90,7 @@ class Hostinger_Helper {
 
 	public function is_hostinger_admin_page(): bool {
 
-		if( ! isset( $_SERVER['REQUEST_URI'] ) ) {
+		if ( ! isset( $_SERVER['REQUEST_URI'] ) ) {
 			return false;
 		}
 
@@ -113,13 +125,14 @@ class Hostinger_Helper {
 	}
 
 	public function default_woocommerce_survey_steps_completed( array $steps ): bool {
-		$completed_actions          = get_option( self::CLIENT_WOO_COMPLETED_ACTIONS, array() );
+		$completed_actions = get_option( self::CLIENT_WOO_COMPLETED_ACTIONS, array() );
+
 		return empty( array_diff( $steps, $completed_actions ) );
 	}
 
 	public function is_this_page( string $page ): bool {
 
-		if( ! isset( $_SERVER['REQUEST_URI'] ) ) {
+		if ( ! isset( $_SERVER['REQUEST_URI'] ) ) {
 			return false;
 		}
 
@@ -138,6 +151,50 @@ class Hostinger_Helper {
 		}
 
 		return false;
+	}
+
+	public function get_promotional_link_url( string $locale ): string {
+		if ( isset( self::PROMOTIONAL_LINKS[ $locale ] ) ) {
+			return self::PROMOTIONAL_LINKS[ $locale ];
+		}
+
+		return self::PROMOTIONAL_LINKS['en_US'];
+	}
+
+	public function get_domain_from_url(): string {
+		$host = parse_url( get_site_url(), PHP_URL_HOST );
+
+		return $host === false ? self::HPANEL_DOMAIN_URL : $host;
+	}
+
+	public function get_hpanel_domain_url(): string {
+		$domain_url =  $this->get_domain_from_url();
+
+		if( $domain_url === self::HPANEL_DOMAIN_URL ) {
+			return $domain_url;
+		}
+
+		return self::HPANEL_DOMAIN_URL . $domain_url;
+	}
+
+	public function check_transient_eligibility( $transient_request_key, $cache_time = 3600 ): bool {
+		try {
+			// Set transient
+			set_transient( $transient_request_key, true, $cache_time );
+
+			// Check if transient was set successfully
+			if ( false === get_transient( $transient_request_key ) ) {
+				throw new Exception( 'Unable to create transient in WordPress.' );
+			}
+
+			// If everything is fine, return true
+			return true;
+
+		} catch ( Exception $exception ) {
+			// If there's an exception, log the error and return false
+			$this->helper->error_log( 'Error checking eligibility: ' . $exception->getMessage() );
+			return false;
+		}
 	}
 }
 

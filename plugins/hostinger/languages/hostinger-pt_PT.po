@@ -3,21 +3,26 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:27+0000\n"
-"PO-Revision-Date: 2023-09-17 09:13+0000\n"
+"PO-Revision-Date: 2024-02-04 14:05+0000\n"
 "Last-Translator: \n"
-"Language-Team: Portuguese (Portugal)\n"
+"Language-Team: Português\n"
 "Language: pt_PT\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.4; wp-6.3.1\n"
+"X-Loco-Version: 2.6.6; wp-6.3.3\n"
 "X-Domain: hostinger"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:15
 msgid "Access the Site identity and edit title"
-msgstr "Aceder à identidade do site e editar o título"
+msgstr "Aceda à identidade do site e edite o título"
+
+#: includes/class-hostinger-errors.php:10
+msgid "Action Failed. Try again or contact support. Apologies."
+msgstr ""
+"A ação falhou. Tente novamente ou contacte o apoio. As nossas desculpas."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:43
 msgid "Add a gallery block"
@@ -63,23 +68,31 @@ msgid "Add your product"
 msgstr "Adicione o seu produto"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:12
+#| msgid ""
+#| "Adding a logo is a great way to personalize a website or add branding "
+#| "information. You can use your existing logo or create a new one using the "
+#| "<a href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
+#| "target=\"_blank\">Ai Logo Maker</a>."
 msgid ""
 "Adding a logo is a great way to personalize a website or add branding "
 "information. You can use your existing logo or create a new one using the <a "
 "href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
-"target=\"_blank\">Ai Logo Maker</a>."
+"target=\"_blank\">AI Logo Maker</a>."
 msgstr ""
 "Adicionar um logotipo é uma ótima maneira de personalizar um site ou "
-"adicionar informações de branding. Pode utilizar o seu logotipo existente ou "
-"criar um novo utilizando o <a href=\"https://logo.hostinger.com/?"
-"ref=wordpress-onboarding\" target=\"_blank\">Criador de Logos IA</a>."
+"adicionar informações sobre a marca. Pode utilizar o seu logotipo existente "
+"ou criar um novo utilizando o <a href=\"https://logo.hostinger.com/?"
+"ref=wordpress-onboarding\" target=\"_blank\"\">Criador de Logos IA</a>."
 
-#: includes/admin/class-hostinger-admin-menu.php:46
 #: includes/admin/class-hostinger-admin-menu.php:47
-#: includes/admin/views/hostinger-onboarding-view.php:67
-#| msgid "AI Assistant"
-msgid "AI assistant"
-msgstr "Assistente IA"
+#: includes/admin/class-hostinger-admin-menu.php:48
+#: includes/admin/views/hostinger-onboarding-view.php:74
+msgid "AI Content Creator"
+msgstr "Criador de Conteúdo IA"
+
+#: includes/class-hostinger-errors.php:13
+msgid "An unexpected error occurred. Please try again or contact support."
+msgstr "Ocorreu um erro inesperado. Tente novamente ou contacte o apoio."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:67
 msgid ""
@@ -90,7 +103,7 @@ msgstr ""
 "Pré-visualizar. Se estiver satisfeito com o resultado, clique no botão "
 "Publicar."
 
-#: includes/admin/views/hostinger-onboarding-view.php:181
+#: includes/admin/views/hostinger-onboarding-view.php:207
 msgid "Close"
 msgstr "Fechar"
 
@@ -107,9 +120,42 @@ msgstr ""
 msgid "Coming Soon"
 msgstr "Brevemente"
 
-#: includes/admin/class-hostinger-admin-ajax.php:38
+#. translators: %s: link to dashboard
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:26
+msgid ""
+"Complete the form with required information related to Amazon's partnership "
+"API. Retrieve all this information from the <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Amazon Product Advertising dashboard</a> and paste it into "
+"the form."
+msgstr ""
+"Preencha o formulário com as informações necessárias relacionadas com a API "
+"de parceiro da Amazon. Obtenha todas essas informações do <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener\">painel de publicidade de produtos da "
+"Amazon</a> e cole-as no formulário."
+
+#: includes/admin/class-hostinger-admin-ajax.php:81
 msgid "Congratulations! Your website is online."
 msgstr "Parabéns! O seu site está online. "
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:40
+msgid "Connect Amazon Account"
+msgstr "Conectar a conta Amazon"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:8
+msgid "Connect Amazon partnership account"
+msgstr "Conectar a conta de parceiro da Amazon"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:111
+msgid "Connect domain now"
+msgstr "Conectar o domínio agora"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:9
+msgid "Connect your domain"
+msgstr "Conecte o seu domínio"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:19
+msgid "Connect your domain to Hostinger"
+msgstr "Conecte o seu domínio à Hostinger"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:63
 msgid ""
@@ -120,6 +166,10 @@ msgstr ""
 "O conteúdo pode ser qualquer coisa que deseje, por exemplo, texto, imagens, "
 "vídeos, tabelas e muito mais. Clique no sinal de mais e selecione qualquer "
 "bloco que queira adicionar à página."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:24
+msgid "Copy-Paste the necessary information:"
+msgstr "Copie e cole as informações necessárias:"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:11
 msgid "Create a catchy headline"
@@ -149,6 +199,19 @@ msgstr "Crie uma página descrevendo os seus serviços "
 msgid "Create your first blog post"
 msgstr "Crie a sua primeira publicação no blog"
 
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:40
+msgid "domain name searcher."
+msgstr "pesquisador de nomes de domínio."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:24
+msgid ""
+"Domain propagation can take up to 24 hours. Your domain will propagate "
+"automatically, and you don't need to take any action during this time."
+msgstr ""
+"A propagação do domínio pode demorar até 24 horas. O seu domínio propagar-se-"
+"á automaticamente e não é necessário realizar qualquer ação durante este "
+"período."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:15
 msgid "Draft your post"
 msgstr "Escrever a sua publicação"
@@ -173,11 +236,22 @@ msgstr "Editar descrição da publicação"
 msgid "Edit site title"
 msgstr "Editar título do site"
 
+#. translators: %s: link to plugin page
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:21
+msgid ""
+"Fill in the required details on the <a href=\"%s\" class=\"hst-open-"
+"affiliate-tab\">Amazon Affiliate plugin page</a>, where you'll find all the "
+"necessary information about the plugin."
+msgstr ""
+"Preencha os detalhes necessários na <a href=\"%s\" class=\"hst-open-"
+"affiliate-tab\">página do plugin Afiliado da Amazon</a>, onde encontrará "
+"todas as informações necessárias sobre o plugin."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:32
 msgid "Finalize the page"
 msgstr "Finalizar a página"
 
-#: includes/admin/views/hostinger-onboarding-view.php:251
+#: includes/admin/views/hostinger-onboarding-view.php:290
 msgid "Find the answers you need in our Knowledge Base"
 msgstr "Encontre as respostas que precisa na nossa Base de Conhecimento"
 
@@ -185,17 +259,21 @@ msgstr "Encontre as respostas que precisa na nossa Base de Conhecimento"
 msgid "Find the Media page"
 msgstr "Encontre a página Media"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:70
+#: includes/admin/onboarding/class-hostinger-onboarding.php:80
 msgid "Follow our guided checklist to setup your website"
 msgstr "Siga a nossa lista de verificação para configurar o seu site"
 
-#: includes/admin/views/hostinger-onboarding-view.php:262
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:15
+msgid "Get a domain"
+msgstr "Obter um domínio"
+
+#: includes/admin/views/hostinger-onboarding-view.php:301
 msgid "Get in touch with our live specialists"
 msgstr "Entre em contacto com os nossos especialistas ao vivo"
 
 #: includes/admin/class-hostinger-admin-menu.php:26
 #: includes/admin/class-hostinger-admin-menu.php:27
-#: includes/admin/views/hostinger-onboarding-view.php:60
+#: includes/admin/views/hostinger-onboarding-view.php:66
 #| msgid "Get Started"
 msgid "Get started"
 msgstr "Começar"
@@ -229,11 +307,11 @@ msgstr ""
 msgid "Go to the Customize page"
 msgstr "Vá para a página Personalizar"
 
-#: includes/admin/views/hostinger-onboarding-view.php:111
+#: includes/admin/views/hostinger-onboarding-view.php:137
 msgid "Got it!"
 msgstr "Já está!"
 
-#: includes/admin/views/hostinger-onboarding-view.php:261
+#: includes/admin/views/hostinger-onboarding-view.php:300
 msgid "Help Center"
 msgstr "Centro de Ajuda"
 
@@ -244,7 +322,7 @@ msgstr "Centro de Ajuda"
 msgid "Hostinger"
 msgstr "Hostinger"
 
-#: includes/admin/views/hostinger-onboarding-view.php:198
+#: includes/admin/views/hostinger-onboarding-view.php:224
 msgid "Hostinger Academy"
 msgstr "Academia Hostinger"
 
@@ -260,32 +338,36 @@ msgstr ""
 "Passe o rato sobre a publicação escolhida para ver o menu de opções. Clique "
 "no botão Editar para abrir o editor de publicações."
 
-#: includes/admin/views/hostinger-onboarding-view.php:17
-#: includes/admin/views/hostinger-onboarding-view.php:209
+#: includes/admin/views/hostinger-onboarding-view.php:20
+#: includes/admin/views/hostinger-onboarding-view.php:245
 msgid "How to Add Your WordPress Website to Google Search Console"
 msgstr "Como adicionar o seu site WordPress ao Google Search Console"
 
-#: includes/admin/views/hostinger-onboarding-view.php:42
+#: includes/admin/views/hostinger-onboarding-view.php:45
 msgid "How to Back Up a WordPress Site"
 msgstr "Como fazer o backup de um site WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:27
+#: includes/admin/views/hostinger-onboarding-view.php:30
 msgid "How to Clear Cache in WordPress Website"
 msgstr "Como limpar a cache num site WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:22
+#: includes/admin/views/hostinger-onboarding-view.php:25
 msgid "How to Create a WordPress Contact Us Page"
 msgstr "Como criar uma página Contactos no WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:32
+#: includes/admin/views/hostinger-onboarding-view.php:35
 msgid "How to Edit the Footer in WordPress"
 msgstr "Como editar o rodapé no WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:47
+#: includes/admin/views/hostinger-onboarding-view.php:50
 msgid "How to Import Images Into WordPress Website"
 msgstr "Como importar imagens para um site WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:52
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:75
+msgid "How to Point Domain Name to Web Hosting"
+msgstr "Como apontar o nome de domínio para o alojamento web"
+
+#: includes/admin/views/hostinger-onboarding-view.php:55
 msgid "How to Set Up WordPress SMTP"
 msgstr "Como configurar o SMTP do WordPress"
 
@@ -376,23 +458,37 @@ msgstr ""
 "Todas as publicações e localize a publicação para a qual pretende alterar a "
 "descrição."
 
-#: includes/admin/class-hostinger-admin-ajax.php:65
-msgid "invalid data"
-msgstr "dados inválidos"
+# 00
+#: includes/admin/views/partials/hostinger-promotional-banner.php:5
+msgid "Invite a Friend, Earn Up to $100"
+msgstr "Convide um Amigo, Ganhe Até $100"
 
-#: includes/admin/views/hostinger-onboarding-view.php:250
+#: includes/admin/views/hostinger-onboarding-view.php:289
 msgid "Knowledge Base"
 msgstr "Base de Conhecimento"
 
 #: includes/admin/class-hostinger-admin-menu.php:36
 #: includes/admin/class-hostinger-admin-menu.php:37
-#: includes/admin/views/hostinger-onboarding-view.php:61
+#: includes/admin/views/hostinger-onboarding-view.php:67
 msgid "Learn"
 msgstr "Aprender"
 
-#: includes/admin/views/hostinger-onboarding-view.php:37
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:67
+msgid ""
+"Learn how to connect your domain to Hostinger by watching this tutorial on "
+"YouTube for a step-by-step guide:"
+msgstr ""
+"Saiba como conectar o seu domínio à Hostinger assistindo a este tutorial "
+"passo a passo no YouTube:"
+
+#: includes/admin/views/hostinger-onboarding-view.php:40
 msgid "LiteSpeed Cache: How to Get 100% WordPress Optimization"
 msgstr "Cache LiteSpeed: Como obter 100% de otimização do WordPress"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:14
+msgid "Login to the Amazon Product Advertising dashboard"
+msgstr ""
+"Inicie a sessão no painel de controlo da Publicidade de Produtos da Amazon"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:33
 msgid ""
@@ -405,9 +501,25 @@ msgstr ""
 "passo seguinte, por exemplo, a contactá-lo por email ou através do "
 "formulário de contacto."
 
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:54
+msgid "Nameserver 1"
+msgstr "Nameserver 1"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:60
+msgid "Nameserver 2"
+msgstr "Nameserver 2"
+
 #: includes/views/hostinger-coming-soon.php:26
 msgid "New WordPress website is being built and will be published soon"
 msgstr "O novo site WordPress está a ser construído e será publicado em breve"
+
+#: includes/admin/views/partials/hostinger-rate-us.php:36
+msgid ""
+"on <a\n"
+"\t\t\t   href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-"
+"post\"\n"
+"\t\t\t   target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
+msgstr "em WordPress.org"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:20
 msgid ""
@@ -439,7 +551,11 @@ msgstr ""
 "de navegação principal ou a outras publicações relevantes para facilitar a "
 "sua localização pelos visitantes."
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:61
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:19
+msgid "Open the Amazon Affiliate plugin configuration"
+msgstr "Abra a configuração do plugin Afiliado da Amazon"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:71
 msgid "Preview website"
 msgstr "Pré-visualizar o site"
 
@@ -455,8 +571,8 @@ msgstr "Publicar a página"
 msgid "Publish the setup"
 msgstr "Publicar a configuração"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:71
-#: includes/admin/onboarding/class-hostinger-onboarding.php:73
+#: includes/admin/onboarding/class-hostinger-onboarding.php:81
+#: includes/admin/onboarding/class-hostinger-onboarding.php:83
 msgid "Publish website"
 msgstr "Publicar o site"
 
@@ -464,21 +580,54 @@ msgstr "Publicar o site"
 msgid "Publish your page"
 msgstr "Publicar a sua página"
 
-#: includes/admin/views/hostinger-onboarding-view.php:178
+#: includes/admin/views/hostinger-onboarding-view.php:204
 msgid "Publishing website"
 msgstr "Publicando o site"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:69
+#: includes/admin/views/partials/hostinger-rate-us.php:2
+msgid "Rate this plugin"
+msgstr "Avalie este plugin"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:79
 msgid "Set up your website"
 msgstr "Configure o seu site"
 
-#: includes/admin/views/hostinger-onboarding-view.php:116
+#: includes/admin/views/partials/hostinger-promotional-banner.php:6
+msgid ""
+"Share your referral link with friends and family and <b>receive 20% "
+"commission</b> for every successful referral."
+msgstr ""
+"Partilhe o seu link de referência com amigos e família e <receba uma "
+"comissão de 20%> por cada referência bem-sucedida."
+
+#: includes/admin/views/partials/hostinger-promotional-banner.php:11
+msgid "Start earning"
+msgstr "Comece a ganhar"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:83
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:41
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:30
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:34
 msgid "Take me there"
 msgstr "Leve-me lá"
 
-#: includes/admin/views/hostinger-onboarding-view.php:179
+#: includes/admin/views/hostinger-onboarding-view.php:205
 msgid "This can take some time"
 msgstr "Isto pode demorar algum tempo"
+
+#. translators: %s: link to dashboard
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:16
+msgid ""
+"To gather the necessary information, log in to your <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener\">Amazon Product Advertising dashboard</a> "
+"using your personal Amazon partnership account."
+msgstr ""
+"Para reunir as informações necessárias, inicie sessão no seu <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener\">painel de controlo da Publicidade de "
+"Produtos da Amazon</a> utilizando a sua conta pessoal de parceiro da Amazon."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:16
 msgid ""
@@ -499,6 +648,10 @@ msgstr ""
 "Para carregar uma nova imagem, clique no botão Adicionar nova na página "
 "Biblioteca de Média e selecione os ficheiros."
 
+#: includes/class-hostinger-errors.php:27
+msgid "Unknown error code."
+msgstr "Código de erro desconhecido."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:5
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:15
 msgid "Upload an image"
@@ -514,12 +667,30 @@ msgstr "Carregue o seu logo"
 msgid "Upload your portfolio projects"
 msgstr "Carregue os seus projetos de portfolio"
 
-#: includes/admin/class-hostinger-admin-ajax.php:37
-#: includes/admin/onboarding/class-hostinger-onboarding.php:58
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:23
+msgid "Wait for domain propagation"
+msgstr "Aguarde a propagação do domínio"
+
+#: includes/class-hostinger-errors.php:16
+msgid ""
+"We apologize for the inconvenience. The AI content generation process "
+"encountered a server error. Please try again later, and if the issue "
+"persists, kindly contact our support team for assistance."
+msgstr ""
+"Pedimos desculpa pelo incómodo. O processo de geração de conteúdos por IA "
+"encontrou um erro no servidor. Tente novamente mais tarde e, se o problema "
+"persistir, contacte a nossa equipa de apoio para obter assistência."
+
+#: includes/admin/class-hostinger-admin-ajax.php:80
+#: includes/admin/onboarding/class-hostinger-onboarding.php:68
 msgid "Website is published"
 msgstr "O site está publicado"
 
-#: includes/admin/views/hostinger-onboarding-view.php:191
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:36
+msgid "Website URL"
+msgstr "URL do site"
+
+#: includes/admin/views/hostinger-onboarding-view.php:217
 msgid "WordPress tutorials"
 msgstr "Tutoriais WordPress"
 
@@ -543,11 +714,21 @@ msgstr ""
 "imagens relevantes. Pode utilizar diferentes blocos para criar títulos, "
 "parágrafos, listas e outros tipos de conteúdo."
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:59
+#: includes/admin/onboarding/class-hostinger-onboarding.php:69
 msgid "You can access this guide material any time when updating your website"
 msgstr ""
 "Pode aceder a este material de orientação a qualquer momento ao atualizar o "
 "seu site"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:50
+msgid ""
+"You can connect domain to Hostinger by changing the nameservers. Different "
+"domain providers are have unique procedures for changing nameservers. Here "
+"are Hostinger's nameservers:"
+msgstr ""
+"Pode conectar o domínio à Hostinger alterando os nameservers. Diferentes "
+"fornecedores de domínios têm procedimentos únicos para alterar os "
+"nameservers. Aqui estão os nameservers da Hostinger:"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:26
 msgid ""
@@ -556,3 +737,21 @@ msgid ""
 msgstr ""
 "Pode ver a publicação completa no editor. Localize a parte da descrição e "
 "altere-a de acordo com as suas preferências."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:39
+msgid ""
+"You need to purchase a domain for your website before the preview domain "
+"becomes inaccessible. Find a desired website name using a"
+msgstr ""
+"É necessário comprar um domínio para o seu site antes que o domínio de pré-"
+"visualização se torne inacessível. Encontre o nome desajado para o site "
+"usando um"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:33
+msgid ""
+"Your website is already published and can be accessed using Hostinger free "
+"temporary subdomain right now. Here is the current URL of your website:"
+msgstr ""
+"O seu site já está publicado e pode ser acedido usando o subdomínio "
+"temporário gratuito da Hostinger neste momento. Aqui está o URL atual do seu "
+"site:"

@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class Hostinger_Admin_Menu {
 	public function __construct() {
-		add_action( 'admin_menu', [ $this, 'admin_menu' ] );
+		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 	}
 
 	public function admin_menu(): void {
@@ -16,7 +16,7 @@ class Hostinger_Admin_Menu {
 			__( 'Hostinger', 'hostinger' ),
 			'manage_options',
 			'hostinger',
-			[ $this, 'render' ],
+			array( $this, 'render' ),
 			$icon,
 			1
 		);
@@ -54,7 +54,6 @@ class Hostinger_Admin_Menu {
 		}
 
 		remove_submenu_page( 'hostinger', 'hostinger' );
-
 	}
 
 	public function render(): void {

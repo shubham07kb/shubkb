@@ -2,14 +2,14 @@
 # This file is distributed under the GPL v3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Hostinger 2.0.1\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hostinger\n"
+"Project-Id-Version: Hostinger 2.0.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hostinger-wordpress-plugin\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-01-16T12:49:25+00:00\n"
+"POT-Creation-Date: 2024-02-09T18:17:58+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.8.1\n"
 "X-Domain: hostinger\n"
@@ -33,51 +33,51 @@ msgstr ""
 msgid "https://www.hostinger.com"
 msgstr ""
 
-#: includes/admin/class-hostinger-admin-ajax.php:44
-#: includes/admin/onboarding/class-hostinger-onboarding.php:68
+#: includes/admin/class-hostinger-admin-ajax.php:134
+#: includes/admin/onboarding/class-hostinger-onboarding.php:67
 msgid "Website is published"
 msgstr ""
 
-#: includes/admin/class-hostinger-admin-ajax.php:45
+#: includes/admin/class-hostinger-admin-ajax.php:135
 msgid "Congratulations! Your website is online."
 msgstr ""
 
 #: includes/admin/class-hostinger-admin-menu.php:26
 #: includes/admin/class-hostinger-admin-menu.php:27
-#: includes/admin/views/hostinger-onboarding-view.php:64
+#: includes/admin/views/hostinger-onboarding-view.php:92
 msgid "Get started"
 msgstr ""
 
 #: includes/admin/class-hostinger-admin-menu.php:36
 #: includes/admin/class-hostinger-admin-menu.php:37
-#: includes/admin/views/hostinger-onboarding-view.php:65
+#: includes/admin/views/hostinger-onboarding-view.php:93
 msgid "Learn"
 msgstr ""
 
 #: includes/admin/class-hostinger-admin-menu.php:47
 #: includes/admin/class-hostinger-admin-menu.php:48
-#: includes/admin/views/hostinger-onboarding-view.php:71
+#: includes/admin/views/hostinger-onboarding-view.php:99
 msgid "AI Content Creator"
 msgstr ""
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:69
+#: includes/admin/onboarding/class-hostinger-onboarding.php:68
 msgid "You can access this guide material any time when updating your website"
 msgstr ""
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:71
+#: includes/admin/onboarding/class-hostinger-onboarding.php:70
 msgid "Preview website"
 msgstr ""
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:79
+#: includes/admin/onboarding/class-hostinger-onboarding.php:78
 msgid "Set up your website"
 msgstr ""
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:80
+#: includes/admin/onboarding/class-hostinger-onboarding.php:79
 msgid "Follow our guided checklist to setup your website"
 msgstr ""
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:81
-#: includes/admin/onboarding/class-hostinger-onboarding.php:83
+#: includes/admin/onboarding/class-hostinger-onboarding.php:80
+#: includes/admin/onboarding/class-hostinger-onboarding.php:82
 msgid "Publish website"
 msgstr ""
 
@@ -170,10 +170,10 @@ msgstr ""
 msgid "Before publishing, you can preview your created page by clicking on the Preview button. If you are happy with the result, click the Publish button."
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:83
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:82
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:34
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:34
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:41
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product-step.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:40
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:30
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:34
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:34
@@ -208,31 +208,31 @@ msgstr ""
 msgid "Once you have finished drafting your post, read it over to check for errors, make any necessary revisions, and then publish it to your blog."
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:5
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product-step.php:5
 msgid "Add your first product"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:11
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product-step.php:11
 msgid "Add your product"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:12
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product-step.php:12
 msgid "Go to Products → Add New or Create Product and enter your product name and description."
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:15
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product-step.php:15
 msgid "Add products image and price"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:16
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product-step.php:16
 msgid "To make the product stand out, upload a picture of it. During the setup of your wanted item, be sure to add its price and any other relevant information. Product categories and tags to help organize your products."
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:19
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product-step.php:19
 msgid "Publish the setup"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:20
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product-step.php:20
 msgid "Once fields are filled, and your item has an image, description, and price, it’s time to publish it online. You will find the “publish” button at the top of the page, near the description field."
 msgstr ""
 
@@ -271,63 +271,63 @@ msgstr ""
 msgid "Connect Amazon Account"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:9
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:10
 msgid "Connect your domain"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:15
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:16
 msgid "Get a domain"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:19
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:20
 msgid "Connect your domain to Hostinger"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:23
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:24
 msgid "Wait for domain propagation"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:24
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:25
 msgid "Domain propagation can take up to 24 hours. Your domain will propagate automatically, and you don't need to take any action during this time."
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:33
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:34
 msgid "Your website is already published and can be accessed using Hostinger free temporary subdomain right now. Here is the current URL of your website:"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:36
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:37
 msgid "Website URL"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:39
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:41
 msgid "You need to purchase a domain for your website before the preview domain becomes inaccessible. Find a desired website name using a"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:40
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:42
 msgid "domain name searcher."
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:50
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:54
 msgid "You can connect domain to Hostinger by changing the nameservers. Different domain providers are have unique procedures for changing nameservers. Here are Hostinger's nameservers:"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:54
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:58
 msgid "Nameserver 1"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:60
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:68
 msgid "Nameserver 2"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:67
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:79
 msgid "Learn how to connect your domain to Hostinger by watching this tutorial on YouTube for a step-by-step guide:"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:75
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:88
 msgid "How to Point Domain Name to Web Hosting"
 msgstr ""
 
-#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:111
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:132
 msgid "Connect domain now"
 msgstr ""
 
@@ -426,77 +426,104 @@ msgstr ""
 msgid "In the left sidebar, click Site Identity, then click on the Select Site Icon button. Here, you can upload your brand logo. "
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:18
-#: includes/admin/views/hostinger-onboarding-view.php:242
+#: includes/admin/views/hostinger-onboarding-view.php:20
+#: includes/admin/views/hostinger-onboarding-view.php:279
 msgid "How to Add Your WordPress Website to Google Search Console"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:23
+#: includes/admin/views/hostinger-onboarding-view.php:25
 msgid "How to Create a WordPress Contact Us Page"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:28
+#: includes/admin/views/hostinger-onboarding-view.php:30
 msgid "How to Clear Cache in WordPress Website"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:33
+#: includes/admin/views/hostinger-onboarding-view.php:35
 msgid "How to Edit the Footer in WordPress"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:38
+#: includes/admin/views/hostinger-onboarding-view.php:40
 msgid "LiteSpeed Cache: How to Get 100% WordPress Optimization"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:43
+#: includes/admin/views/hostinger-onboarding-view.php:45
 msgid "How to Back Up a WordPress Site"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:48
+#: includes/admin/views/hostinger-onboarding-view.php:50
 msgid "How to Import Images Into WordPress Website"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:53
+#: includes/admin/views/hostinger-onboarding-view.php:55
 msgid "How to Set Up WordPress SMTP"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:134
+#: includes/admin/views/hostinger-onboarding-view.php:123
+msgid "Go to hPanel"
+msgstr ""
+
+#: includes/admin/views/hostinger-onboarding-view.php:171
 msgid "Got it!"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:201
+#: includes/admin/views/hostinger-onboarding-view.php:238
 msgid "Publishing website"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:202
+#: includes/admin/views/hostinger-onboarding-view.php:239
 msgid "This can take some time"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:204
+#: includes/admin/views/hostinger-onboarding-view.php:241
 msgid "Close"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:214
+#: includes/admin/views/hostinger-onboarding-view.php:251
 msgid "WordPress tutorials"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:221
+#: includes/admin/views/hostinger-onboarding-view.php:258
 msgid "Hostinger Academy"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:283
+#: includes/admin/views/hostinger-onboarding-view.php:320
 msgid "Knowledge Base"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:284
+#: includes/admin/views/hostinger-onboarding-view.php:321
 msgid "Find the answers you need in our Knowledge Base"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:294
+#: includes/admin/views/hostinger-onboarding-view.php:331
 msgid "Help Center"
 msgstr ""
 
-#: includes/admin/views/hostinger-onboarding-view.php:295
+#: includes/admin/views/hostinger-onboarding-view.php:332
 msgid "Get in touch with our live specialists"
+msgstr ""
+
+#: includes/admin/views/partials/hostinger-promotional-banner.php:5
+msgid "Invite a Friend, Earn Up to $100"
+msgstr ""
+
+#: includes/admin/views/partials/hostinger-promotional-banner.php:6
+msgid "Share your referral link with friends and family and <b>receive 20% commission</b> for every successful referral."
+msgstr ""
+
+#: includes/admin/views/partials/hostinger-promotional-banner.php:11
+msgid "Start earning"
+msgstr ""
+
+#: includes/admin/views/partials/hostinger-rate-us.php:2
+msgid "Rate this plugin"
+msgstr ""
+
+#: includes/admin/views/partials/hostinger-rate-us.php:36
+msgid ""
+"on <a\n"
+"\t\t\t   href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-post\"\n"
+"\t\t\t   target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
 msgstr ""
 
 #: includes/class-hostinger-errors.php:10
@@ -513,6 +540,75 @@ msgstr ""
 
 #: includes/class-hostinger-errors.php:27
 msgid "Unknown error code."
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys-questions.php:13
+msgid "How would you rate your experience using our AI Assistant plugin for content generation? (Scale 1-10)"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys-questions.php:14
+msgid "How would you rate your experience setting up a WooCommerce site on our hosting?"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys-questions.php:15
+msgid "How would you rate your experience using our AI content generation tools in onboarding? (Scale 1-10)"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys-questions.php:16
+msgid "How would you rate your experience publishing Amazon Affiliate links?"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys-questions.php:20
+#: includes/surveys/class-hostinger-surveys-questions.php:22
+msgid "Do you have any comments/suggestions to improve our AI tools?"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys-questions.php:21
+msgid "Do you have any comments/suggestions to improve our WooCommerce onboarding?"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys-questions.php:23
+msgid "How could we improve the Amazon Affiliate plugin and theme?"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys.php:269
+msgid "Survey completed"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys.php:289
+msgid "Next"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys.php:290
+msgid "Previous"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys.php:291
+msgid "Submit"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys.php:292
+msgid "Thank you for completing the survey !"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys.php:320
+msgid "Response required."
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys.php:332
+msgid "Poor"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys.php:333
+msgid "Excellent"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys.php:380
+msgid "Question"
+msgstr ""
+
+#: includes/surveys/class-hostinger-surveys.php:386
+msgid "of "
 msgstr ""
 
 #: includes/views/hostinger-coming-soon.php:6

@@ -18,14 +18,16 @@ class Hostinger_Requests_Client {
 		$request_args = array(
 			'method'  => 'GET',
 			'headers' => array_merge( $this->default_headers, $headers ),
-			'timeout' => $timeout
+			'timeout' => $timeout,
 		);
 
 		if ( ! empty( $params ) ) {
 			$url = add_query_arg( $params, $url );
 		}
 
-		return wp_remote_get( $url, $request_args );
+		$response = wp_remote_get( $url, $request_args );
+
+		return $response;
 	}
 
 	public function post( $endpoint, $params = array(), $headers = array(), $timeout = 120 ) {
@@ -37,6 +39,8 @@ class Hostinger_Requests_Client {
 			'body'    => $params,
 		);
 
-		return wp_remote_post( $url, $request_args );
+		$response = wp_remote_post( $url, $request_args );
+
+		return $response;
 	}
 }

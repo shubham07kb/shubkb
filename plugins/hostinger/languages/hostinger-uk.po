@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: Hostinger\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 08:27+0000\n"
-"PO-Revision-Date: 2023-09-08 11:17+0000\n"
-"Last-Translator: \n"
-"Language-Team: Ukrainian\n"
+"PO-Revision-Date: 2024-02-05 21:25+0000\n"
+"Last-Translator: Julia\n"
+"Language-Team: Українська\n"
 "Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
 "n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
@@ -13,12 +13,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.4; wp-6.3.1\n"
+"X-Loco-Version: 2.6.6; wp-6.3.3\n"
 "X-Domain: hostinger"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:15
 msgid "Access the Site identity and edit title"
 msgstr "Доступ до айдентики сайту та редагування заголовка"
+
+#: includes/class-hostinger-errors.php:10
+msgid "Action Failed. Try again or contact support. Apologies."
+msgstr ""
+"Не вдалося виконати дію. Спробуйте ще раз або зверніться до служби підтримки."
+" "
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:43
 msgid "Add a gallery block"
@@ -64,23 +70,33 @@ msgid "Add your product"
 msgstr "Додати продукт"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:12
+#, fuzzy
+#| msgid ""
+#| "Adding a logo is a great way to personalize a website or add branding "
+#| "information. You can use your existing logo or create a new one using the "
+#| "<a href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
+#| "target=\"_blank\">Ai Logo Maker</a>."
 msgid ""
 "Adding a logo is a great way to personalize a website or add branding "
 "information. You can use your existing logo or create a new one using the <a "
 "href=\"https://logo.hostinger.com/?ref=wordpress-onboarding\" "
-"target=\"_blank\">Ai Logo Maker</a>."
+"target=\"_blank\">AI Logo Maker</a>."
 msgstr ""
 "Логотип – чудовий спосіб ідентифікувати бренд. Ви можете використати наявний "
 "логотип або створити новий за допомогою <a href=\"https://logo.hostinger."
 "com/?ref=wordpress-onboarding\" target=\"_blank\">конструктора лого ШІ</a>."
 
-#: includes/admin/class-hostinger-admin-menu.php:46
 #: includes/admin/class-hostinger-admin-menu.php:47
-#: includes/admin/views/hostinger-onboarding-view.php:67
-#, fuzzy
-#| msgid "AI Assistant"
-msgid "AI assistant"
-msgstr "AI Assistant"
+#: includes/admin/class-hostinger-admin-menu.php:48
+#: includes/admin/views/hostinger-onboarding-view.php:74
+msgid "AI Content Creator"
+msgstr "Генератор контенту ШІ"
+
+#: includes/class-hostinger-errors.php:13
+msgid "An unexpected error occurred. Please try again or contact support."
+msgstr ""
+"Виникла непередбачувана помилка. Спробуйте ще раз або зверніться до служби "
+"підтримки."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:67
 msgid ""
@@ -91,7 +107,7 @@ msgstr ""
 "\"Попередній перегляд\". Якщо ви задоволені результатом, натисніть "
 "\"Опублікувати\"."
 
-#: includes/admin/views/hostinger-onboarding-view.php:181
+#: includes/admin/views/hostinger-onboarding-view.php:207
 msgid "Close"
 msgstr "Закрити"
 
@@ -108,9 +124,41 @@ msgstr ""
 msgid "Coming Soon"
 msgstr "Незабаром"
 
-#: includes/admin/class-hostinger-admin-ajax.php:38
+#. translators: %s: link to dashboard
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:26
+msgid ""
+"Complete the form with required information related to Amazon's partnership "
+"API. Retrieve all this information from the <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Amazon Product Advertising dashboard</a> and paste it into "
+"the form."
+msgstr ""
+"Заповніть форму, пов'язану з партнерським API Amazon. Знайдіть необхідну "
+"інформацію в <a href=\"%s\" target=\"_blank\" rel=\"noopener\">панелі "
+"управління Amazon Product Advertising</a> і вставте її у форму."
+
+#: includes/admin/class-hostinger-admin-ajax.php:81
 msgid "Congratulations! Your website is online."
 msgstr "Вітаємо! Ваш сайт онлайн."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:40
+msgid "Connect Amazon Account"
+msgstr "Підключіть акаунт Amazon"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:8
+msgid "Connect Amazon partnership account"
+msgstr "Підключіть партнерський акаунт Amazon"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:111
+msgid "Connect domain now"
+msgstr "Підключіть домен зараз"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:9
+msgid "Connect your domain"
+msgstr "Підключіть ваш домен"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:19
+msgid "Connect your domain to Hostinger"
+msgstr "Підключіть ваш домен до Hostinger"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:63
 msgid ""
@@ -121,6 +169,10 @@ msgstr ""
 "Ви можете використовувати різні типи контенту, наприклад, текст, зображення, "
 "відео, таблиці тощо. Натисніть на знак плюс і виберіть будь-який контент, "
 "який ви хочете додати на сторінку."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:24
+msgid "Copy-Paste the necessary information:"
+msgstr "Скопіюйте та вставте необхідну інформацію:"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:11
 msgid "Create a catchy headline"
@@ -150,6 +202,18 @@ msgstr "Створіть сторінку з описом ваших послу�
 msgid "Create your first blog post"
 msgstr "Створіть першу публікацію в блозі"
 
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:40
+msgid "domain name searcher."
+msgstr "пошук доменних імен."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:24
+msgid ""
+"Domain propagation can take up to 24 hours. Your domain will propagate "
+"automatically, and you don't need to take any action during this time."
+msgstr ""
+"Поширення домену може зайняти до 24 годин. Ваш домен поширюватиметься "
+"автоматично. Протягом цього часу вам не потрібно робити жодних дій."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:15
 msgid "Draft your post"
 msgstr "Створіть чернетку публікації"
@@ -174,11 +238,22 @@ msgstr "Редагувати опис публікації"
 msgid "Edit site title"
 msgstr "Редагувати назву сайту"
 
+#. translators: %s: link to plugin page
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:21
+msgid ""
+"Fill in the required details on the <a href=\"%s\" class=\"hst-open-"
+"affiliate-tab\">Amazon Affiliate plugin page</a>, where you'll find all the "
+"necessary information about the plugin."
+msgstr ""
+"Заповніть необхідні дані на сторінці <a href=\"%s\" class=\"hst-open-"
+"affiliate-tab\">Плагін Amazon Affiliate</a>, де ви знайдете всю необхідну "
+"інформацію про плагін."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:32
 msgid "Finalize the page"
 msgstr "Завершіть налаштування сторінки"
 
-#: includes/admin/views/hostinger-onboarding-view.php:251
+#: includes/admin/views/hostinger-onboarding-view.php:290
 msgid "Find the answers you need in our Knowledge Base"
 msgstr "Знайдіть необхідну інформацію в нашій базі знань"
 
@@ -186,17 +261,21 @@ msgstr "Знайдіть необхідну інформацію в нашій �
 msgid "Find the Media page"
 msgstr "Знайдіть сторінку «Медіа»"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:70
+#: includes/admin/onboarding/class-hostinger-onboarding.php:80
 msgid "Follow our guided checklist to setup your website"
 msgstr "Скористайтеся нашим чек-листом, щоб налаштувати сайт"
 
-#: includes/admin/views/hostinger-onboarding-view.php:262
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:15
+msgid "Get a domain"
+msgstr "Отримати домен"
+
+#: includes/admin/views/hostinger-onboarding-view.php:301
 msgid "Get in touch with our live specialists"
 msgstr "Зв'яжіться з нашими фахівцями через онлайн-чат"
 
 #: includes/admin/class-hostinger-admin-menu.php:26
 #: includes/admin/class-hostinger-admin-menu.php:27
-#: includes/admin/views/hostinger-onboarding-view.php:60
+#: includes/admin/views/hostinger-onboarding-view.php:66
 #, fuzzy
 #| msgid "Get Started"
 msgid "Get started"
@@ -231,11 +310,11 @@ msgstr ""
 msgid "Go to the Customize page"
 msgstr "Перейти на сторінку налаштування"
 
-#: includes/admin/views/hostinger-onboarding-view.php:111
+#: includes/admin/views/hostinger-onboarding-view.php:137
 msgid "Got it!"
 msgstr "Зрозуміло!"
 
-#: includes/admin/views/hostinger-onboarding-view.php:261
+#: includes/admin/views/hostinger-onboarding-view.php:300
 msgid "Help Center"
 msgstr "Команда підтримки"
 
@@ -246,7 +325,7 @@ msgstr "Команда підтримки"
 msgid "Hostinger"
 msgstr "Hostinger"
 
-#: includes/admin/views/hostinger-onboarding-view.php:198
+#: includes/admin/views/hostinger-onboarding-view.php:224
 msgid "Hostinger Academy"
 msgstr "Hostinger Academy"
 
@@ -262,32 +341,36 @@ msgstr ""
 "Наведіть курсор на потрібну публікацію, щоб побачити меню параметрів. "
 "Натисніть кнопку \"Редагувати\", щоб відкрити редактор публікацій."
 
-#: includes/admin/views/hostinger-onboarding-view.php:17
-#: includes/admin/views/hostinger-onboarding-view.php:209
+#: includes/admin/views/hostinger-onboarding-view.php:20
+#: includes/admin/views/hostinger-onboarding-view.php:245
 msgid "How to Add Your WordPress Website to Google Search Console"
 msgstr "Як додати сайт WordPress до Google Search Console"
 
-#: includes/admin/views/hostinger-onboarding-view.php:42
+#: includes/admin/views/hostinger-onboarding-view.php:45
 msgid "How to Back Up a WordPress Site"
 msgstr "Як створити резервну копію сайту WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:27
+#: includes/admin/views/hostinger-onboarding-view.php:30
 msgid "How to Clear Cache in WordPress Website"
 msgstr "Як очистити кеш сайту WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:22
+#: includes/admin/views/hostinger-onboarding-view.php:25
 msgid "How to Create a WordPress Contact Us Page"
 msgstr "Як створити сторінку \"Контакти\" в WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:32
+#: includes/admin/views/hostinger-onboarding-view.php:35
 msgid "How to Edit the Footer in WordPress"
 msgstr "Як редагувати нижній колонтитул у WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:47
+#: includes/admin/views/hostinger-onboarding-view.php:50
 msgid "How to Import Images Into WordPress Website"
 msgstr "Як імпортувати зображення на сайт WordPress"
 
-#: includes/admin/views/hostinger-onboarding-view.php:52
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:75
+msgid "How to Point Domain Name to Web Hosting"
+msgstr "Як направити доменне ім'я на хостинг"
+
+#: includes/admin/views/hostinger-onboarding-view.php:55
 msgid "How to Set Up WordPress SMTP"
 msgstr "Як налаштувати SMTP у WordPress"
 
@@ -376,23 +459,35 @@ msgstr ""
 "У лівій бічній панелі знайдіть кнопку \"Публікації\". Натисніть кнопку \"Усі "
 "публікації\" та виберіть публікацію, опис якої потрібно змінити."
 
-#: includes/admin/class-hostinger-admin-ajax.php:65
-msgid "invalid data"
-msgstr "неправильні дані"
+#: includes/admin/views/partials/hostinger-promotional-banner.php:5
+msgid "Invite a Friend, Earn Up to $100"
+msgstr "Запросіть друга та отримайте до 100 $"
 
-#: includes/admin/views/hostinger-onboarding-view.php:250
+#: includes/admin/views/hostinger-onboarding-view.php:289
 msgid "Knowledge Base"
 msgstr "База знань"
 
 #: includes/admin/class-hostinger-admin-menu.php:36
 #: includes/admin/class-hostinger-admin-menu.php:37
-#: includes/admin/views/hostinger-onboarding-view.php:61
+#: includes/admin/views/hostinger-onboarding-view.php:67
 msgid "Learn"
 msgstr "Навчайтеся"
 
-#: includes/admin/views/hostinger-onboarding-view.php:37
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:67
+msgid ""
+"Learn how to connect your domain to Hostinger by watching this tutorial on "
+"YouTube for a step-by-step guide:"
+msgstr ""
+"Дізнайтеся, як підключити свій домен до Hostinger, переглянувши покрокову "
+"інструкцію на YouTube:"
+
+#: includes/admin/views/hostinger-onboarding-view.php:40
 msgid "LiteSpeed Cache: How to Get 100% WordPress Optimization"
 msgstr "Кеш LiteSpeed: як отримати 100% оптимізацію WordPress"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:14
+msgid "Login to the Amazon Product Advertising dashboard"
+msgstr "Увійдіть до панелі управління Amazon Product Advertising"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:33
 msgid ""
@@ -405,9 +500,29 @@ msgstr ""
 "відвідувачів зробити наступний крок, наприклад, зв’язатися з вами "
 "електронною поштою або через контактну форму."
 
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:54
+msgid "Nameserver 1"
+msgstr "Сервер імен 1"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:60
+msgid "Nameserver 2"
+msgstr "Сервер імен 2"
+
 #: includes/views/hostinger-coming-soon.php:26
 msgid "New WordPress website is being built and will be published soon"
 msgstr "Новий сайт WordPress створюється та незабаром буде опублікований"
+
+#: includes/admin/views/partials/hostinger-rate-us.php:36
+msgid ""
+"on <a\n"
+"\t\t\t   href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-"
+"post\"\n"
+"\t\t\t   target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
+msgstr ""
+"на <a\n"
+"\t\t\t   href=\"https://wordpress.org/support/plugin/hostinger/reviews/#new-"
+"post\"\n"
+"\t\t\t   target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a>"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:20
 msgid ""
@@ -436,7 +551,11 @@ msgstr ""
 "з'явилося на сайті. Ви можете додати посилання на головне меню навігації або "
 "в інші публікації, щоб полегшити відвідувачам пошук."
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:61
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:19
+msgid "Open the Amazon Affiliate plugin configuration"
+msgstr "Відкрийте конфігурацію плагіна Amazon Affiliate"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:71
 msgid "Preview website"
 msgstr "Попередній перегляд сайту"
 
@@ -452,8 +571,8 @@ msgstr "Опублікувати сторінку"
 msgid "Publish the setup"
 msgstr "Опублікувати налаштування"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:71
-#: includes/admin/onboarding/class-hostinger-onboarding.php:73
+#: includes/admin/onboarding/class-hostinger-onboarding.php:81
+#: includes/admin/onboarding/class-hostinger-onboarding.php:83
 msgid "Publish website"
 msgstr "Опублікувати сайт"
 
@@ -461,21 +580,54 @@ msgstr "Опублікувати сайт"
 msgid "Publish your page"
 msgstr "Опублікуйте сторінку"
 
-#: includes/admin/views/hostinger-onboarding-view.php:178
+#: includes/admin/views/hostinger-onboarding-view.php:204
 msgid "Publishing website"
 msgstr "Публікування сайту"
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:69
+#: includes/admin/views/partials/hostinger-rate-us.php:2
+msgid "Rate this plugin"
+msgstr "Оцініть цей плагін"
+
+#: includes/admin/onboarding/class-hostinger-onboarding.php:79
 msgid "Set up your website"
 msgstr "Налаштуйте свій сайт"
 
-#: includes/admin/views/hostinger-onboarding-view.php:116
+#: includes/admin/views/partials/hostinger-promotional-banner.php:6
+msgid ""
+"Share your referral link with friends and family and <b>receive 20% "
+"commission</b> for every successful referral."
+msgstr ""
+"Поділіться своїм реферальним посиланням з друзями та <b>отримуйте 20% "
+"комісії</b> за кожного успішного реферала."
+
+#: includes/admin/views/partials/hostinger-promotional-banner.php:11
+msgid "Start earning"
+msgstr "Почати"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-page.php:83
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-post.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:41
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-heading.php:30
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:34
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-logo-step.php:34
 msgid "Take me there"
 msgstr "Перейти"
 
-#: includes/admin/views/hostinger-onboarding-view.php:179
+#: includes/admin/views/hostinger-onboarding-view.php:205
 msgid "This can take some time"
 msgstr "Це може зайняти деякий час"
+
+#. translators: %s: link to dashboard
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-affiliate-settings.php:16
+msgid ""
+"To gather the necessary information, log in to your <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener\">Amazon Product Advertising dashboard</a> "
+"using your personal Amazon partnership account."
+msgstr ""
+"Щоб зібрати необхідну інформацію, увійдіть у <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener\">панель управління Amazon Product "
+"Advertising</a>, використовуючи свій особистий партнерський акаунт Amazon."
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-add-product.php:16
 msgid ""
@@ -495,6 +647,10 @@ msgstr ""
 "Щоб завантажити нове зображення, натисніть кнопку \"Додати нове\" на "
 "сторінці медіатеки та виберіть файли."
 
+#: includes/class-hostinger-errors.php:27
+msgid "Unknown error code."
+msgstr "Невідомий код помилки."
+
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:5
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-image-step.php:15
 msgid "Upload an image"
@@ -509,12 +665,30 @@ msgstr "Завантажте логотип"
 msgid "Upload your portfolio projects"
 msgstr "Завантажте портфоліо"
 
-#: includes/admin/class-hostinger-admin-ajax.php:37
-#: includes/admin/onboarding/class-hostinger-onboarding.php:58
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:23
+msgid "Wait for domain propagation"
+msgstr "Дочекайтеся розповсюдження домену"
+
+#: includes/class-hostinger-errors.php:16
+msgid ""
+"We apologize for the inconvenience. The AI content generation process "
+"encountered a server error. Please try again later, and if the issue "
+"persists, kindly contact our support team for assistance."
+msgstr ""
+"Перепрошуємо за тимчасові незручності. Під час генерації контенту ШІ виникла "
+"помилка сервера. Повторіть спробу пізніше. Якщо проблема не зникне, "
+"зверніться за допомогою до нашої служби підтримки."
+
+#: includes/admin/class-hostinger-admin-ajax.php:80
+#: includes/admin/onboarding/class-hostinger-onboarding.php:68
 msgid "Website is published"
 msgstr "Сайт опубліковано"
 
-#: includes/admin/views/hostinger-onboarding-view.php:191
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:36
+msgid "Website URL"
+msgstr "URL-адреса сайту"
+
+#: includes/admin/views/hostinger-onboarding-view.php:217
 msgid "WordPress tutorials"
 msgstr "Посібники з WordPress"
 
@@ -538,11 +712,21 @@ msgstr ""
 "можете використовувати різні блоки для створення заголовків, абзаців, "
 "списків тощо."
 
-#: includes/admin/onboarding/class-hostinger-onboarding.php:59
+#: includes/admin/onboarding/class-hostinger-onboarding.php:69
 msgid "You can access this guide material any time when updating your website"
 msgstr ""
 "Ви можете будь-коли отримати доступ до цього посібника під час оновлення "
 "свого сайту"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:50
+msgid ""
+"You can connect domain to Hostinger by changing the nameservers. Different "
+"domain providers are have unique procedures for changing nameservers. Here "
+"are Hostinger's nameservers:"
+msgstr ""
+"Ви можете підключити домен до Hostinger, змінивши сервери імен. Різні "
+"провайдери доменів мають унікальні процедури зміни серверів імен. Ось список "
+"серверів імен Hostinger:"
 
 #: includes/admin/onboarding/steps/class-hostinger-onboarding-description.php:26
 msgid ""
@@ -551,3 +735,20 @@ msgid ""
 msgstr ""
 "Ви можете переглянути весь текстовий вміст у редакторі. Знайдіть частину "
 "опису та змініть її під свої потреби."
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:39
+msgid ""
+"You need to purchase a domain for your website before the preview domain "
+"becomes inaccessible. Find a desired website name using a"
+msgstr ""
+"Вам потрібно придбати домен для вашого сайту до того, як домен для "
+"попереднього перегляду стане недоступним. Знайдіть потрібне ім'я сайту за "
+"допомогою"
+
+#: includes/admin/onboarding/steps/class-hostinger-onboarding-connect-domain.php:33
+msgid ""
+"Your website is already published and can be accessed using Hostinger free "
+"temporary subdomain right now. Here is the current URL of your website:"
+msgstr ""
+"Ваш сайт вже опублікований і доступний за допомогою безплатного тимчасового "
+"піддомену Hostinger прямо зараз. Ось поточна URL-адреса вашого сайту:"

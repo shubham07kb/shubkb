@@ -3,7 +3,7 @@ Tags: onboarding, hostinger
 Requires at least: 5.9
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 2.0.2
+Stable tag: 2.0.8
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -243,4 +243,25 @@ Watching for Changes: During development, you can use "npm run watch" to continu
 - Added onboarding step for affiliate plugin
 
 2.0.2 (2024-01-19)
-- Updated development dependencies
+- Updated internal services
+
+2.0.3 (2024-01-19)
+- Fixes
+- Added promotional banner
+
+2.0.4 (2024-02-02)
+- Added jump to hpanel
+- Redesign tabs section
+
+2.0.5 (2024-02-06)
+- Added surveys
+
+2.0.6 (2024-02-09)
+- Added affiliate surveys
+- Internal services improvements
+
+2.0.7 (2024-02-13)
+- Survey adjustments
+
+2.0.8 (2024-02-14)
+- Fixed files loading

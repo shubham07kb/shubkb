@@ -3,7 +3,7 @@ defined( 'ABSPATH' ) || exit;
 
 class Hostinger_Maintenance_Command {
 	public static function define_command(): void {
-		WP_CLI::add_command( 'hostinger maintenance', Hostinger_Maintenance_Command::class );
+		WP_CLI::add_command( 'hostinger maintenance', self::class );
 	}
 	/**
 	 * Command allows enable/disable maintenance mode.
@@ -50,12 +50,11 @@ class Hostinger_Maintenance_Command {
 	 *
 	 *     # Get maintenance mode status
 	 *     $ wp hostinger maintenance status
-	 *
 	 */
 	public function status(): bool {
 		$status = get_option( 'hostinger_maintenance_mode', 0 );
 
-		if( $status ) {
+		if ( $status ) {
 			WP_CLI::success( 'Maintenance mode ENABLED' );
 		} else {
 			WP_CLI::success( 'Maintenance mode DISABLED' );

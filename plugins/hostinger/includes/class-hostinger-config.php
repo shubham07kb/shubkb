@@ -5,8 +5,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class Hostinger_Config {
-	private array $config = [];
-	public const TOKEN_HEADER = 'X-Hpanel-Order-Token';
+	private array $config      = array();
+	public const TOKEN_HEADER  = 'X-Hpanel-Order-Token';
 	public const DOMAIN_HEADER = 'X-Hpanel-Domain';
 	public function __construct() {
 		$this->decode_config( HOSTINGER_WP_CONFIG_PATH );
