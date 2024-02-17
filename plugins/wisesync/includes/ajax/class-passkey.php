@@ -184,6 +184,12 @@ class Passkey {
 					if ( isset( $_POST['login'] ) && 'true' === sanitize_text_field( wp_unslash( $_POST['login'] ) ) ) {
 						set_session( 'passkey_login', true );
 					}
+					if ( isset( $_POST['redirect'] ) && 'true' === sanitize_text_field( wp_unslash( $_POST['redirect'] ) ) ) {
+						set_session( 'passkey_redirect', true );
+						if ( isset( $_POST['redirect_url'] ) ) {
+							set_session( 'passkey_redirect_url', sanitize_text_field( wp_unslash( $_POST['redirect_url'] ) ) );
+						}
+					}
 					wp_send_json_success(
 						array(
 							'challenge' => $args,
@@ -200,8 +206,14 @@ class Passkey {
 				break;
 			case 'verify_challenge':
 				$passkey_login = get_session( 'passkey_login' );
+				$redirect      = get_session( 'passkey_redirect' );
+				$redirect_url  = get_session( 'passkey_redirect_url' );
 				if ( $passkey_login ) {
 					delete_session( 'passkey_login' );
+				}
+				if ( $redirect ) {
+					delete_session( 'passkey_redirect' );
+					delete_session( 'passkey_redirect_url' );
 				}
 				if ( empty( get_session( 'passkey_challange' ) ) ) {
 					wp_send_json_error(
@@ -301,6 +313,19 @@ class Passkey {
 
 						wp_set_current_user( $user_id );
 						wp_set_auth_cookie( $user_id, true );
+					}
+					if ( $redirect ) {
+						if ( empty( $redirect_url ) ) {
+
+							// if user is admin then redirect to admin dashboard, else redirect to home page.
+							if ( current_user_can( 'manage_options' ) ) {
+								$redirect_url = admin_url();
+							} else {
+								$redirect_url = home_url();
+							}
+						}
+						wp_safe_redirect( $redirect_url, 302, get_option( 'blogname' ) );
+						exit;
 					}
 					wp_send_json_success( array( 'message' => 'Challenge verified successfully.' ) );
 				} catch ( \Exception $ex ) {
