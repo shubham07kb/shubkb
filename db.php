@@ -1,1 +1,0 @@
-/Users/shubham/Local Sites/learn/app/public/wp-content/plugins/query-monitor/wp-content/db.php
