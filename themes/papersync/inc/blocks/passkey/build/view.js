@@ -3,7 +3,6 @@ elementsReg.forEach(function (element) {
 	element.addEventListener('click', doRegister);
 });
 function doRegister() {
-	b('Register button clicked!');
 	register.a();
 }
 const elementsVal = document.querySelectorAll('.passkey_val');
@@ -11,7 +10,6 @@ elementsVal.forEach(function (element) {
 	element.addEventListener('click', doValidate);
 });
 function doValidate() {
-	b('Validate button clicked!');
 	validate.a();
 }
 const helper = {
@@ -54,10 +52,7 @@ const helper = {
 		}
 		fetch(url, { method: 'POST', body: form })
 			.then((res) => res.text())
-			.then((res) => after(res))
-			.catch((err) => {
-				b(err);
-			});
+			.then((res) => after(res));
 	},
 };
 
@@ -69,15 +64,11 @@ const register = {
 				request_type: 'get_credential_json',
 			},
 			async (res) => {
-				try {
-					res = JSON.parse(res);
-					helper.bta(res.data.credential);
-					register.b(
-						await navigator.credentials.create(res.data.credential)
-					);
-				} catch (e) {
-					b(e);
-				}
+				res = JSON.parse(res);
+				helper.bta(res.data.credential);
+				register.b(
+					await navigator.credentials.create(res.data.credential)
+				);
 			}
 		),
 	b: (cred) =>
@@ -95,12 +86,7 @@ const register = {
 					? helper.atb(cred.response.attestationObject)
 					: null,
 			},
-			(res) => {
-				res = JSON.parse(res);
-				b(res);
-				b(res.data);
-				b(res.data.sd);
-			}
+			(res) => {console.log(res)}
 		),
 };
 
@@ -113,21 +99,16 @@ const validate = {
 				user: 'shub',
 			},
 			async (res) => {
-				try {
-					res = JSON.parse(res);
-					helper.bta(res.data.challenge);
-					b(res);
-					validate.b(
-						await navigator.credentials.get(res.data.challenge),
-						res.data.user
-					);
-				} catch (e) {
-					b(e);
-				}
+				res = JSON.parse(res);
+				helper.bta(res.data.challenge);
+				validate.b(
+					await navigator.credentials.get(res.data.challenge),
+					res.data.user
+				);
 			}
 		),
 	b: (cred, user) => {
-		b(cred);
+		console.log(cred);
 		helper.ajax(
 			'/wp-admin/admin-ajax.php?action=passkey',
 			{
@@ -147,12 +128,7 @@ const validate = {
 					: null,
 				user_id: user,
 			},
-			(res) => b(res)
-		);}
-};
-const b = (res) => {
-	console.log(res);
-	if (res.publicKey) {
-		console.log('publicKey: ', res.publicKey);
-	}
+			(res) => {console.log(res)}
+		);
+	},
 };

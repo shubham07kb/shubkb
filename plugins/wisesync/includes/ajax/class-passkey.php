@@ -46,7 +46,18 @@ class Passkey {
 		switch ( $request_type ) {
 			case 'get_credential_json':
 				$current_user = wp_get_current_user();
-				$credentials  = $web_authn->getCreateArgs(
+				$passkey      = get_user_meta( $current_user->ID, 'passkey', true );
+				if ( $passkey && ! empty( $passkey ) ) {
+					$passkey = json_decode( $passkey );
+					if ( 20 <= count( $passkey ) ) {
+						wp_send_json_error(
+							array(
+								'message' => 'Credential Limit reached.',
+							)
+						);
+					}
+				}
+				$credentials = $web_authn->getCreateArgs(
 					$current_user->user_login,
 					$current_user->user_email,
 					$current_user->display_name,
@@ -54,7 +65,7 @@ class Passkey {
 					false,
 					true
 				);
-				$challenge    = ( $web_authn->getChallenge() )->getBinaryString();
+				$challenge   = ( $web_authn->getChallenge() )->getBinaryString();
 				set_session( 'passkey_challange', $challenge );
 				wp_send_json_success( array( 'credential' => $credentials ) );
 				break;
@@ -97,7 +108,21 @@ class Passkey {
 					$data_store['id'] = base64_encode( $data->credentialId );
 					// phpcs:enable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_encode
 					$data_store['publicKey'] = $data->credentialPublicKey;
-					$store_status            = update_user_meta( $current_user->ID, 'passkey', wp_slash( wp_json_encode( $data_store ) ) );
+					$passkey                 = get_user_meta( $current_user->ID, 'passkey', true );
+					if ( $passkey && ! empty( $passkey ) ) {
+						$passkey = json_decode( $passkey );
+						if ( 20 <= count( $passkey ) ) {
+							wp_send_json_error(
+								array(
+									'message' => 'Credential Limit Reached.',
+								)
+							);
+						}
+						array_push( $passkey, $data_store );
+					} else {
+						$passkey = array( $data_store );
+					}
+					$store_status = update_user_meta( $current_user->ID, 'passkey', wp_slash( wp_json_encode( $passkey ) ) );
 					if ( ! $store_status ) {
 						wp_send_json_error(
 							array(
@@ -124,17 +149,39 @@ class Passkey {
 				if ( isset( $_POST['user'] ) ) {
 					$user    = sanitize_text_field( wp_unslash( $_POST['user'] ) );
 					$user_id = is_email( $user ) ? get_user_by( 'email', $user )->ID : get_user_by( 'login', $user )->ID;
-					$passkey = json_decode( get_user_meta( $user_id, 'passkey', true ) );
+					$passkey = get_user_meta( $user_id, 'passkey', true );
+					if ( ! $passkey ) {
+						wp_send_json_error(
+							array(
+								'message' => 'Passkey not found.',
+							)
+						);
+					}
+					$passkey = json_decode( $passkey );
+					if ( ! $passkey ) {
+						wp_send_json_error(
+							array(
+								'message' => 'Passkey stored Incorrectly, Remove all passkey and try again.',
+							)
+						);
+					}
 					// phpcs:disable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode
-					$args = $web_authn->getGetArgs( array( base64_decode( $passkey->id ) ), 30 );
+					$credentials_id = array();
+					$passkey_count  = count( $passkey );
+					for ( $i = 0; $i < $passkey_count; $i++ ) {
+						array_push( $credentials_id, base64_decode( $passkey[ $i ]->id ) );
+					}
+					$args = $web_authn->getGetArgs( $credentials_id, 30 );
 					// phpcs:enable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode
 					$challenge = ( $web_authn->getChallenge() )->getBinaryString();
 					set_session( 'passkey_challange', $challenge );
+					if ( isset( $_POST['login'] ) && 'true' === sanitize_text_field( wp_unslash( $_POST['login'] ) ) ) {
+						set_session( 'passkey_login', true );
+					}
 					wp_send_json_success(
 						array(
 							'challenge' => $args,
 							'user'      => $user,
-							'publicKey' => $passkey->publicKey,
 						),
 					);
 				} else {
@@ -146,18 +193,9 @@ class Passkey {
 				}
 				break;
 			case 'verify_challenge':
-				if ( isset( $_POST['user_id'] ) ) {
-					$user    = sanitize_text_field( wp_unslash( $_POST['user_id'] ) );
-					$user_id = is_email( $user ) ? get_user_by( 'email', $user )->ID : get_user_by( 'login', $user )->ID;
-					// phpcs:disable WordPress.PHP.DiscouragedPHPFunctions.serialize_unserialize
-					$passkey = json_decode( get_user_meta( $user_id, 'passkey', true ) );
-					// phpcs:enable WordPress.PHP.DiscouragedPHPFunctions.serialize_unserialize
-				} else {
-					wp_send_json_error(
-						array(
-							'message' => 'Invalid request. userid not found.',
-						)
-					);
+				$passkey_login = get_session( 'passkey_login' );
+				if ( $passkey_login ) {
+					delete_session( 'passkey_login' );
 				}
 				if ( empty( get_session( 'passkey_challange' ) ) ) {
 					wp_send_json_error(
@@ -169,6 +207,33 @@ class Passkey {
 					$challenge = get_session( 'passkey_challange' );
 					delete_session( 'passkey_challange' );
 				}
+				if ( isset( $_POST['user_id'] ) ) {
+					$user    = sanitize_text_field( wp_unslash( $_POST['user_id'] ) );
+					$user_id = is_email( $user ) ? get_user_by( 'email', $user )->ID : get_user_by( 'login', $user )->ID;
+					$passkey = get_user_meta( $user_id, 'passkey', true );
+					$passkey = get_user_meta( $user_id, 'passkey', true );
+					if ( ! $passkey ) {
+						wp_send_json_error(
+							array(
+								'message' => 'Passkey not found.',
+							)
+						);
+					}
+					$passkey = json_decode( $passkey );
+					if ( ! $passkey ) {
+						wp_send_json_error(
+							array(
+								'message' => 'Passkey stored Incorrectly, Remove all passkey and try again.',
+							)
+						);
+					}
+				} else {
+					wp_send_json_error(
+						array(
+							'message' => 'Invalid request. userid not found.',
+						)
+					);
+				}
 				if ( ! isset( $_POST['id'] ) ) {
 					wp_send_json_error(
 						array(
@@ -177,12 +242,22 @@ class Passkey {
 					);
 				} else {
 					// phpcs:disable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode
-					$id = base64_decode( sanitize_text_field( wp_unslash( $_POST['id'] ) ) );
-					if ( base64_decode( $passkey->id ) !== $id ) {
+					$id            = base64_decode( sanitize_text_field( wp_unslash( $_POST['id'] ) ) );
+					$passkey_count = count( $passkey );
+					$is_matched    = false;
+					for ( $i = 0; $i < $passkey_count; $i++ ) {
+						if ( base64_decode( $passkey[ $i ]->id ) === $id ) {
+							$passkey    = $passkey[ $i ];
+							$is_matched = true;
+							break;
+						}
+					}
+					if ( ! $is_matched ) {
 						// phpcs:enable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode
 						wp_send_json_error(
 							array(
 								'message' => 'Invalid request. id not matched.',
+								'id'      => $id,
 							)
 						);
 					}
@@ -208,7 +283,7 @@ class Passkey {
 						$passkey->publicKey,
 						$challenge
 					);
-					wp_send_json_success( array( 'message' => 'Challenge verified successfully.', 'login'  => is_user_logged_in() ) );
+					wp_send_json_success( array( 'message' => 'Challenge verified successfully.' ) );
 				} catch ( \Exception $ex ) {
 					wp_send_json_error(
 						array(

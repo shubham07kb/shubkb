@@ -4,15 +4,34 @@ import {
 	InspectorControls,
 } from '@wordpress/block-editor';
 import { useState } from '@wordpress/element';
-import { ToolbarButton, ToolbarGroup } from '@wordpress/components';
+import {
+	PanelBody,
+	ToolbarButton,
+	ToolbarGroup,
+	TextControl,
+} from '@wordpress/components';
 import './editor.scss';
 
 export default function Edit({ attributes, setAttributes }) {
-	const { type } = attributes;
+	const { type, id } = attributes;
 	const [typeValue, setType] = useState(type);
+	const [idValue, setId] = useState(id);
 	return (
 		<div {...useBlockProps()}>
-			<InspectorControls></InspectorControls>
+			{typeValue === 'validate' && (
+				<InspectorControls>
+					<PanelBody>
+						<TextControl
+							label="Target Field ID"
+							value={idValue}
+							onChange={(value) => {
+								setId(value);
+								setAttributes({ id: value });
+							}}
+						/>
+					</PanelBody>
+				</InspectorControls>
+			)}
 			<BlockControls>
 				<ToolbarGroup>
 					<ToolbarButton
@@ -21,7 +40,11 @@ export default function Edit({ attributes, setAttributes }) {
 						isPressed={typeValue === 'register'}
 						onClick={() => {
 							setType('register');
-							setAttributes({ type: 'register' });
+							setId('user-login');
+							setAttributes({
+								type: 'register',
+								id: 'user-login',
+							});
 						}}
 					/>
 					<ToolbarButton

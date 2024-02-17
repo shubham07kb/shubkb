@@ -13,6 +13,10 @@
 	"editorScript": "file:./build/index.js",
 	"viewScript": "file:./build/view.js",
 	"attributes": {
+		"id": {
+			"type": "string",
+			"default": "user-login"
+		},
 		"type": {
 			"type": "string",
 			"default": "register"

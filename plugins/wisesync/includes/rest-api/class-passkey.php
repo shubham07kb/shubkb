@@ -108,6 +108,7 @@ class Passkey {
 						'id'    => $child_page->ID,
 						'url'   => get_permalink( $child_page->ID ),
 						'child' => $this->get_child_data( $child_page->ID ),
+						'uploa' => wp_upload_dir(),
 					)
 				);
 			}
@@ -124,11 +125,30 @@ class Passkey {
 	 */
 	public function get_child_id_tree( \WP_REST_Request $request ) {
 
+		$str      = '';
+		$blockarr = parse_blocks(
+			'<!-- wp:papersync/passkey-button -->
+		<div class="wp-block-papersync-passkey-button"><button class="passkey_reg">Register</button></div>
+		<!-- /wp:papersync/passkey-button -->
+		
+		<!-- wp:papersync/passkey-button {"type":"validate"} -->
+		<div class="wp-block-papersync-passkey-button"><button class="passkey_val">Validate</button></div>
+		<!-- /wp:papersync/passkey-button -->
+		
+		<!-- wp:papersync/course-index /-->'
+		);
+
+		foreach ( $blockarr as $block ) {
+			$str .= render_block( $block );
+		}
+
 		// Extract child and sub-child post IDs.
 		return array(
 			'status' => 'success',
 			'id'     => 'is it working',
 			'login'  => is_user_logged_in(),
+			'upload' => wp_upload_dir(),
+			'arr'    => $str,
 		);
 	}
 }
