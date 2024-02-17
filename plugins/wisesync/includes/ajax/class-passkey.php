@@ -6,7 +6,6 @@
  * @since 1.0.0
  *
  * phpcs:disable WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
- * phpcs:disable WordPress.Security.NonceVerification.Missing
  */
 
 namespace WiseSync\Ajax;
@@ -33,6 +32,15 @@ class Passkey {
 	public function passkey() {
 
 		global $client_data;
+
+		// Verify nonce.
+		if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nonce'] ) ), 'client_data' ) ) {
+			wp_send_json_error(
+				array(
+					'message' => 'Invalid request.',
+				)
+			);
+		}
 
 		// Verify request type.
 		$request_type = isset( $_POST['request_type'] ) ? sanitize_text_field( wp_unslash( $_POST['request_type'] ) ) : '';
@@ -332,6 +340,74 @@ class Passkey {
 					wp_send_json_error(
 						array(
 							'message' => $ex->getMessage(),
+						)
+					);
+				}
+				break;
+			case 'remove_credential':
+				$current_user = wp_get_current_user();
+				if ( ! isset( $_POST['index'] ) ) {
+					wp_send_json_error(
+						array(
+							'message' => 'Invalid request. id not found.',
+						)
+					);
+				} else {
+					$index = absint( $_POST['index'] ) - 1;
+				}
+				$passkey = get_user_meta( $current_user->ID, 'passkey', true );
+				if ( ! $passkey ) {
+					wp_send_json_error(
+						array(
+							'message' => 'Passkey not found.',
+						)
+					);
+				}
+				$passkey = json_decode( $passkey );
+				if ( ! $passkey ) {
+					wp_send_json_error(
+						array(
+							'message' => 'Passkey stored Incorrectly, Remove all passkey and try again.',
+						)
+					);
+				}
+				if ( ! isset( $passkey[ $index ] ) ) {
+					wp_send_json_error(
+						array(
+							'message' => 'Invalid request. id not matched.',
+						)
+					);
+				}
+				unset( $passkey[ $index ] );
+				$passkey      = array_values( $passkey );
+				$store_status = update_user_meta( $current_user->ID, 'passkey', wp_slash( wp_json_encode( $passkey ) ) );
+				if ( ! $store_status ) {
+					wp_send_json_error(
+						array(
+							'message' => 'Credential not removed.',
+						)
+					);
+				} else {
+					wp_send_json_success(
+						array(
+							'message' => 'Credential removed successfully.',
+						)
+					);
+				}
+				break;
+			case 'remove_credential_all':
+				$current_user = wp_get_current_user();
+				$store_status = delete_user_meta( $current_user->ID, 'passkey' );
+				if ( ! $store_status ) {
+					wp_send_json_error(
+						array(
+							'message' => 'Credential not removed.',
+						)
+					);
+				} else {
+					wp_send_json_success(
+						array(
+							'message' => 'Credential removed successfully.',
 						)
 					);
 				}
