@@ -13,10 +13,32 @@ if ( session_status() === PHP_SESSION_NONE ) {
 	session_start();
 }
 
+// Cloudflare IP check to get real IP in $_SERVER['REMOTE_ADDR'].
+if ( isset( $_SERVER['HTTP_CF_CONNECTING_IP'] ) ) {
+	$_SERVER['REMOTE_ADDR'] = sanitize_text_field( wp_unslash( $_SERVER['HTTP_CF_CONNECTING_IP'] ) );
+}
+$request_ip = sanitize_text_field(
+	wp_unslash(
+		isset( $_SERVER['HTTP_CF_CONNECTING_IP'] ) ? $_SERVER['HTTP_CF_CONNECTING_IP'] :
+		( isset( $_SERVER['HTTP_CLIENT_IP'] ) ? $_SERVER['HTTP_CLIENT_IP'] :
+			( isset( $_SERVER['HTTP_X_FORWARDED_FOR'] ) ? $_SERVER['HTTP_X_FORWARDED_FOR'] :
+				( isset( $_SERVER['HTTP_X_FORWARDED'] ) ? $_SERVER['HTTP_X_FORWARDED'] :
+					( isset( $_SERVER['HTTP_FORWARDED_FOR'] ) ? $_SERVER['HTTP_FORWARDED_FOR'] :
+						( isset( $_SERVER['HTTP_FORWARDED'] ) ? $_SERVER['HTTP_FORWARDED'] :
+							( isset( $_SERVER['REMOTE_ADDR'] ) ? $_SERVER['REMOTE_ADDR'] : '' )
+						)
+					)
+				)
+			)
+		)
+	)
+);
+
 /**
  * Add Client Data Script
  */
 function add_client_data_script() {
+	global $request_ip;
 
 	wp_enqueue_script( 'client-data', WISESYNC_PLUGIN_URL . '/assets/js/client-data.js', array(), '1.0.0', true );
 	wp_localize_script(
@@ -25,6 +47,7 @@ function add_client_data_script() {
 		array(
 			'ajax_url' => admin_url( 'admin-ajax.php' ),
 			'nonce'    => wp_create_nonce( 'client_data' ),
+			'ip'       => $request_ip,
 		)
 	);
 }
