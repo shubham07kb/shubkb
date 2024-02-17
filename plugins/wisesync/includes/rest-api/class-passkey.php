@@ -119,11 +119,9 @@ class Passkey {
 	/**
 	 * Get Child ID Tree
 	 *
-	 * @param \WP_REST_Request $request Request object.
-	 *
 	 * @since 1.0.0
 	 */
-	public function get_child_id_tree( \WP_REST_Request $request ) {
+	public function get_child_id_tree() {
 
 		$str      = '';
 		$blockarr = parse_blocks(

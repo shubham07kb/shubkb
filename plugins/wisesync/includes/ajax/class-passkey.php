@@ -32,6 +32,8 @@ class Passkey {
 	 */
 	public function passkey() {
 
+		global $client_data;
+
 		// Verify request type.
 		$request_type = isset( $_POST['request_type'] ) ? sanitize_text_field( wp_unslash( $_POST['request_type'] ) ) : '';
 		if ( empty( $request_type ) ) {
@@ -107,8 +109,12 @@ class Passkey {
 					// phpcs:disable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_encode
 					$data_store['id'] = base64_encode( $data->credentialId );
 					// phpcs:enable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_encode
-					$data_store['publicKey'] = $data->credentialPublicKey;
-					$passkey                 = get_user_meta( $current_user->ID, 'passkey', true );
+					$data_store['publicKey']  = $data->credentialPublicKey;
+					$data_store['createdAt']  = gmdate( 'Y-m-d H:i:s' );
+					$data_store['createdOn']  = $client_data['device_string'];
+					$data_store['lastUsed']   = gmdate( 'Y-m-d H:i:s' );
+					$data_store['lastUsedOn'] = $client_data['device_string'];
+					$passkey                  = get_user_meta( $current_user->ID, 'passkey', true );
 					if ( $passkey && ! empty( $passkey ) ) {
 						$passkey = json_decode( $passkey );
 						if ( 20 <= count( $passkey ) ) {
@@ -241,19 +247,26 @@ class Passkey {
 						)
 					);
 				} else {
+
 					// phpcs:disable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode
 					$id            = base64_decode( sanitize_text_field( wp_unslash( $_POST['id'] ) ) );
 					$passkey_count = count( $passkey );
 					$is_matched    = false;
+					$public_key    = '';
 					for ( $i = 0; $i < $passkey_count; $i++ ) {
+
 						if ( base64_decode( $passkey[ $i ]->id ) === $id ) {
-							$passkey    = $passkey[ $i ];
-							$is_matched = true;
+
+							// phpcs:enable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode
+							$public_key                = $passkey[ $i ]->publicKey;
+							$passkey[ $i ]->lastUsed   = gmdate( 'Y-m-d H:i:s' );
+							$passkey[ $i ]->lastUsedOn = $client_data['device_string'];
+							$is_matched                = true;
 							break;
 						}
 					}
 					if ( ! $is_matched ) {
-						// phpcs:enable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode
+
 						wp_send_json_error(
 							array(
 								'message' => 'Invalid request. id not matched.',
@@ -280,9 +293,15 @@ class Passkey {
 						base64_decode( $auth ),
 						base64_decode( $sig ),
 						// phpcs:enable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode
-						$passkey->publicKey,
+						$public_key,
 						$challenge
 					);
+					update_user_meta( $user_id, 'passkey', wp_slash( wp_json_encode( $passkey ) ) );
+					if ( $passkey_login ) {
+
+						wp_set_current_user( $user_id );
+						wp_set_auth_cookie( $user_id, true );
+					}
 					wp_send_json_success( array( 'message' => 'Challenge verified successfully.' ) );
 				} catch ( \Exception $ex ) {
 					wp_send_json_error(

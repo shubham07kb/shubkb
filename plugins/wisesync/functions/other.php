@@ -14,6 +14,23 @@ if ( session_status() === PHP_SESSION_NONE ) {
 }
 
 /**
+ * Add Client Data Script
+ */
+function add_client_data_script() {
+
+	wp_enqueue_script( 'client-data', WISESYNC_PLUGIN_URL . '/assets/js/client-data.js', array(), '1.0.0', true );
+	wp_localize_script(
+		'client-data',
+		'clientData',
+		array(
+			'ajax_url' => admin_url( 'admin-ajax.php' ),
+			'nonce'    => wp_create_nonce( 'client_data' ),
+		)
+	);
+}
+$client_data = array( 'device_string' => 'coming soon' );
+
+/**
  * Set Session variable
  *
  * @param mixed  $key Key for Session.

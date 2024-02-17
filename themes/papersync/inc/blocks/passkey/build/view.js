@@ -97,6 +97,7 @@ const validate = {
 			{
 				request_type: 'get_challenge',
 				user: 'shub',
+				login: 'true',
 			},
 			async (res) => {
 				res = JSON.parse(res);

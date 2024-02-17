@@ -54,19 +54,8 @@ register_activation_hook(
 	}
 );
 
-/**
- * Display all rewrite rules.
- */
-function display_all_rewrite_rules() {
-	global $wp_rewrite;
-
-	// Get all rewrite rules.
-	$rewrite_rules = $wp_rewrite->rewrite_rules();
-}
-
-// Hook the function to a specific action or filter
-// For example, you can use 'init' or 'wp_loaded'.
-add_action( 'init', 'display_all_rewrite_rules' );
+// Add Hook to call Script for Client Data.
+add_action( 'wp_enqueue_scripts', 'add_client_data_script' );
 
 // Cron Log.
 if ( defined( 'DOING_CRON' ) && DOING_CRON ) {
