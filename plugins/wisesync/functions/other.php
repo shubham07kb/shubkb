@@ -34,6 +34,28 @@ $request_ip = sanitize_text_field(
 	)
 );
 
+// Set Client Data Variable.
+if ( isset( $_SESSION['client_data_ua_type'] ) ) {
+	$client_data_type = sanitize_text_field( wp_unslash( $_SESSION['client_data_ua_type'] ) );
+	if ( 'ua' === $client_data_type ) {
+		if ( isset( $_SESSION['client_data_ua'] ) ) {
+			$client_data = array(
+				'ua' => sanitize_text_field( wp_unslash( $_SESSION['client_data_ua'] ) ),
+			);
+		}
+	} elseif ( 'parsed' === $client_data_type ) {
+		if ( isset( $_SESSION['client_data_ua'] ) && isset( $_SESSION['client_data_pasred'] ) && isset( $_SESSION['client_data_os'] ) && isset( $_SESSION['client_data_device'] ) && isset( $_SESSION['client_data_broswer'] ) ) {
+			$client_data = array(
+				'all'      => sanitize_text_field( wp_unslash( $_SESSION['client_data_ua'] ) ),
+				'ua'       => sanitize_text_field( wp_unslash( $_SESSION['client_data_pasred'] ) ),
+				'platform' => sanitize_text_field( wp_unslash( $_SESSION['client_data_os'] ) ),
+				'device'   => sanitize_text_field( wp_unslash( $_SESSION['client_data_device'] ) ),
+				'browser'  => sanitize_text_field( wp_unslash( $_SESSION['client_data_broswer'] ) ),
+			);
+		}
+	}
+}
+
 /**
  * Add Client Data Script
  */
@@ -44,7 +66,7 @@ function add_client_data_script() {
 		$request_ip = 'localhost';
 	}
 
-	wp_enqueue_script( 'client-data', WISESYNC_PLUGIN_URL . '/assets/js/client-data.js', array(), '1.0.3_test1', true );
+	wp_enqueue_script( 'client-data', WISESYNC_PLUGIN_URL . '/assets/js/client-data.js', array(), '1.0.4', true );
 	wp_localize_script(
 		'client-data',
 		'clientData',
@@ -53,11 +75,10 @@ function add_client_data_script() {
 			'nonce'   => wp_create_nonce( 'client_data' ),
 			'ip'      => $request_ip,
 			'action'  => 'set_client_data',
-			'cip'     => get_session( 'client_data' )['ip'],
+			'cip'     => isset( get_session( 'client_data' )['ip'] ) ? get_session( 'client_data' )['ip'] : '',
 		)
 	);
 }
-$client_data = array( 'device_string' => 'coming soon' );
 
 /**
  * Set Session variable

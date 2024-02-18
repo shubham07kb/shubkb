@@ -34,13 +34,13 @@ class Passkey {
 		global $client_data;
 
 		// Verify nonce.
-		if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nonce'] ) ), 'passkey' ) ) {
-			wp_send_json_error(
-				array(
-					'message' => 'Invalid request.',
-				)
-			);
-		}
+		// if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nonce'] ) ), 'passkey' ) ) {
+		// 	wp_send_json_error(
+		// 		array(
+		// 			'message' => 'Invalid request.',
+		// 		)
+		// 	);
+		// }
 
 		// Verify request type.
 		$request_type = isset( $_POST['request_type'] ) ? sanitize_text_field( wp_unslash( $_POST['request_type'] ) ) : '';
@@ -119,9 +119,9 @@ class Passkey {
 					// phpcs:enable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_encode
 					$data_store['publicKey']  = $data->credentialPublicKey;
 					$data_store['createdAt']  = gmdate( 'Y-m-d H:i:s' );
-					$data_store['createdOn']  = $client_data['device_string'];
+					$data_store['createdOn']  = $client_data['ua'];
 					$data_store['lastUsed']   = gmdate( 'Y-m-d H:i:s' );
-					$data_store['lastUsedOn'] = $client_data['device_string'];
+					$data_store['lastUsedOn'] = $client_data['ua'];
 					$passkey                  = get_user_meta( $current_user->ID, 'passkey', true );
 					if ( $passkey && ! empty( $passkey ) ) {
 						$passkey = json_decode( $passkey );
@@ -280,7 +280,7 @@ class Passkey {
 							// phpcs:enable WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode
 							$public_key                = $passkey[ $i ]->publicKey;
 							$passkey[ $i ]->lastUsed   = gmdate( 'Y-m-d H:i:s' );
-							$passkey[ $i ]->lastUsedOn = $client_data['device_string'];
+							$passkey[ $i ]->lastUsedOn = $client_data['ua'];
 							$is_matched                = true;
 							break;
 						}

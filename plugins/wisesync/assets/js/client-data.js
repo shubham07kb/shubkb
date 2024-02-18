@@ -212,7 +212,7 @@ async function getCurrentData(ajaxUrl, nonce, action) {
 						: null,
 			},
 			device: {
-				data: data5,
+				parsed: data5,
 				ua: data4,
 			},
 		},
@@ -271,3 +271,4 @@ if (clientData.cip === null) {
 		getCurrentData(clientData.ajaxUrl, clientData.nonce, clientData.action);
 	}
 }
+getCurrentData(clientData.ajaxUrl, clientData.nonce, clientData.action);
