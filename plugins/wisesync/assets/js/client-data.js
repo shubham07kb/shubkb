@@ -74,19 +74,6 @@ async function getCurrentData(ajaxUrl, nonce, action) {
 		fetch('https://ipapi.co/json/'),
 		fetch('https://api.ipapi.is/'),
 		fetch('https://ipwho.is/'),
-		,
-		navigator.userAgentData.getHighEntropyValues([
-			'architecture',
-			'bitness',
-			'brands',
-			'mobile',
-			'model',
-			'platform',
-			'platformVersion',
-			'uaFullVersion',
-			'fullVersionList',
-			'wow64',
-		]),
 	]);
 
 	// Check if each request was successful
