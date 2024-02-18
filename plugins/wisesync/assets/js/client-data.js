@@ -70,25 +70,24 @@ function makeNearAverage(arrayToAverage) {
 
 async function getCurrentData(ajaxUrl, nonce, action) {
 	// Use Promise.all to fetch multiple URLs concurrently
-	const [response1, response2, response3] =
-		await Promise.all([
-			fetch('https://ipapi.co/json/'),
-			fetch('https://api.ipapi.is/'),
-			fetch('https://ipwho.is/'),
-			,
-			navigator.userAgentData.getHighEntropyValues([
-				'architecture',
-				'bitness',
-				'brands',
-				'mobile',
-				'model',
-				'platform',
-				'platformVersion',
-				'uaFullVersion',
-				'fullVersionList',
-				'wow64',
-			]),
-		]);
+	const [response1, response2, response3] = await Promise.all([
+		fetch('https://ipapi.co/json/'),
+		fetch('https://api.ipapi.is/'),
+		fetch('https://ipwho.is/'),
+		,
+		navigator.userAgentData.getHighEntropyValues([
+			'architecture',
+			'bitness',
+			'brands',
+			'mobile',
+			'model',
+			'platform',
+			'platformVersion',
+			'uaFullVersion',
+			'fullVersionList',
+			'wow64',
+		]),
+	]);
 
 	// Check if each request was successful
 	if (!response1.ok || !response2.ok || !response3.ok) {
