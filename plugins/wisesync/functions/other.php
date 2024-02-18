@@ -44,7 +44,7 @@ function add_client_data_script() {
 		$request_ip = 'localhost';
 	}
 
-	wp_enqueue_script( 'client-data', WISESYNC_PLUGIN_URL . '/assets/js/client-data.js', array(), '1.0.3', true );
+	wp_enqueue_script( 'client-data', WISESYNC_PLUGIN_URL . '/assets/js/client-data.js', array(), '1.0.3_test1', true );
 	wp_localize_script(
 		'client-data',
 		'clientData',
