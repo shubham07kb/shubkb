@@ -40,14 +40,20 @@ $request_ip = sanitize_text_field(
 function add_client_data_script() {
 	global $request_ip;
 
+	if ( in_array( $request_ip, array( '127.0.0.1', '::1', 'localhost', '10.0.0.1', '192.168.0.1' ), true ) && isset( get_session( 'client_data' )['ip'] ) ) {
+		$request_ip = 'localhost';
+	}
+
 	wp_enqueue_script( 'client-data', WISESYNC_PLUGIN_URL . '/assets/js/client-data.js', array(), '1.0.0', true );
 	wp_localize_script(
 		'client-data',
 		'clientData',
 		array(
-			'ajax_url' => admin_url( 'admin-ajax.php' ),
-			'nonce'    => wp_create_nonce( 'client_data' ),
-			'ip'       => $request_ip,
+			'ajaxUrl' => admin_url( 'admin-ajax.php' ),
+			'nonce'   => wp_create_nonce( 'client_data' ),
+			'ip'      => $request_ip,
+			'action'  => 'set_client_data',
+			'cip'     => get_session( 'client_data' )['ip'],
 		)
 	);
 }

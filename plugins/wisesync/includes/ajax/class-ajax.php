@@ -12,6 +12,7 @@ namespace WiseSync\Ajax;
 
 use WiseSync\Ajax\Course;
 use WiseSync\Ajax\Passkey;
+use WiseSync\Ajax\Other;
 
 /**
  * Ajax
@@ -36,7 +37,8 @@ class Ajax {
 	 */
 	public function register_ajax_actions() {
 
-		$course  = new Course();
-		$passkey = new Passkey();
+		new Course();
+		new Passkey();
+		new Other();
 	}
 }
