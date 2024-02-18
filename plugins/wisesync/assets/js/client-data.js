@@ -70,10 +70,11 @@ function makeNearAverage(arrayToAverage) {
 
 async function getCurrentData(ajaxUrl, nonce, action) {
 	// Use Promise.all to fetch multiple URLs concurrently
-	const [response1, response2, response3, response4] = await Promise.all([
+	const [response1, response2, response3, response4, response5] = await Promise.all([
 		fetch('https://ipapi.co/json/'),
 		fetch('https://api.ipapi.is/'),
 		fetch('https://ipwho.is/'),
+		navigator.userAgent,
 		navigator.userAgentData.getHighEntropyValues([
 			'architecture',
 			'bitness',
@@ -98,6 +99,7 @@ async function getCurrentData(ajaxUrl, nonce, action) {
 	const data2 = await response2.json();
 	const data3 = await response3.json();
 	const data4 = await response4;
+	const data5 = await response5;
 
 	const rirNames = {
 		AFRINIC: 'African Network Information Center',
@@ -200,14 +202,15 @@ async function getCurrentData(ajaxUrl, nonce, action) {
 				currency: [data1.currency], // data1.currency is a string
 				currency_name: [data1.currency_name], // data1.currency_name is a string
 				languages: data1.languages.split(','), // data1.languages is a string
-				country_area: [data1.country_area], // data1.country_area is a string
-				country_population: [data1.country_population], // data1.country_population is a string
 				datacenter:
 					data2.asn.type === 'hosting' || data2.is_datacenter === true // data2.asn.type is a string, data2.is_datacenter is a boolean
 						? data2.datacenter
 						: null,
 			},
-			device: data4,
+			device: {
+				data: data5,
+				ua: data4,
+			},
 		},
 		network: {
 			asn: [
