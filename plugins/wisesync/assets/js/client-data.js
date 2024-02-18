@@ -248,15 +248,16 @@ async function getCurrentData(ajaxUrl, nonce, action) {
 }
 
 // Call the function
-// eslint-disable-next-line no-undef
-if (typeof clientData.cip === 'object') {
-	if (
+if (
+	// eslint-disable-next-line no-undef
+	(typeof clientData.cip === 'object' &&
 		// eslint-disable-next-line no-undef
 		!Object.values(clientData.cip).includes(clientData.ip) &&
 		// eslint-disable-next-line no-undef
-		clientData.ip !== 'localhost'
-	) {
-		// eslint-disable-next-line no-undef
-		getCurrentData(clientData.ajaxUrl, clientData.nonce, clientData.action);
-	}
+		clientData.ip !== 'localhost') ||
+	// eslint-disable-next-line no-undef
+	clientData.cip === null
+) {
+	// eslint-disable-next-line no-undef
+	getCurrentData(clientData.ajaxUrl, clientData.nonce, clientData.action);
 }
