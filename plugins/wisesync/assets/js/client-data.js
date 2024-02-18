@@ -249,7 +249,11 @@ async function getCurrentData(ajaxUrl, nonce, action) {
 
 // Call the function
 // eslint-disable-next-line no-undef
-if (typeof clientData.cip === 'object') {
+if (clientData.cip === null) {
+	// eslint-disable-next-line no-undef
+	getCurrentData(clientData.ajaxUrl, clientData.nonce, clientData.action);
+	// eslint-disable-next-line no-undef
+} else if (typeof clientData.cip === 'object') {
 	if (
 		// eslint-disable-next-line no-undef
 		!Object.values(clientData.cip).includes(clientData.ip) &&
@@ -259,8 +263,4 @@ if (typeof clientData.cip === 'object') {
 		// eslint-disable-next-line no-undef
 		getCurrentData(clientData.ajaxUrl, clientData.nonce, clientData.action);
 	}
-	// eslint-disable-next-line no-undef
-} else if (clientData.cip === null) {
-	// eslint-disable-next-line no-undef
-	getCurrentData(clientData.ajaxUrl, clientData.nonce, clientData.action);
 }
