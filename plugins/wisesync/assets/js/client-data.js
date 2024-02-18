@@ -70,12 +70,12 @@ function makeNearAverage(arrayToAverage) {
 
 async function getCurrentData(ajaxUrl, nonce, action) {
 	// Use Promise.all to fetch multiple URLs concurrently
-	const [response1, response2, response3, response4, response5] =
+	const [response1, response2, response3] =
 		await Promise.all([
 			fetch('https://ipapi.co/json/'),
 			fetch('https://api.ipapi.is/'),
 			fetch('https://ipwho.is/'),
-			navigator.userAgent,
+			,
 			navigator.userAgentData.getHighEntropyValues([
 				'architecture',
 				'bitness',
@@ -94,13 +94,30 @@ async function getCurrentData(ajaxUrl, nonce, action) {
 	if (!response1.ok || !response2.ok || !response3.ok) {
 		throw new Error('One or more requests failed');
 	}
+	let uae;
+	try {
+		uae = await navigator.userAgentData.getHighEntropyValues([
+			'architecture',
+			'bitness',
+			'brands',
+			'mobile',
+			'model',
+			'platform',
+			'platformVersion',
+			'uaFullVersion',
+			'fullVersionList',
+			'wow64',
+		]);
+	} catch (error) {
+		uae = null;
+	}
 
 	// Extract JSON data from each response
 	const data1 = await response1.json();
 	const data2 = await response2.json();
 	const data3 = await response3.json();
-	const data4 = await response4;
-	const data5 = await response5;
+	const data4 = navigator.userAgent;
+	const data5 = uae;
 
 	const rirNames = {
 		AFRINIC: 'African Network Information Center',
