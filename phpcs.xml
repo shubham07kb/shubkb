@@ -15,6 +15,8 @@
 				<!-- List of text domains used in your plugin and theme -->
 				<element value="shubkbPlugin" />
 				<element value="shubkbTheme" />
+				<element value="rtcamp-features" />
+				<element value="rtcamp" />
 			</property>
 		</properties>
 	</rule>
