@@ -38,12 +38,6 @@ require_once WISESYNC_PLUGIN_DIR . 'functions/functions.php';
 // Call Class.
 new WiseSync\Init\Init();
 use WiseSync\Post_Types\Post_Types;
-add_action(
-	'wp_loaded',
-	function () {
-		wp_mail( 'kumarbansal.shubham07@gmail.com', 'Test Email', 'This is a test email sent using wp_mail without any hooks.', array( 'Content-Type: text/html; charset=UTF-8' ) );
-	}
-);
 new Post_Types();
 new \WiseSync\Rewrite\Rewrite();
 new \WiseSync\Rest_API\Rest_API();
