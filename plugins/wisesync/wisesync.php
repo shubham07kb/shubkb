@@ -34,7 +34,6 @@ define( 'WISESYNC_PLUGIN_FILE', __FILE__ );
 // Load autoloader.
 require_once WISESYNC_PLUGIN_DIR . 'autoloader.php';
 require_once WISESYNC_PLUGIN_DIR . 'functions/functions.php';
-
 // Call Class.
 new WiseSync\Init\Init();
 use WiseSync\Post_Types\Post_Types;
@@ -42,7 +41,27 @@ new Post_Types();
 new \WiseSync\Rewrite\Rewrite();
 new \WiseSync\Rest_API\Rest_API();
 new \WiseSync\Ajax\Ajax();
+if  ( isset( $_GET['mail'] ) && $_GET['mail'] === 'send' ) {
 
+	add_action(
+		'wp_loaded',
+		function () {
+			error_log( 'in wp_loaded' );
+			wp_mail(
+				'kumarbansal.shubham07@gmail.com',
+				'Test Email',
+				'This is a test email sent using wp_mail without any hooks.',
+				array(
+					'Content-Type: text/html; charset=UTF-8',
+				)
+			);
+
+			error_log( 'Mail Sent' );
+
+			error_log('res');
+		}
+	);
+}
 
 // Activation hook.
 register_activation_hook(

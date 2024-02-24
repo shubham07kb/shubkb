@@ -52,6 +52,7 @@ class Mail {
 		$this->mail['from_email'] = get_option( 'admin_email' );
 		$this->mail['from_name']  = get_bloginfo( 'name' );
 
+		error_log( wp_json_encode( $this->mail, 1, 4 ) );
 		add_action( 'phpmailer_init', array( $this, 'apply_smtp' ) );
 	}
 
@@ -80,6 +81,7 @@ class Mail {
 				$this->mail['smtp_pass'] = defined( 'WS_SMTP_PASS' ) ? WS_SMTP_PASS : '';
 			}
 		}
+		// define( 'WS_MAIL_SET', $this->mail['type'] );
 	}
 
 	/**
@@ -98,23 +100,25 @@ class Mail {
 	 */
 	public function apply_smtp( $phpmailer ) {
 
+		error_log( 'apply_smtp' );
 		// if auth type is smtp, then set the smtp settings from constant.
 		if ( 'smtp' === $this->mail['type'] ) {
 
 			// Set the SMTP settings from constant to variables.
 			// phpcs:disable WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
-			$phpmailer->isSMTP();
+			$phpmailer->Mailer     = $this->mail['type'];
 			$phpmailer->Host       = $this->mail['smtp_host'];
 			$phpmailer->Port       = $this->mail['smtp_port'];
 			$phpmailer->SMTPAuth   = $this->mail['smtp_auth'];
 			$phpmailer->SMTPSecure = $this->mail['smtp_secr'];
-			if ( $this->mail['smtp_auth'] ) {
+			if ( $this->mail['smtp_secr'] ) {
 				$phpmailer->Username = $this->mail['smtp_user'];
 				$phpmailer->Password = $this->mail['smtp_pass'];
 			}
-			$phpmailer->From      = 'from@example.com';
-			$phpmailer->FromName  = 'Your Name';
+			$phpmailer->From      = $this->mail['from_email'];
+			$phpmailer->FromName  = $this->mail['from_name'];
 			$phpmailer->SMTPDebug = 0;
+			error_log( 'in most php_init: ' . wp_json_encode( $phpmailer, 1, 4 ) );
 			// phpcs:enable WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 		}
 	}

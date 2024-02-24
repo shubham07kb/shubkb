@@ -35,6 +35,7 @@ class Init {
 	 */
 	public function init_classes() {
 
+		error_log('run init_classes() from class-init.php');
 		new Mail();
 	}
 }
